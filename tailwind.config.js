@@ -18,7 +18,11 @@ module.exports = {
       colors : {
         pinkText : '#eb34e5',
         pinkishWhite : '#ffdefe',
-        purpleText : '#2e844a'
+        purpleText : '#2e844a',
+        shadedBlue: '#7bc1fb',
+        blushPink : '#d650b4',
+        purpleFrom : '#9b87f5',
+        purpleTo : '#E5DEFF'
       },
 
 

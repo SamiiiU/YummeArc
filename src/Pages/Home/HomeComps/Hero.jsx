@@ -1,5 +1,6 @@
 import React from 'react'
 import heroVid from '../../../Assets/Videos/HomeHeroVideo.mp4'
+import heroImg from '../../../Assets/Images/HomeImages/HeroImg.png'
 
 const Hero = () => {
     return (
@@ -7,12 +8,13 @@ const Hero = () => {
 
             {/* <span className='w-full h-full absolute top-0 left-0 z-20  bg-pinkText/50' /> */}
 
-            <span className='w-full h-1/2 absolute bottom-0 z-20 left-0 bg-gradient-to-b from-transparent 
-            to-pinkText' />
-
-            <span className='w-full h-full absolute top-0 z-20 left-0  bg-gradient-to-b from-pinkText 
+            <span className='w-full h-full absolute top-0 z-20 right-0 bg-gradient-to-tl from-blushPink
             to-transparent' />
 
+            <span className='w-full h-full absolute top-0 z-20 left-0  bg-gradient-to-br from-shadedBlue
+            to-transparent' />
+
+            {/* bg video  */}
             <div className="w-full h-screen absolute top-0 left-0 z-10 overflow-hidden ">
                 <video
                     className="w-full h-full object-cover"
@@ -27,9 +29,9 @@ const Hero = () => {
             </div>
 
 
-            <div className='w-full z-30 flex justify-center items-center flex-col lg:flex-row gap-10 pt-36'>
+            <div className='w-full z-30 flex justify-center  flex-col lg:flex-row gap-10 pt-36  '>
                 {/* Home text  */}
-                <div className='lg:w-1/2 w-full lg:items-start md:items-center  flex flex-col  gap-y-4'>
+                <div className='lg:w-1/2 w-full lg:items-start md:items-center  flex flex-col  gap-y-4 '>
 
                     <h1 className=' font-[600] text-pinkishWhite lg:text-[3.5rem] leading-[1.1]'>
                     Bring Your VTuber Dream to Life.
@@ -43,7 +45,7 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className='2xl:w-1/2 lg:w-1/2 w-full h-full pt-4 rounded-3xl' style={{ backgroundImage: 'url("https://cdn.kwork.com/files/portfolio/t3/92/dffbcb50f0cfbd6125889462ab09ad44466d5a77-1677148824.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <div className='2xl:w-1/2 lg:w-1/2 w-full h-full pt-4 rounded-3xl' style={{ backgroundImage: `url("${heroImg}")`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                     {/* <video width="100%" height="100%" controls style={{objectFit: 'contain', borderRadius: '20px'}}>
                     <source src={heroVid} type="video/mp4" />
                     Your browser does not support the video tag.

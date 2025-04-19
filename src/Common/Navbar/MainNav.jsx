@@ -102,37 +102,36 @@ const MainNav = () => {
       {/* <span onClick={scrollToTop} className={`z-50 fixed sm:bottom-5 bottom-10 ${!isVisible && 'hidden opacity-100'} right-5 lg:text-5xl text-3xl transition-all text-white  bg-[#16316a] lg:p-2 cursor-pointer rounded-full  `}><FaArrowAltCircleUp /></span> */}
 
       {scrwidth > 1280 ? (
-        <div className='w-full flex justify-between items-center px-6 py-2  z-50 bg-pink-500/0 absolute'>
+        <div className='w-full flex justify-evenly items-center px-6 py-2  z-50 bg-white'>
           {/* Logo image started  */}
           <Link to="/" className='w-[7%] h-16  px-4  ' style={{ backgroundImage: `url(${"https://upload.wikimedia.org/wikipedia/en/e/eb/JDC_Foundation_Logo.png"})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
           {/* Logo image done  */}
 
-          <div className='flex justify-center items-center gap-x-6 font-bold text-white'>
+          <div className='flex justify-center items-center gap-x-6 font-bold text-purpleFrom'>
             <div className='flex flex-col group items-center'>
-              <Link to={"/About"} className='text-lg font-bold z-10 bg-pinkText/0'>Home</Link>
-              <span className='w-full transition-all group-hover:translate-y-0 -translate-y-4 z-0 py-[2px] group-hover:bg-pinkishWhite bg-transparent rounded-full' />
+              <Link to={"/About"} className='text-lg font-bold z-10 '>Home</Link>
+              <span className='w-full transition-all group-hover:translate-y-0 -translate-y-4 z-0 py-[2px] group-hover:bg-purpleFrom bg-transparent rounded-full' />
             </div>
 
             <div className='flex flex-col group items-center'>
-              <Link to={"/About"} className='text-lg font-bold z-10 bg-pinkText/0'>About</Link>
-              <span className='w-full transition-all group-hover:translate-y-0 -translate-y-4 z-0 py-[2px] group-hover:bg-pinkishWhite bg-transparent rounded-full' />
+              <Link to={"/About"} className='text-lg font-bold z-10 '>About</Link>
+              <span className='w-full transition-all group-hover:translate-y-0 -translate-y-4 z-0 py-[2px] group-hover:bg-purpleFrom bg-transparent rounded-full' />
             </div>
 
             <div className='flex flex-col group items-center'>
-              <Link to={"/About"} className='text-lg font-bold z-10 bg-pinkText/0'>Portfolio</Link>
-              <span className='w-full transition-all group-hover:translate-y-0 -translate-y-4 z-0 py-[2px] group-hover:bg-pinkishWhite bg-transparent rounded-full' />
+              <Link to={"/About"} className='text-lg font-bold z-10 '>Portfolio</Link>
+              <span className='w-full transition-all group-hover:translate-y-0 -translate-y-4 z-0 py-[2px] group-hover:bg-purpleFrom bg-transparent rounded-full' />
             </div>
 
             <div className='flex flex-col group items-center'>
-              <Link to={"/About"} className='text-lg font-bold z-10 bg-pinkText/0'>Contact</Link>
-              <span className='w-full transition-all group-hover:translate-y-0 -translate-y-4 z-0 py-[2px] group-hover:bg-pinkishWhite bg-transparent rounded-full' />
+              <Link to={"/About"} className='text-lg font-bold z-10 '>Contact</Link>
+              <span className='w-full transition-all group-hover:translate-y-0 -translate-y-4 z-0 py-[2px] group-hover:bg-purpleFrom bg-transparent rounded-full' />
             </div>
 
             
 
           </div>
 
-          <span className='font-bold min-w-fit text-lg py-2 cursor-pointer text-white bg-greenButton px-4 rounded '>Book A Call</span>
 
         </div >
 
