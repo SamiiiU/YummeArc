@@ -43,3 +43,11 @@ export const our_process = [
     {heaiding : 'Model Rendering' ,  para : 'We design your model with high-detail artistry in anime style.' , icon : <MdHighQuality />},
     {heaiding : 'Delivery' ,  para : 'We send files optimized for Live2D, rigging, or static use.' , icon : <AiOutlineDeliveredProcedure />},
 ]
+
+export const testimonals_home = [
+    {client_name : "AikoVT" , review : "YumeArc completely understood my character’s soul. The attention to detail was insane, and the process was super smooth!"},
+    {client_name : "AikoVT" , review : "YumeArc completely understood my character’s soul. The attention to detail was insane, and the process was super smooth!"},
+    {client_name : "AikoVT" , review : "YumeArc completely understood my character’s soul. The attention to detail was insane, and the process was super smooth!"},
+    {client_name : "AikoVT" , review : "YumeArc completely understood my character’s soul. The attention to detail was insane, and the process was super smooth!"},
+
+]

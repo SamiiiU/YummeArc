@@ -9,8 +9,7 @@ const WhyYummearc = () => {
     setIsActive(onMouse)
   }
   return (
-    <div className='w-full    2xl:px-80 bg-white flex flex-col justify-center  pb-20  min-h-screen relative space-y-20'>
-
+    <div className='w-full 2xl:px-80 bg-white flex flex-col justify-center  pb-20  min-h-screen relative space-y-20'>
 
       <div className='w-full z-30 flex justify-center items-center flex-col lg:flex-row gap-10 rounded-3xl bg-gradient-to-b from-purpleFrom to-purpleTo relative pt-10'>
         {/* Home text  */}

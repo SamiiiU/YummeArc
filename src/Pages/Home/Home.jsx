@@ -4,6 +4,8 @@ import Hero from './HomeComps/Hero'
 import WhyYummearc from './HomeComps/WhyYummearc'
 import RecentWork from './HomeComps/RecentWork'
 import OurProcess from './HomeComps/OurProcess'
+import Testimonals from './HomeComps/Testimonals'
+import CTA from '../../Common/CTAs/CTA'
 
 const Home = () => {
   return (
@@ -13,6 +15,9 @@ const Home = () => {
       <WhyYummearc/>
       <RecentWork/>
       <OurProcess/>
+      <Testimonals/>
+      <CTA/>
+
     </div>
   )
 }
