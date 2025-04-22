@@ -45,7 +45,7 @@ const Hero = () => {
                     </div>
                 </div>
 
-                <div className='2xl:w-1/2 lg:w-1/2 w-full h-full pt-4 rounded-3xl' style={{ backgroundImage: `url("${heroImg}")`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <div className='2xl:w-1/2 lg:w-1/2 w-full h-full pt-4 rounded-3xl' style={{ backgroundImage: `url("${heroImg}")`, backgroundSize: 'contain', backgroundPosition: 'center' , backgroundRepeat : 'no-repeat' }}>
                     {/* <video width="100%" height="100%" controls style={{objectFit: 'contain', borderRadius: '20px'}}>
                     <source src={heroVid} type="video/mp4" />
                     Your browser does not support the video tag.

@@ -107,25 +107,25 @@ const MainNav = () => {
           <Link to="/" className='w-[7%] h-16  px-4  ' style={{ backgroundImage: `url(${"https://upload.wikimedia.org/wikipedia/en/e/eb/JDC_Foundation_Logo.png"})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
           {/* Logo image done  */}
 
-          <div className='flex justify-center items-center gap-x-6 font-bold text-purpleFrom'>
+          <div className='flex justify-center items-center gap-x-6 font-bold text-textColor'>
             <div className='flex flex-col group items-center'>
               <Link to={"/About"} className='text-lg font-bold z-10 '>Home</Link>
-              <span className='w-full transition-all group-hover:translate-y-0 -translate-y-4 z-0 py-[2px] group-hover:bg-purpleFrom bg-transparent rounded-full' />
+              <span className='w-full transition-all group-hover:translate-y-0 -translate-y-4 z-0 py-[2px] group-hover:bg-textColor bg-transparent rounded-full' />
             </div>
 
             <div className='flex flex-col group items-center'>
               <Link to={"/About"} className='text-lg font-bold z-10 '>About</Link>
-              <span className='w-full transition-all group-hover:translate-y-0 -translate-y-4 z-0 py-[2px] group-hover:bg-purpleFrom bg-transparent rounded-full' />
+              <span className='w-full transition-all group-hover:translate-y-0 -translate-y-4 z-0 py-[2px] group-hover:bg-textColor bg-transparent rounded-full' />
             </div>
 
             <div className='flex flex-col group items-center'>
               <Link to={"/About"} className='text-lg font-bold z-10 '>Portfolio</Link>
-              <span className='w-full transition-all group-hover:translate-y-0 -translate-y-4 z-0 py-[2px] group-hover:bg-purpleFrom bg-transparent rounded-full' />
+              <span className='w-full transition-all group-hover:translate-y-0 -translate-y-4 z-0 py-[2px] group-hover:bg-textColor bg-transparent rounded-full' />
             </div>
 
             <div className='flex flex-col group items-center'>
               <Link to={"/About"} className='text-lg font-bold z-10 '>Contact</Link>
-              <span className='w-full transition-all group-hover:translate-y-0 -translate-y-4 z-0 py-[2px] group-hover:bg-purpleFrom bg-transparent rounded-full' />
+              <span className='w-full transition-all group-hover:translate-y-0 -translate-y-4 z-0 py-[2px] group-hover:bg-textColor bg-transparent rounded-full' />
             </div>
 
             

@@ -20,9 +20,10 @@ module.exports = {
         pinkishWhite : '#ffdefe',
         purpleText : '#2e844a',
         shadedBlue: '#7bc1fb',
-        blushPink : '#d650b4',
-        purpleFrom : '#9b87f5',
-        purpleTo : '#E5DEFF'
+        blushPink : '#eda0cb',
+        textColor: '#2e1e4d',
+        purpleFrom : '#faedfe',
+        purpleTo : '#f1e2fa',
       },
 
 
