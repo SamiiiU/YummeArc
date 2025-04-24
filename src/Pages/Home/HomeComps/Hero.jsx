@@ -31,17 +31,17 @@ const Hero = () => {
 
             <div className='w-full z-30 flex justify-center  flex-col lg:flex-row gap-10 pt-36  '>
                 {/* Home text  */}
-                <div className='lg:w-1/2 w-full lg:items-start md:items-center  flex flex-col  gap-y-4 '>
+                <div className='lg:w-1/2 w-full lg:items-start md:items-center  flex flex-col text-white gap-y-4 '>
 
-                    <h1 className=' font-[600] text-pinkishWhite lg:text-[3.5rem] leading-[1.1]'>
+                    <h1 className=' font-[600]  lg:text-[3.5rem] text-5xl leading-[1.1]'>
                     Bring Your VTuber Dream to Life.
                     </h1>
-                    <p className='text-xl text-pinkishWhite'>Custom anime-style VTuber models crafted with deep storytelling, rich detail, and heartfelt design.
+                    <p className='text-xl '>Custom anime-style VTuber models crafted with deep storytelling, rich detail, and heartfelt design.
                     </p>
 
                     <div className=' flex md:flex-row flex-col sm:rounded-md gap-4 md:w-auto w-full text-md xl:text-lg pt-6 '>
                         <button className=' px-8 py-2 text-white font-bold cursor-pointer transition-all duration-300 hover:bg-transparent bg-pinkText text-center rounded-md '> View Portfolio</button>
-                        <button className=' px-8 py-2  font-bold cursor-pointer transition-all duration-300  text-white border-2 border-pinkishWhite hover:border-pinkText hover:text-pinkText text-center rounded-md '>Start Your Commission</button>
+                        <button className=' px-8 py-2  font-bold cursor-pointer transition-all duration-300  text-white border-2 border-white hover:border-white text-center rounded-md '>Start Your Commission</button>
                     </div>
                 </div>
 

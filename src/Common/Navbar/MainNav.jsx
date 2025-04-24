@@ -99,10 +99,10 @@ const MainNav = () => {
     <>
 
       {/* button for scrolling to top  */}
-      {/* <span onClick={scrollToTop} className={`z-50 fixed sm:bottom-5 bottom-10 ${!isVisible && 'hidden opacity-100'} right-5 lg:text-5xl text-3xl transition-all text-white  bg-[#16316a] lg:p-2 cursor-pointer rounded-full  `}><FaArrowAltCircleUp /></span> */}
+      <span onClick={scrollToTop} className={`z-50 fixed sm:bottom-5 bottom-10 ${!isVisible && 'hidden opacity-100'} right-5 lg:text-5xl text-3xl transition-all text-white  bg-[#16316a] lg:p-2 cursor-pointer rounded-full  `}><FaArrowAltCircleUp /></span>
 
       {scrwidth > 1280 ? (
-        <div className='w-full flex justify-evenly items-center px-6 py-2  z-50 bg-white shadow-lg'>
+        <div className='w-full fixed  flex justify-evenly items-center px-6 py-2  z-50 bg-white shadow-lg'>
           {/* Logo image started  */}
           <Link to="/" className='w-[7%] h-16  px-4  ' style={{ backgroundImage: `url(${"https://upload.wikimedia.org/wikipedia/en/e/eb/JDC_Foundation_Logo.png"})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
           {/* Logo image done  */}

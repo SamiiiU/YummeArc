@@ -5,11 +5,11 @@ import { model_packages } from '../../../WebData/ComissionData'
 const Packages = () => {
     return (
         <div className='w-full   px-4 sm:px-12  2xl:px-80  py-10   relative'>
-            <h1 className='w-full text-center  font-[600]  lg:text-[3.5rem] leading-[1.1] text-textColor  '>
+            <h1 className='w-full text-center  font-[600]  lg:text-[3.5rem] text-5xl leading-[1.1] text-textColor  '>
                 Model Packages
             </h1>
 
-            <div className='w-full grid grid-cols-3 gap-8 mt-6  p-6'>
+            <div className='w-full grid lg:grid-cols-3 grid-cols-1 gap-8 mt-6  p-6'>
                 {model_packages.map((item  , idx) => (
                     <div key={idx} className='col-span-1 row-span-1 p-4 bg-white rounded-3xl space-y-6  text-center  '>
                         <h1 className='text-3xl font-bold'>{item.name}</h1>

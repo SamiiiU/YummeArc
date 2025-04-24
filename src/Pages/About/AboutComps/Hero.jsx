@@ -6,7 +6,7 @@ const Hero = () => {
 
 
             <h1 className=' font-[600]  lg:text-[3.5rem] text-5xl leading-[1.1] w-full text-center'>
-            Ready to bring your VTuber to life?
+            YummeArc -- The World Of Vtubers
             </h1>
             <p className='lg:text-xl text-lg text-center mt-6'>We’re honored you’re considering YumeArc.<br/> Our custom anime-style models are crafted with deep storytelling, rich aesthetics, and heartfelt care.
 

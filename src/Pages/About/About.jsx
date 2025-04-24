@@ -1,19 +1,15 @@
 import React from 'react'
 import MainNav from '../../Common/Navbar/MainNav'
-import Hero from './ComissionComps/Hero'
-import OurProcess from './ComissionComps/OurProcess'
-import Packages from './ComissionComps/Packeges'
-import FAQs from './ComissionComps/FAQs'
+import Hero from './AboutComps/Hero'
+
 import CTA from '../../Common/CTAs/CTA'
 
-const Comission = () => {
+const About = () => {
   return (
-    <div className='w-full text-textColor overflow-x-hidden bg-purpleTo relative '>
+    <div className='w-full text-textColor overflow-x-hidden bg-pinkishWhite relative '>
       <MainNav/>
       <Hero/>
-      <OurProcess/>
-      <Packages/>
-      <FAQs/>
+      
       <CTA heading={"Start Your Commission"} para={"Tell us about your character, your dream, and how we can bring it to life.<br/>We’ll reply within 48 hours with your quote and next steps!"} cta1={"Start Your Request Form"} />
       
 
@@ -21,4 +17,4 @@ const Comission = () => {
   )
 }
 
-export default Comission
+export default About
