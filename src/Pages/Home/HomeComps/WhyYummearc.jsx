@@ -29,7 +29,7 @@ const WhyYummearc = () => {
 
         </div>
 
-        <span className='lg:w-1/2 w-full h-full min-h-[26rem]' style={{ backgroundImage: `url("${whyYmmearc}")`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}/>
+        <span className='lg:w-1/2 w-full h-full min-h-[26rem] mask-y-from-70% mask-y-to-90% ' style={{ backgroundImage: `url("${whyYmmearc}")`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}/>
 
 
       </div>
