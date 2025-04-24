@@ -8,7 +8,7 @@ import CTA from '../../Common/CTAs/CTA'
 
 const Comission = () => {
   return (
-    <div className='w-full text-textColor overflow-x-hidden bg-purpleTo relative '>
+    <div className='w-full text-textColor  bg-purpleTo relative '>
       <MainNav/>
       <Hero/>
       <OurProcess/>
