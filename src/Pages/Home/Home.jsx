@@ -6,6 +6,7 @@ import RecentWork from './HomeComps/RecentWork'
 import OurProcess from './HomeComps/OurProcess'
 import Testimonals from './HomeComps/Testimonals'
 import CTA from '../../Common/CTAs/CTA'
+import Footer from '../../Common/Footer/Footer'
 
 const Home = () => {
   return (
@@ -17,7 +18,7 @@ const Home = () => {
       <OurProcess/>
       <Testimonals/>
       <CTA heading={"Your story deserves to be seen."} para={"Let’s bring your dream VTuber model to life—with soul, style, and storytelling that matters."} cta1={"Start a Commission"} cta2={"Contact Us"}/>
-
+      <Footer/>
     </div>
   )
 }

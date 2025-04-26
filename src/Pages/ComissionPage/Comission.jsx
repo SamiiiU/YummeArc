@@ -5,6 +5,7 @@ import OurProcess from './ComissionComps/OurProcess'
 import Packages from './ComissionComps/Packeges'
 import FAQs from './ComissionComps/FAQs'
 import CTA from '../../Common/CTAs/CTA'
+import Footer from '../../Common/Footer/Footer'
 
 const Comission = () => {
   return (
@@ -15,6 +16,7 @@ const Comission = () => {
       <Packages/>
       <FAQs/>
       <CTA heading={"Start Your Commission"} para={"Tell us about your character, your dream, and how we can bring it to life.<br/>We’ll reply within 48 hours with your quote and next steps!"} cta1={"Start Your Request Form"} />
+      <Footer/>
       
 
     </div>
