@@ -13,7 +13,7 @@ const RecentWork = () => {
         setIsActive(onMouse)
     }
     return (
-        <div className='w-full  px-4 sm:px-12  2xl:px-80  flex flex-col  items-center   min-h-screen relative space-y-20
+        <div className='w-full  px-4 sm:px-12  2xl:px-80  flex flex-col  items-center  relative space-y-20
         bg-gradient-to-b from-white to-purpleTo  py-20'>
             <AOSInitializer />
 

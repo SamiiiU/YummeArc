@@ -14,7 +14,7 @@ const Meet_Artist = () => {
                         Now, I help creators around the world bring their anime-inspired identities to life. Whether it's a shy healer, a space idol, or a wandering swordsman-I'm here to draw your dream.
                     </p>
                 </div>
-                <div data-aos="fade-left" className='col-span-1 lg:px-20 sm:px-10 relative'>
+                <div  className='col-span-1 lg:px-20 sm:px-10 relative'>
                     <img
                         src="https://www.josephsmithpapers.org/bc-jsp/content/jsp/images/content/library/images/per86---D1-page-163---088-088-emma-smith-full-2.jpg"
                         style={{
@@ -28,7 +28,7 @@ const Meet_Artist = () => {
                 </div>
             </div>
 
-            <h1 data-aos="zoom-out" className='w-full text-center mt-8 font-bold md:text-4xl text-2xl'>
+            <h1 data-aos="zoom-in" className='w-full text-center mt-8 font-bold md:text-4xl text-2xl'>
                 "Design isn't just about looks. It's about why your character exists."
             </h1>
 

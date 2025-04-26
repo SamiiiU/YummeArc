@@ -3,7 +3,7 @@ import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 
 const Hero = () => {
     return (
-        <div className='w-full   px-4 sm:px-12  2xl:px-80  py-10   relative xl:pt-40'>
+        <div className='w-full   px-4 sm:px-12  2xl:px-80  py-10  xl:pt-40'>
 
             <AOSInitializer/>
             <h1 data-aos="flip-up" className=' font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1] w-full text-center'>
@@ -16,7 +16,7 @@ const Hero = () => {
 
             </p>
 
-            <p data-aos="zoom-out" className='text-xl font-semibold text-center mt-6'>
+            <p data-aos="zoom-in" className='text-xl font-semibold text-center mt-6'>
 
             Every model we create is built with deep respect for your lore, visual identity, and dreams..</p>
 

@@ -9,7 +9,7 @@ import Vision from './AboutComps/Vision'
 
 const About = () => {
   return (
-    <div className='w-full text-textColor overflow-x-hidden bg-pinkishWhite relative '>
+    <div className='w-full text-textColor bg-pinkishWhite relative '>
       <MainNav/>
       <Hero/>
       <Philosophy/>

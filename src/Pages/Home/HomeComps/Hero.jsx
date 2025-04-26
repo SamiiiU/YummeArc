@@ -5,7 +5,7 @@ import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 
 const Hero = () => {
     return (
-        <div className='w-full h-screen  px-4 sm:px-12  2xl:px-80  pb-20 flex  relative'>
+        <div className='w-full h-auto   px-4 sm:px-12  2xl:px-80  pb-20 flex  relative'>
             <AOSInitializer duration={500} offset={20} />
 
             {/* <span className='w-full h-full absolute top-0 left-0 z-20  bg-pinkText/50' /> */}
@@ -17,7 +17,7 @@ const Hero = () => {
             to-transparent' />
 
             {/* bg video  */}
-            <div className="w-full h-screen absolute top-0 left-0 z-10 overflow-hidden ">
+            <div className="w-full h-full absolute top-0 left-0 z-10 overflow-hidden ">
                 <video
                     className="w-full h-full object-cover"
                     autoPlay

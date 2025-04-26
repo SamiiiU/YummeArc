@@ -5,6 +5,7 @@ const GlobalProvider = ({children}) => {
         const [states, setState] = useState('false');
         const [scrwidth, setWidth] = useState(window.innerWidth); 
         const [isLoading , setIsLoading] = useState(false)
+        const [currPage , setcurrPage] = useState("Home")
 
         useEffect(() => {
           const handleResize = () => setWidth(window.innerWidth);
@@ -21,7 +22,8 @@ const GlobalProvider = ({children}) => {
     <ContextAPI.Provider value={{
         states,
         scrwidth,
-        isLoading , setIsLoading
+        isLoading , setIsLoading,
+        currPage , setcurrPage
  
     }}>
         {children}

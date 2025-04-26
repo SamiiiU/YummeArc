@@ -20,25 +20,13 @@ const MainNav = () => {
 
   const [currDataIndex, setCurrDataIndex] = useState(null)
 
-  const { scrwidth } = useContext(ContextAPI);
+  const { scrwidth , currPage , setcurrPage } = useContext(ContextAPI);
 
-  //handler for main screen navigation 
-  const navHandler = (index, status) => {
-    setIsBigMenu(status == true ? false : true);
-
-
-    if (index - 1 != currDataIndex) {
-      setTimeout(() => {
-        setIsBigMenu(status);
-        setCurrDataIndex(index - 1);
-
-      }, 200);
-    } else {
-      setCurrDataIndex(null)
-    }
-
-
+  const handleCurrPage = (page_num) => {
+        setcurrPage(page_num)
+        // console.log(page_num)
   }
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -109,23 +97,23 @@ const MainNav = () => {
 
           <div className='flex justify-center items-center gap-x-6 font-bold text-textColor'>
             <div className='flex flex-col group items-center'>
-              <Link to={"/"} className='text-lg font-bold z-10 '>Home</Link>
-              <span className='w-full transition-all group-hover:translate-y-0 -translate-y-4 z-0 py-[2px] group-hover:bg-textColor bg-transparent rounded-full' />
+              <Link onClick={() => handleCurrPage("Home")} to={"/"} className='text-lg font-bold z-10 '>Home</Link>
+              <span className={`w-full transition-all ${currPage == "Home" ? 'translate-y-0 bg-textColor' : 'group-hover:translate-y-0 -translate-y-4  group-hover:bg-textColor bg-transparent'} z-0 py-[2px] rounded-full`} />
             </div>
 
             <div className='flex flex-col group items-center'>
-              <Link to={"/portfolio"} className='text-lg font-bold z-10 '>Portfolio</Link>
-              <span className='w-full transition-all group-hover:translate-y-0 -translate-y-4 z-0 py-[2px] group-hover:bg-textColor bg-transparent rounded-full' />
+              <Link onClick={() => handleCurrPage("Portfolio")} to={"/portfolio"} className='text-lg font-bold z-10 '>Portfolio</Link>
+              <span className={`w-full transition-all ${currPage == "Portfolio" ? 'translate-y-0 bg-textColor' : 'group-hover:translate-y-0 -translate-y-4  group-hover:bg-textColor bg-transparent'} z-0 py-[2px] rounded-full`}/>
             </div>
 
             <div className='flex flex-col group items-center'>
-              <Link to={"/about"} className='text-lg font-bold z-10 '>About</Link>
-              <span className='w-full transition-all group-hover:translate-y-0 -translate-y-4 z-0 py-[2px] group-hover:bg-textColor bg-transparent rounded-full' />
+              <Link onClick={() => handleCurrPage("About")} to={"/about"} className='text-lg font-bold z-10 '>About</Link>
+              <span className={`w-full transition-all ${currPage == "About" ? 'translate-y-0 bg-textColor' : 'group-hover:translate-y-0 -translate-y-4  group-hover:bg-textColor bg-transparent'} z-0 py-[2px] rounded-full`} />
             </div>
 
             <div className='flex flex-col group items-center'>
-              <Link to={"/comission"} className='text-lg font-bold z-10 '>Comission</Link>
-              <span className='w-full transition-all group-hover:translate-y-0 -translate-y-4 z-0 py-[2px] group-hover:bg-textColor bg-transparent rounded-full' />
+              <Link onClick={() => handleCurrPage("Comission")} to={"/comission"} className='text-lg font-bold z-10 '>Comission</Link>
+              <span className={`w-full transition-all ${currPage == "Comission" ? 'translate-y-0 bg-textColor' : 'group-hover:translate-y-0 -translate-y-4  group-hover:bg-textColor bg-transparent'} z-0 py-[2px] rounded-full`} />
             </div>
 
             

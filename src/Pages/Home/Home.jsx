@@ -9,7 +9,7 @@ import CTA from '../../Common/CTAs/CTA'
 
 const Home = () => {
   return (
-    <div className='w-full text-textColor overflow-x-hidden'>
+    <div className='w-full  text-textColor '>
       <MainNav/>
       <Hero/>
       <WhyYummearc/>
