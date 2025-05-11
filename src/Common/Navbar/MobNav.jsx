@@ -10,7 +10,7 @@ const MobNav = () => {
     setIsOpen(!isOpen);
   }
   return (
-    <div className='w-full p-4  z-50 bg-white relative'>
+    <div className='w-full p-4  z-50 bg-white relative font-orbitron'>
       <div className='w-full flex justify-between items-center z-50 relative bg-white'>
         {/* Logo image started  */}
         <Link to="/" className='w-[15%] h-10    ' style={{ backgroundImage: `url(${"https://upload.wikimedia.org/wikipedia/en/e/eb/JDC_Foundation_Logo.png"})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />

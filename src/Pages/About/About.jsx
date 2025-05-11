@@ -10,7 +10,7 @@ import Footer from '../../Common/Footer/Footer'
 
 const About = () => {
   return (
-    <div className='w-full text-textColor bg-pinkishWhite relative '>
+    <div className='w-full text-textColor bg-[#f2f2f2] relative font-orbitron'>
       <MainNav/>
       <Hero/>
       <Philosophy/>

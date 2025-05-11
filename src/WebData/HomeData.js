@@ -33,7 +33,7 @@ export const whyYummeArc = [
 export const recentModels =[
     {name : "John Abraham" , description : "A guardian of dreams who travels between realms" , model : model_1},
     {name : "John Wick" , description : "A stargazer turned streamer, with celestial hair and a shy heart" , model : model_2},
-    {name : "Bappa Jani" , description : "Warrior of the blossom moon—soft outside, fierce inside" , model : model_3},
+    {name : "Albert Einstien" , description : "Warrior of the blossom moon—soft outside, fierce inside" , model : model_3},
 
 ]
 

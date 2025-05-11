@@ -6,7 +6,7 @@ import { FaFacebook, FaInstagram, FaLocationDot, FaSnapchat, FaTwitch, FaTwitter
 
 const Footer = () => {
     return (
-        <div className='w-full space-y-8     bg-purpleTo relative'>
+        <div className='w-full space-y-8   bg-bgColor relative'>
 
             <div className='grid px-4 sm:px-12 py-20  2xl:px-80 lg:grid-cols-3 gap-20 w-full'>
 

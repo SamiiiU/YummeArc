@@ -9,7 +9,7 @@ const Meet_Artist = () => {
             <div className='w-full  grid md:grid-cols-2 grid-cols-1 gap-10'>
                 <div className='space-y-6 col-span-1'>
                     <h1 data-aos="fade-right" className='text-4xl font-bold'>Meet the Artist - <i>Emma Smith</i></h1>
-                    <p data-aos="fade-right" >Hi! I'm Emma, a lifelong anime fan and full-time VTuber model artist. I started YumeArc because I saw too many models lacking soul-just art without story.
+                    <p data-aos="fade-right" className='font-mPlus' >Hi! I'm Emma, a lifelong anime fan and full-time VTuber model artist. I started YumeArc because I saw too many models lacking soul-just art without story.
                         <br /> <br />
                         Now, I help creators around the world bring their anime-inspired identities to life. Whether it's a shy healer, a space idol, or a wandering swordsman-I'm here to draw your dream.
                     </p>

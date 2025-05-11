@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import whyYmmearc from '../../../Assets/Images/HomeImages/WhySecImg.png'
 import { whyYummeArc } from '../../../WebData/HomeData'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
+import { BackgroundBeamsWithCollision } from '../../../components/ui/background-beams-with-collisions'
 
 const WhyYummearc = () => {
   const [isActive, setIsActive] = useState(null)
@@ -10,13 +11,14 @@ const WhyYummearc = () => {
     setIsActive(onMouse)
   }
   return (
-    <div className=' bg-white flex flex-col justify-center  pb-20  min-h-screen  space-y-20'>
+    <BackgroundBeamsWithCollision className={"min-h-screen"}>
+      <div className=' bg-textColor flex flex-col justify-center px-4 sm:px-12 2xl:px-80 pt-20  min-h-screen  space-y-20'>
       <AOSInitializer />
 
-
-      <div className='w-full grid sm:grid-cols-2 grid-cols-1 xl:gap-16 lg:gap-8 gap-6 mt-16 px-4 sm:px-12 2xl:px-80'>
+      <h1 className='font-kaushans text-white text-5xl'>Why YummeArc?</h1>
+      <div className='w-full grid sm:grid-cols-2 grid-cols-1 xl:gap-16 lg:gap-8 gap-6 mt-16 '>
         {whyYummeArc.map((why, idx) => (
-          <div data-aos="zoom-in" key={idx} onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)} className='col-span-1 cursor-pointer  row-span-1 rounded-3xl bg-white flex flex-col justify-center items-center gap-y-6 px-8 py-6 transition-all ' style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }}>
+          <div data-aos="zoom-in" key={idx} onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)} className='col-span-1 cursor-pointer  row-span-1 rounded-3xl text-white flex flex-col justify-center items-center gap-y-6 px-8 py-6 transition-all ' style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }}>
             <span className='text-5xl  font-bold'>{why.icon}</span>
 
             <h1 className='text-xl font-semibold'>{why.text}</h1>
@@ -27,14 +29,15 @@ const WhyYummearc = () => {
         ))}
       </div>
 
-      <div className='w-full 2xl:px-80 z-30 grid lg:grid-cols-2 grid-cols-1 gap-10 sm:rounded-3xl bg-gradient-to-b from-purpleFrom to-purpleTo relative pt-10'>
+      <div className='w-full  z-30 grid lg:grid-cols-2 grid-cols-1 gap-10 sm:rounded-3xl bg-white/10 text-white relative pt-10'>
         {/* Home text  */}
-        <div className='col-span-1 lg:text-center justify-center md:items-center  flex flex-col  gap-y-4 sm:p-16 p-4 min-h-[24rem]'>
+        <div className='col-span-1  justify-center text-left  flex flex-col  gap-y-4 sm:p-16 p-4 min-h-[24rem]'>
 
           <h1 data-aos="fade-right" className=' font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]  '>
-            Why YummeArc?
+          The Heart Behind Every Model
           </h1>
-          <p data-aos="fade-right" className='lg:text-xl text-lg '>At YumeArc, every design begins with your backstory, your lore, and your passion. We believe your VTuber model should feel like an extension of your soul-not just a pretty character.
+          <p data-aos="fade-right" className='lg:text-xl text-lg '>At YummeArc, every model begins with your story — your lore, your vibe, your soul. We believe your VTuber avatar shouldn’t just look good… it should feel like a reflection of you. Not just a character. A legacy.
+
           </p>
 
           <div className=' flex md:flex-row flex-col sm:rounded-md gap-4 md:w-auto w-full text-md xl:text-lg pt-6 '>
@@ -64,6 +67,7 @@ const WhyYummearc = () => {
       </div>
 
     </div>
+    </BackgroundBeamsWithCollision>
   )
 }
 

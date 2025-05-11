@@ -24,6 +24,7 @@ module.exports = {
         textColor: '#2e1e4d',
         purpleFrom : '#faedfe',
         purpleTo : '#f1e2fa',
+        bgColor : '#f2f2f2',
       },
 
 
@@ -78,6 +79,14 @@ module.exports = {
 
       boxShadow: {
         'custom-equal': '-2px 0px 10px 5px rgba(0, 0, 0, 0.1)', // yeh chaaron sides ke liye hai
+      },
+
+      fontFamily: {
+        orbitron : ["Orbitron", "sans-serif"], 
+        mPlus : ["M PLUS Rounded 1c", "sans-serif"], // 
+        kaushans : ["Kaushan Script", "cursive" ], // 
+
+
       },
     },
   },
