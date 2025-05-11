@@ -10,10 +10,12 @@ function App() {
   return (
     <GlobalProvider>
       <Routes>
+        < >
         <Route path="/" element={<Home/>}/>
         <Route path="/portfolio" element={<Portfolio/>}/>
         <Route path="/comission" element={<Comission/>}/>
         <Route path="/about" element={<About/>}/>
+        </>
         
 
 

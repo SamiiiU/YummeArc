@@ -10,11 +10,11 @@ import Footer from '../../Common/Footer/Footer'
 
 const Home = () => {
   return (
-    <div className='w-full  text-textColor bg-[#f2f2f2] font-orbitron'>
+    <div className='w-full  text-textColor bg-white font-orbitron'>
       <MainNav/>
       <Hero/>
-      <WhyYummearc/>
       <RecentWork/>
+      <WhyYummearc/>
       <OurProcess/>
       <Testimonals/>
       <CTA heading={"Your story deserves to be seen."} para={"Let’s bring your dream VTuber model to life—with soul, style, and storytelling that matters."} cta1={"Start a Commission"} cta2={"Contact Us"}/>

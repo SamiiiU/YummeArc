@@ -10,7 +10,7 @@ const OurProcess = () => {
         setIsActive(onMouse)
     }
     return (
-        <div className='w-full  px-4 sm:px-12  2xl:px-80  flex flex-col  items-center   relative 
+        <div className='w-full  px-4 sm:px-28  2xl:px-80  flex flex-col  items-center   relative 
           py-20 ' >
             <AOSInitializer/>
             <span className='absolute top-0 left-0 w-full h-full opacity-50' style={{backgroundImage : `url(${bgImage})` , backgroundPosition : 'center' , backgroundSize : '120%'}}></span>
@@ -21,7 +21,7 @@ const OurProcess = () => {
             <div className='w-full grid sm:grid-cols-2 grid-cols-1 gap-8 mt-6'>
                 {our_process.map((process , idx) => (
                     <div data-aos= "fade-up" key={idx} onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)} 
-                    style={{boxShadow : isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)'}} className='col-span-1 row-span-1 p-4 flex rounded-md transition-all cursor-pointer'>
+                    style={{boxShadow : isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)'}} className='col-span-1 row-span-1 p-4 flex rounded-md transition-all cursor-pointer bg-purpleText text-white'>
                         <span className=' h-full  text-5xl'>
                             {process.icon} 
                         </span>

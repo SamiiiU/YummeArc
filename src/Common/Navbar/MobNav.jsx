@@ -13,7 +13,10 @@ const MobNav = () => {
     <div className='w-full p-4  z-50 bg-white relative font-orbitron'>
       <div className='w-full flex justify-between items-center z-50 relative bg-white'>
         {/* Logo image started  */}
-        <Link to="/" className='w-[15%] h-10    ' style={{ backgroundImage: `url(${"https://upload.wikimedia.org/wikipedia/en/e/eb/JDC_Foundation_Logo.png"})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
+        {/* <Link to="/" className='w-[15%] h-10    ' style={{ backgroundImage: `url(${"https://upload.wikimedia.org/wikipedia/en/e/eb/JDC_Foundation_Logo.png"})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} /> */}
+
+        <h1 className='text-5xl font-bold font-kaushans'>YummeArc</h1>
+
         {/* Logo image done  */}
         <span onClick={() => handleIsOpen()} className='text-4xl transition-all'>
           {isOpen ? <RxCross2 /> : <LuMenu/>}

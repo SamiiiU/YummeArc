@@ -17,14 +17,16 @@ module.exports = {
 
       colors : {
         pinkText : '#eb34e5',
-        pinkishWhite : '#ffdefe',
-        purpleText : '#2e844a',
-        shadedBlue: '#7bc1fb',
-        blushPink : '#eda0cb',
-        textColor: '#2e1e4d',
-        purpleFrom : '#faedfe',
-        purpleTo : '#f1e2fa',
-        bgColor : '#f2f2f2',
+        pinkishWhite : '#fef8f8',
+        purpleText : '#7f82af',
+        blackText : '#28252b',
+        textWhite : '#fcf7f4'
+        // shadedBlue: '#7bc1fb',
+        // blushPink : '#eda0cb',
+        // textColor: '#2e1e4d',
+        // purpleFrom : '#faedfe',
+        // purpleTo : '#f1e2fa',
+        // bgColor : '#f2f2f2',
       },
 
 

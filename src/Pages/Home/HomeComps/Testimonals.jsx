@@ -25,12 +25,12 @@ const Testimonals = () => {
             className='w-full   relative grid grid-cols-2   transition-all ' >
 
             {idx % 2 == 0 ? (
-              <div style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }} className=' bg-white col-start-1 col-end-1 p-6 rounded-md'>
+              <div style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }} className=' bg-purpleText text-white col-start-1 col-end-1 p-6 rounded-md'>
                 <h1 className=''>"{testimonal.review}"</h1>
                 <p className='text-lg font-bold'><i>~{testimonal.client_name}</i></p>
               </div>
             ) : (
-              <div style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }} className='bg-white  col-start-2 col-end-2 p-6 rounded-md'>
+              <div style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }} className='bg-purpleText text-white  col-start-2 col-end-2 p-6 rounded-md'>
                 <h1 className=''>"{testimonal.review}"</h1>
                 <p className='text-lg font-bold'><i>~{testimonal.client_name}</i></p>
               </div>
