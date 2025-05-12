@@ -21,9 +21,9 @@ const WhyYummearc = () => {
           <div data-aos="zoom-in" key={idx} onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)} className='col-span-1 cursor-pointer  row-span-1 rounded-3xl  flex flex-col justify-center items-center gap-y-6 px-8 py-6 transition-all ' style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }}>
             <span className='text-5xl  font-bold'>{why.icon}</span>
 
-            <h1 className='text-xl font-semibold'>{why.text}</h1>
+            <h1 className='text-xl font-semibold font-merryWeater'>{why.text}</h1>
             {idx == 2 && (
-              <p className='-translate-y-4 '>(no NSFW, no demonic themes)</p>
+              <p className='-translate-y-4 font-merryWeater'>(no NSFW, no demonic themes)</p>
             )}
           </div>
         ))}
@@ -36,7 +36,7 @@ const WhyYummearc = () => {
           <h1 data-aos="fade-right" className=' font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]  '>
           The Heart Behind Every Model
           </h1>
-          <p data-aos="fade-right" className='lg:text-xl text-lg '>At YummeArc, every model begins with your story — your lore, your vibe, your soul. We believe your VTuber avatar shouldn’t just look good… it should feel like a reflection of you. Not just a character. A legacy.
+          <p data-aos="fade-right" className='font-merryWeater lg:text-xl text-lg '>At YummeArc, every model begins with your story — your lore, your vibe, your soul. We believe your VTuber avatar shouldn’t just look good… it should feel like a reflection of you. Not just a character. A legacy.
 
           </p>
 

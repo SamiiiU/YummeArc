@@ -31,7 +31,7 @@ const RecentWork = () => {
 
                         <div className='w-full  flex flex-col p-10 bg-white'>
                             <h1 data-aos="fade-up" className='text-xl  font-bold'>{model.name}</h1>
-                            <p data-aos="fade-up" className='mt-4 '>{model.description} </p>
+                            <p data-aos="fade-up" className='mt-4 font-merryWeater'>{model.description} </p>
                         </div>
 
 

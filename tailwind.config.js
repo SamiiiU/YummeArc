@@ -87,6 +87,9 @@ module.exports = {
         orbitron : ["Orbitron", "sans-serif"], 
         mPlus : ["M PLUS Rounded 1c", "sans-serif"], // 
         kaushans : ["Kaushan Script", "cursive" ], // 
+        tages : ["Tagesschrift", "system-ui"], //
+        merryWeater : ["Merriweather", "serif"] 
+        
 
 
       },

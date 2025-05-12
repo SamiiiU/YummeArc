@@ -65,7 +65,7 @@ const Hero = () => {
                     <h1 className=' font-[600]  lg:text-[3.5rem] text-5xl leading-[1.1]'>
                         Bring Your VTuber Dream to Life.
                     </h1>
-                    <p className='text-xl text-blackText'>Custom anime-style VTuber models crafted with deep storytelling, rich detail, and heartfelt design.
+                    <p className='text-xl text-blackText font-merryWeater'>Custom anime-style VTuber models crafted with deep storytelling, rich detail, and heartfelt design.
                     </p>
 
                     <div className=' flex md:flex-row flex-col sm:rounded-md gap-4 md:w-auto w-full text-md xl:text-lg  '>
