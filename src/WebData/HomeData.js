@@ -22,10 +22,12 @@ import { AiOutlineDeliveredProcedure } from "react-icons/ai";
 
 
 export const whyYummeArc = [
-    {text : "Anime-inspired, original model design" , icon : <CiStar/>},
-    {text : "Deep backstory analysis to guide visuals" , icon : <FaBook/>},
-    {text : "Clean content with strong personal values" , icon : <FaLeaf/>},
-    {text : "Extremely detailed, high-quality finishes" , icon : <WiStars/>},
+    {text : "Anime-inspired, original model design" , para : "Every model we create is rooted in expressive anime art — no templates, no shortcuts. Every design is tailored to your story." ,  icon : <CiStar/>},
+
+    {text : "Built Around Lore & Identity" , para : "We don’t just design what looks cool. We craft what makes sense — visuals that reflect your character's personality and backstory." , icon : <FaBook/>},
+
+    {text : "Wholesome & Value-Driven" , para : "No NSFW, no demonic themes. Just clean, heartfelt visuals made with intention and emotional respect.", icon : <FaLeaf/>},
+    {text : " Highly Detailed, Stream-Ready Files" , para : " We obsess over line quality, color harmony, and character flow — everything’s optimized for Live2D, overlays, or PNGTuber use." , icon : <WiStars/>},
 
     
 ]

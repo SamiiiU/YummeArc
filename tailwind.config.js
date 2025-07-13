@@ -16,11 +16,14 @@ module.exports = {
       },
 
       colors : {
+        primaryfrom : '#F9F3F8',
+        primaryTo : '#FFEAF6',
         pinkText : '#eb34e5',
         pinkishWhite : '#fef8f8',
         purpleText : '#7f82af',
         blackText : '#28252b',
-        textWhite : '#fcf7f4'
+        textWhite : '#fcf7f4',
+        pastelPink : '#FF87AB'
         // shadedBlue: '#7bc1fb',
         // blushPink : '#eda0cb',
         // textColor: '#2e1e4d',
@@ -61,9 +64,11 @@ module.exports = {
         fadeIn: {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 }
+        },
+        fadeUP : {
+          '0%': { opacity: 0, transform: 'translateY(100px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)'}
         }
-        
-
       },
       animation: {
         spinCustom: 'spinCustom 10s linear infinite',
@@ -73,11 +78,10 @@ module.exports = {
         expand: 'expand 0.3s ease-in-out', // Custom expand animation
         contract: 'contract 0.3s ease-in', // Custom expand animation
         scroll: 'scroll 40s linear infinite', // Adjust duration as needed
-        fadeIn: 'fadeIn 0.5s ease-out'
+        fadeIn: 'fadeIn 0.5s ease-out',
+        fadeUP: 'fadeUP 0.5s  infinite '
       },
-      fontFamily: {
-        inter: ['Inter', 'sans-serif'], // Set Inter as the primary sans font
-      },
+      
 
       boxShadow: {
         'custom-equal': '-2px 0px 10px 5px rgba(0, 0, 0, 0.1)', // yeh chaaron sides ke liye hai
@@ -88,7 +92,9 @@ module.exports = {
         mPlus : ["M PLUS Rounded 1c", "sans-serif"], // 
         kaushans : ["Kaushan Script", "cursive" ], // 
         tages : ["Tagesschrift", "system-ui"], //
-        merryWeater : ["Merriweather", "serif"] 
+        merryWeater : ["Merriweather", "serif"] ,
+        inter: ['Inter', 'sans-serif'], // Set Inter as the primary sans font
+
         
 
 

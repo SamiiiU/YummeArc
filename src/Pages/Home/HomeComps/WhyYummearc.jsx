@@ -18,15 +18,23 @@ const WhyYummearc = () => {
       <h1 className='font-kaushans  text-5xl'>Why YummeArc?</h1>
       <div className='w-full grid sm:grid-cols-2 grid-cols-1 xl:gap-16 lg:gap-8 gap-6 mt-16 '>
         {whyYummeArc.map((why, idx) => (
-          <div data-aos="zoom-in" key={idx} onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)} className='col-span-1 cursor-pointer  row-span-1 rounded-3xl  flex flex-col justify-center items-center gap-y-6 px-8 py-6 transition-all ' style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }}>
+          <div data-aos="zoom-in" key={idx} onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)} className='col-span-1 cursor-pointer bg-primaryfrom  row-span-1 rounded-3xl  flex flex-col justify-center items-center gap-y-6 px-8 py-6 transition-all text-purpleText' style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }}>
             <span className='text-5xl  font-bold'>{why.icon}</span>
 
             <h1 className='text-xl font-semibold font-merryWeater'>{why.text}</h1>
-            {idx == 2 && (
-              <p className='-translate-y-4 font-merryWeater'>(no NSFW, no demonic themes)</p>
-            )}
+            
+            <p className='-translate-y-4 font-merryWeater text-center'>{why.para}</p>
           </div>
         ))}
+      </div>
+
+      <div className='w-full flex flex-col gap-y-4 justify-center items-center text-center'>
+        <h1 data-aos="slide-up" className='font-bold sm:text-4xl text-2xl'>
+          You’re not just buying a model.
+        </h1>
+        <h2 data-aos="slide-up" className='sm:text-xl text-lg'>
+          You’re investing in your virtual identity.
+        </h2>
       </div>
 
       <div className='w-full  z-30 grid lg:grid-cols-2 grid-cols-1 gap-10 sm:rounded-3xl bg-white/10 text-white relative pt-10'>
@@ -57,14 +65,7 @@ const WhyYummearc = () => {
 
 
 
-      <div className='w-full flex flex-col gap-y-4 justify-center items-center text-center'>
-        <h1 data-aos="slide-up" className='font-bold sm:text-4xl text-2xl'>
-          You’re not just buying a model.
-        </h1>
-        <h2 data-aos="slide-up" className='sm:text-xl text-lg'>
-          You’re investing in your virtual identity.
-        </h2>
-      </div>
+      
 
     </div>
     </BackgroundBeamsWithCollision>
