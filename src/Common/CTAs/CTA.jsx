@@ -3,7 +3,7 @@ import AOSInitializer from '../AOS/AOSInitializer'
 
 const CTA = ({heading , para , cta1 , cta2}) => {
     return (
-        <div className='w-full 2xl:px-80 px-8 bg-white flex flex-col justify-center items-center py-20   relative text-center'>
+        <div className='w-full 2xl:px-80 px-8 bg-gradient-to-tl from-pinkText text-white to-purpleText flex flex-col justify-center items-center py-20   relative text-center'>
             <AOSInitializer/>
                 <h1 data-aos="flip-up" className=' font-[600] lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]'>
                 {heading}

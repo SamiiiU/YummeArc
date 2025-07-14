@@ -7,6 +7,7 @@ import OurProcess from './HomeComps/OurProcess'
 import Testimonals from './HomeComps/Testimonals'
 import CTA from '../../Common/CTAs/CTA'
 import Footer from '../../Common/Footer/Footer'
+import WhatWeCreate from './HomeComps/WhatWeCreate'
 
 const Home = () => {
   return (
@@ -14,11 +15,12 @@ const Home = () => {
       <MainNav/>
       <Hero/>
       <WhyYummearc/>
-
-      <RecentWork/>
-      <OurProcess/>
+      <WhatWeCreate/>
       <Testimonals/>
-      <CTA heading={"Your story deserves to be seen."} para={"Let’s bring your dream VTuber model to life—with soul, style, and storytelling that matters."} cta1={"Start a Commission"} cta2={"Contact Us"}/>
+      <CTA heading={"Ready to Start Your VTuber Journey?"} para={"Whether it’s your first model or a full rebrand — we’re here to design with you, not just for you."} cta1={"Start a Commission"} cta2={"Contact Us"}/>
+
+      {/* <RecentWork/> */}
+      <OurProcess/>
       <Footer/>
     </div>
   )
