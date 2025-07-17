@@ -6,7 +6,7 @@ import { FaFacebook, FaInstagram, FaLocationDot, FaSnapchat, FaTwitch, FaTwitter
 
 const Footer = () => {
     return (
-        <div className='w-full space-y-8 text-purpleText relative bg-blackText'>
+        <div className='w-full space-y-8  relative bg-primaryfrom text-blackText'>
 
             <div className='grid px-4 sm:px-12 py-20  2xl:px-80 lg:grid-cols-3 gap-20 w-full'>
 
@@ -16,9 +16,9 @@ const Footer = () => {
                     <h1 className='text-5xl font-bold font-kaushans'>YummeArc</h1>
 
                     {/* Logo image done  */}
-                    <h1 className='font-bold text-xl text-white'> <i> "Where Your Story Becomes a Virtual Star ✨" </i></h1>
+                    <h1 className='font-bold text-xl '> <i> "Where Your Story Becomes a Virtual Star ✨" </i></h1>
 
-                    <div className='w-full flex gap-x-6 text-white'>
+                    <div className='w-full flex gap-x-6 '>
                         <a href="" target='_blank' className='hover:scale-125 transition-all' ><FaFacebook size={"2em"}/></a>
                         <a href="" target='_blank' className='hover:scale-125 transition-all' ><FaTwitter size={"2em"}/></a>
                         <a href="" target='_blank' className='hover:scale-125 transition-all' ><FaSnapchat size={"2em"}/></a>
@@ -32,7 +32,7 @@ const Footer = () => {
                 <div className='space-y-6 cols-span-1 '>
                     <h1 className='text-xl font-bold'>Quick Links</h1>
 
-                    <div className='flex flex-col gap-y-3 text-white'>
+                    <div className='flex flex-col gap-y-3 '>
                         <Link to={"/"} className='text-lg font-semibold underline z-10 '>Home</Link>
 
 
@@ -53,7 +53,7 @@ const Footer = () => {
                 <div className='space-y-6 cols-span-1'>
                     <h1 className='text-xl font-bold'>Contact Us </h1>
 
-                    <div className='flex flex-col gap-y-4 text-white'>
+                    <div className='flex flex-col gap-y-4 '>
                         <div className='flex '>
                             <MdEmail size={"2em"} />
                             <p className='px-4 text-lg font-semibold underline'>jdcOfficial@bhikari.com</p>
@@ -73,7 +73,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className=' w-full  py-4 text-center bg-blackText text-white font-semibold text-xl'> 2025 YummeArc — Made with sparkles, stories & coffee ☕✨
+            <div className=' w-full  py-4 text-center bg-blackText text-white font-semibold text-xl'> © 2025 YummeArc — Made with sparkles, stories & coffee ☕✨
 
 </div>
         </div>

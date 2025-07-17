@@ -4,26 +4,26 @@ import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 import bgImage from '../../../Assets/Images/BG/stars.png'
 
 const OurProcess = () => {
-    const [isActive , setIsActive ] = useState(null)
+    const [isActive, setIsActive] = useState(null)
 
     const handleActive = (onMouse) => {
         setIsActive(onMouse)
     }
     return (
         <div className='w-full  px-4 sm:px-28  2xl:px-80  flex flex-col  items-center   relative 
-          py-20 ' >
-            <AOSInitializer/>
-            <span className='absolute top-0 left-0 w-full h-full opacity-50' style={{backgroundImage : `url(${bgImage})` , backgroundPosition : 'center' , backgroundSize : '120%'}}></span>
+          py-20 bg-primaryfrom' >
+            <AOSInitializer />
+            <span className='absolute top-0 left-0 w-full h-full opacity-10' style={{ backgroundImage: `url(${bgImage})`, backgroundPosition: 'center', backgroundSize: '120%' }}></span>
 
             <h1 data-aos="flip-up" className='w-full text-center  font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1] text-textColor  font-kaushans'>From Vision to Virtual Star</h1>
-            <p data-aos="fade-up"  className='w-full text-center my-6 lg:text-xl text-lg font-merryWeater'>We take care of every step—from concept to final render—with care, precision, and passion.</p>
+            <p data-aos="fade-up" className='w-full text-center my-6 lg:text-xl text-lg font-merryWeater'>We take care of every step—from concept to final render—with care, precision, and passion.</p>
 
-            <div className='w-full grid sm:grid-cols-2 grid-cols-1 gap-8 mt-6'>
-                {our_process.map((process , idx) => (
-                    <div data-aos= "fade-up" key={idx} onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)} 
-                    style={{boxShadow : isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)'}} className='col-span-1 row-span-1 p-4 flex rounded-md transition-all cursor-pointer bg-purpleText text-white'>
+            <div className='w-full grid  grid-cols-1 gap-8 mt-6'>
+                {our_process.map((process, idx) => (
+                    <div data-aos="fade-up" key={idx} onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)}
+                        style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }} className='col-span-1 row-span-1 p-4 flex rounded-md transition-all cursor-pointer bg-purpleText text-white'>
                         <span className=' h-full  text-5xl'>
-                            {process.icon} 
+                            {process.icon}
                         </span>
                         <div className='px-5'>
                             <h1 className='text-xl font-bold'>{process.heaiding}</h1>
@@ -33,7 +33,15 @@ const OurProcess = () => {
                 ))}
             </div>
 
+            <div className='w-full flex flex-col gap-y-4 justify-center items-center text-center mt-10'>
+                <h1 className='font-semibold text-2xl'>
+                    Have something custom in mind? Let’s make it real together
 
+                </h1>
+                <span className='text-xl bg-pastelPink text-white font-semibold px-8 py-2 rounded-md cursor-pointer transition-all duration-300 hover:scale-[105%] hover:drop-shadow-sm'>
+                    Start a Custom Project 💌
+                </span>
+            </div>
 
         </div>
     )

@@ -1,6 +1,6 @@
 //imports of why section 
 import { CiStar } from "react-icons/ci";
-import { FaBook } from "react-icons/fa";
+import { FaBook, FaBox, FaBrain, FaHeart, FaPen, FaStar } from "react-icons/fa";
 import { FaLeaf } from "react-icons/fa";
 import { WiStars } from "react-icons/wi";
 
@@ -52,10 +52,11 @@ export const recentModels =[
 ]
 
 export const our_process = [
-    {heaiding : 'Backstory Discovery' ,  para : 'We listen to your character idea, lore, and personality.' , icon : < FaHistory />},
-    {heaiding : 'Concept Sketches' ,  para : 'You get preview sketches to help refine your vision.' , icon : <TbBulbFilled />},
-    {heaiding : 'Model Rendering' ,  para : 'We design your model with high-detail artistry in anime style.' , icon : <MdHighQuality />},
-    {heaiding : 'Delivery' ,  para : 'We send files optimized for Live2D, rigging, or static use.' , icon : <AiOutlineDeliveredProcedure />},
+    {heaiding : 'Step 1: Discovery' ,  para : 'We start with you — your lore, vibe, inspirations, and goals. Whether it’s a simple PNGTuber or a full-blown magical OC, we get to know everything.' , icon : < FaBrain />},
+    {heaiding : 'Step 2: Concept & Sketch' ,  para : 'We sketch early ideas and send previews. You give feedback. This step lets you shape the vibe before anything’s finalized.' , icon : <FaPen />},
+    {heaiding : 'Step 3: Final Model Art' ,  para : 'Once approved, we render the full piece with polish, emotion, and deep detail. You\'ll see your character come to life.' , icon : <FaHeart />},
+    {heaiding : 'Step 4: Delivery & Support' ,  para : 'You receive clean files — rig-ready, high-res, or for panels/branding. We’re here for post-delivery questions or add-ons.' , icon : <FaBox />},
+    {heaiding : 'Step 5: Debut Ready Extras ' ,  para : 'Need help with banners, panels, or extra poses? We offer creative add-ons based on your needs.' , icon : <FaStar />},
 ]
 
 export const testimonals_home = [

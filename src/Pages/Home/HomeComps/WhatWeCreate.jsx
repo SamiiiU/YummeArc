@@ -18,7 +18,7 @@ const WhatWeCreate = () => {
             <AOSInitializer />
 
             
-            <h1 data-aos="flip-up" className='w-full text-left  font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]   font-kaushans'>What We Create</h1>
+            <h1 data-aos="flip-up" className='w-full text-left  font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]   font-kaushans'>What We Create for VTubers & Streamers</h1>
             <div className='w-full grid md:grid-cols-3 grid-cols-1 xl:gap-16 lg:gap-8 gap-6 '>
                 {weCreate.map((model, idx) => (
                     <div data-aos-duration="200" data-aos="flip-right" key={idx}  onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)} 
@@ -29,7 +29,7 @@ const WhatWeCreate = () => {
 
                         </FollowerPointerCard>
 
-                        <div className='w-full  flex flex-col p-10 bg-white'>
+                        <div className='w-full  flex flex-col p-6 bg-white'>
                             <h1 data-aos="fade-up" className='text-xl  font-bold'>{model.name}</h1>
                             <p data-aos="fade-up" className='mt-4 font-merryWeater'>{model.description} </p>
                         </div>
@@ -43,11 +43,11 @@ const WhatWeCreate = () => {
 
             <div className='w-full flex flex-col gap-y-4 justify-center items-center text-center'>
                 <h1 className='font-semibold text-2xl'>
-                    Have something custom in mind? Let’s make it real together. 💌
+                    Have something custom in mind? Let’s make it real together
 
                 </h1>
                 <span className='text-xl bg-pastelPink text-white font-semibold px-8 py-2 rounded-md cursor-pointer transition-all duration-300 hover:scale-[105%] hover:drop-shadow-sm'>
-                    Start a Custom Project
+                    Start a Custom Project 💌
                 </span>
             </div>
 

@@ -12,7 +12,7 @@ const CTA = ({heading , para , cta1 , cta2}) => {
                 </p>
 
                 <div data-aos="fade-up" className=' flex md:flex-row flex-col sm:rounded-md gap-4 md:w-auto w-full text-md xl:text-lg pt-6 '>
-                    <button className=' px-8 py-2 bg-purpleText text-white font-bold cursor-pointer transition-all duration-300  bg-blushPink text-center rounded-md '>{cta1}</button>
+                    <button className=' px-8 py-2 bg-purpleText hover:bg-purple-950 transition-all text-white font-bold cursor-pointer transition-all duration-300  bg-blushPink text-center rounded-md '>{cta1}</button>
                     {cta2 && (<button className=' px-8 py-2  font-bold cursor-pointer transition-all duration-300 border-2   text-center rounded-md '>{cta2}</button>)}
                 </div>
 

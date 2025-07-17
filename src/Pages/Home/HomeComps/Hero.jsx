@@ -2,13 +2,14 @@ import React from 'react'
 import heroVid from '../../../Assets/Videos/HomeHeroVideo.mp4'
 import heroImg from '../../../Assets/Images/HomeImages/HeroImg.png'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
+import { FaArrowDown } from 'react-icons/fa'
 
 const Hero = () => {
     return (
 
         <>
             <div className='w-full xl:h-[37rem] lg:h-[40rem] h-auto bg-primaryfrom text-purpleText   px-4 xl:px-28 sm:px-20  2xl:px-80   flex  relative'>
-                <div className='px-5 bg-white/50 z-40 rounded-md text-center py-4 text-xl absolute -bottom-4 shadow-pastelPink shadow-lg left-1/2 -translate-x-1/2 animate-fadeIn'>💫 Scroll to explore our magical art world</div>
+                <div className='px-5  z-40 rounded-md text-center py-4 text-xl absolute bottom-0  right-0 animate-fadeIn font-bold flex items-center gap-x-4'> Scroll To Explore <FaArrowDown/></div>
 
                 {/* <span className='w-full h-full absolute top-0 left-0 z-20  bg-pinkText/50' /> */}
 

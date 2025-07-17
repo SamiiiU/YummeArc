@@ -12,16 +12,16 @@ const Testimonals = () => {
   }
   return (
     <div className='w-full   px-4 sm:px-12  2xl:px-80  flex flex-col    relative 
-         py-20 bg-blackText text-white'>
+         py-20 bg-gradient-to-br from-[#1E1B2E] to-[#292440] text-[#DAD4F7]'>
       <AOSInitializer />
 
-      <h1 data-aos="flip-up" className=' font-[600] font-kaushans text-center lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]  '>
+      <h1 data-aos="flip-up" className=' font-[600] font-kaushans  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]  '>
         What Our Client Says
       </h1>
-      <p data-aos="fade-up" className='font-merryWeater lg:text-lg text-sm w-full my-6 text-center '>Streamers who trusted us — and felt seen, styled, and supported.
+      <p data-aos="fade-up" className='font-merryWeater lg:text-lg text-sm w-full my-6  '>Streamers who trusted us — and felt seen, styled, and supported.
       </p>
 
-      <div className='w-full flex flex-col  gap-8 mt-6'>
+      <div className='w-full flex flex-col  gap-8 mt-6 text-[#DAD4F7]'>
         <>
           {scrwidth > 640 ? (
             <>
@@ -31,12 +31,19 @@ const Testimonals = () => {
                   className='w-full   relative grid grid-cols-2   transition-all ' >
 
                   {idx % 2 == 0 ? (
-                    <div style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }} className=' bg-purpleText text-white col-start-1 col-end-1 p-6 rounded-md'>
+                    <div 
+                    style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(250, 250, 250, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' , transition: 'all 0.3s ease-in-out' }}
+                    
+                    className='  col-start-1 col-end-1 p-6 rounded-3xl'>
                       <h1 className='font-merryWeater'>"{testimonal.review}"</h1>
                       <p className='text-lg font-bold'><i>~{testimonal.client_name}</i></p>
                     </div>
                   ) : (
-                    <div style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }} className='bg-purpleText text-white  col-start-2 col-end-2 p-6 rounded-md'>
+                    <div 
+                    
+                    style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(250, 250, 250, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' , transition: 'all 0.3s ease-in-out' }}
+                    
+                    className='  col-start-2 col-end-2 p-6 rounded-3xl'>
                       <h1 className='font-merryWeater'>"{testimonal.review}"</h1>
                       <p className='text-lg font-bold'><i>~{testimonal.client_name}</i></p>
                     </div>
@@ -51,7 +58,7 @@ const Testimonals = () => {
 
                   className='w-full   relative grid grid-cols-2   transition-all ' >
 
-                  <div style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }} className=' bg-purpleText text-white col-span-2 p-6 rounded-md'>
+                  <div style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }} className='  col-span-2 p-6 rounded-md'>
                       <h1 className='font-merryWeater'>"{testimonal.review}"</h1>
                       <p className='text-lg font-bold'><i>~{testimonal.client_name}</i></p>
                     </div>
