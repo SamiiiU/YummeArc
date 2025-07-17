@@ -17,12 +17,13 @@ const Home = () => {
       <Hero/>
       <WhyYummearc/>
       <WhatWeCreate/>
+      <RecentWork/>
+
       <Heart/>
       <OurProcess/>
       <Testimonals/>
       <CTA heading={"Ready to Start Your VTuber Journey?"} para={"Whether it’s your first model or a full rebrand — we’re here to design with you, not just for you."} cta1={"Start a Commission"} cta2={"Contact Us"}/>
 
-      {/* <RecentWork/> */}
       <Footer/>
     </div>
   )

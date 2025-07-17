@@ -13,12 +13,12 @@ const RecentWork = () => {
         setIsActive(onMouse)
     }
     return (
-        <div className='w-full px-4 sm:px-28  2xl:px-80  flex flex-col  items-center  relative space-y-20
+        <div className='w-full px-4 sm:px-28 bg-primaryfrom  2xl:px-80  flex flex-col  items-center  relative space-y-20
          py-20 text-blackText'>
             <AOSInitializer />
 
             
-            <h1 data-aos="flip-up" className='w-full text-left  font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]   '>Our Recent Models</h1>
+            <h1 data-aos="flip-up" className='w-full text-left  font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]   '>Our Work In Action</h1>
             <div className='w-full grid md:grid-cols-3 grid-cols-1 xl:gap-16 lg:gap-8 gap-6 '>
                 {recentModels.map((model, idx) => (
                     <div data-aos-duration="200" data-aos="flip-right" key={idx}  onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)} 
@@ -29,7 +29,7 @@ const RecentWork = () => {
 
                         </FollowerPointerCard>
 
-                        <div className='w-full  flex flex-col p-10 bg-white'>
+                        <div className='w-full  flex flex-col p-6 bg-white'>
                             <h1 data-aos="fade-up" className='text-xl  font-bold'>{model.name}</h1>
                             <p data-aos="fade-up" className='mt-4 font-merryWeater'>{model.description} </p>
                         </div>
