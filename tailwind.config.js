@@ -23,7 +23,21 @@ module.exports = {
         purpleText : '#7f82af',
         blackText : '#28252b',
         textWhite : '#fcf7f4',
-        pastelPink : '#FF87AB'
+        pastelPink : '#FF87AB',
+        
+        primaryDark : '#14121A',
+        secondaryDark : '#1B1923',
+        purpleShadow : '#2C2839',
+
+        headingDark : '#F6ECE0',
+        textDark : '#C4B7A7',
+        dimText : '#8C8495',
+
+        iconColor : '#FFE18A',
+        buttonPrimary : '#5B558F',
+        skyBlue : '#9BB5DB',
+
+
         // shadedBlue: '#7bc1fb',
         // blushPink : '#eda0cb',
         // textColor: '#2e1e4d',

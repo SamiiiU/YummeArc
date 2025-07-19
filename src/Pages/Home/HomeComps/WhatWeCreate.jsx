@@ -3,6 +3,7 @@ import whyYmmearc from '../../../Assets/Images/HomeImages/WhySecImg.png'
 import { recentModels, weCreate, whyYummeArc } from '../../../WebData/HomeData'
 import { FollowerPointerCard } from '../../../components/ui/following-pointer'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
+import ShadePurple from '../../../Common/ShadePurple'
 
 
 
@@ -13,17 +14,25 @@ const WhatWeCreate = () => {
         setIsActive(onMouse)
     }
     return (
-        <div className='w-full px-4 bg-primaryTo sm:px-28  2xl:px-80  flex flex-col  items-center  relative space-y-20
-         py-20 text-blackText'>
+        <div className='w-full px-4 bg-secondaryDark sm:px-28  2xl:px-80  flex flex-col  items-center  relative space-y-20
+         py-10 text-textDark'>
             <AOSInitializer />
 
-            
-            <h1 data-aos="flip-up" className='w-full text-left  font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]   font-kaushans'>What We Create for VTubers & Streamers</h1>
+            {/* shading circle hai na idher sai start  */}
+            <ShadePurple className={'-right-20 top-20 bg-gradient-to-r w-72 h-72'} />
+
+            <ShadePurple className={'-left-24 bottom-20 bg-gradient-to-r w-72 h-72'} />
+
+            {/* shading circle yaha sai khatam bus ok  */}
+
+            <span className='w-full h-1/5 absolute bottom-0 z-0 right-0 bg-gradient-to-t from-primaryDark
+                to-transparent' />
+            <h1 data-aos="flip-up" className='w-full text-left  font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]   font-kaushans text-headingDark'>What We Create for VTubers & Streamers</h1>
             <div className='w-full grid md:grid-cols-3 grid-cols-1 xl:gap-16 lg:gap-8 gap-6 '>
                 {weCreate.map((model, idx) => (
-                    <div data-aos-duration="200" data-aos="flip-right" key={idx}  onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)} 
-                    style={{transform : isActive == idx ? 'scale(1.1)' : 'scale(1)' , boxShadow : isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)'}}
-                     className='flex-1 min-h-96 bg-purpleTo rounded-2xl overflow-hidden shadow-md transition-all cursor-pointer'>
+                    <div data-aos-duration="200" data-aos="flip-right" key={idx} onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)}
+                        style={{ transform: isActive == idx ? 'scale(1.1)' : 'scale(1)', boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }}
+                        className='flex-1 min-h-96 bg-purpleTo rounded-2xl overflow-hidden shadow-md transition-all cursor-pointer'>
                         <FollowerPointerCard title={model.name} className={"w-full  min-h-64 relative bg-gradient-to-t from-purpleText/30 to-purpleText"}>
                             <div className='w-full h-full absolute top-0 left-0' style={{ backgroundImage: `url(${model.model})`, backgroundSize: 'cover', backgroundPosition: 'top' }}></div>
 
@@ -41,12 +50,12 @@ const WhatWeCreate = () => {
 
             </div>
 
-            <div className='w-full flex flex-col gap-y-4 justify-center items-center text-center'>
+            <div className='w-full flex flex-col gap-y-4 justify-center items-center text-center z-30'>
                 <h1 className='font-semibold text-2xl'>
                     Have something custom in mind? Let’s make it real together
 
                 </h1>
-                <span className='text-xl bg-pastelPink text-white font-semibold px-8 py-2 rounded-md cursor-pointer transition-all duration-300 hover:scale-[105%] hover:drop-shadow-sm'>
+                <span className='text-xl bg-buttonPrimary text-headingDark font-semibold px-8 py-2 rounded-md cursor-pointer transition-all duration-300 hover:scale-[105%] hover:drop-shadow-sm'>
                     Start a Custom Project 💌
                 </span>
             </div>

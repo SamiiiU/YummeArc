@@ -6,7 +6,7 @@ import { FaFacebook, FaInstagram, FaLocationDot, FaSnapchat, FaTwitch, FaTwitter
 
 const Footer = () => {
     return (
-        <div className='w-full space-y-8  relative bg-primaryfrom text-blackText'>
+        <div className='w-full space-y-8  relative bg-primaryDark text-headingDark'>
 
             <div className='grid px-4 sm:px-12 py-20  2xl:px-80 lg:grid-cols-3 gap-20 w-full'>
 
@@ -73,7 +73,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className=' w-full  py-4 text-center bg-blackText text-white font-semibold text-xl'> © 2025 YummeArc — Made with sparkles, stories & coffee ☕✨
+            <div className=' w-full  py-4 text-center bg-primaryDark text-white font-semibold text-xl'> © 2025 YummeArc — Made with sparkles, stories & coffee ☕✨
 
 </div>
         </div>

@@ -1,16 +1,25 @@
 import React from 'react'
-import whyYmmearc from '../../../Assets/Images/HomeImages/HeroImg.png'
+import whyYmmearc from '../../../Assets/Images/HomeImages/heartChar.png'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
+import ShadePurple from '../../../Common/ShadePurple'
 
 
 const Heart = () => {
     return (
-        <div className='w-full  z-30 grid lg:grid-cols-2 grid-cols-1 gap-10  bg-white/10  text-[#DAD4F7] bg-gradient-to-br from-[#1E1B2E] to-[#292440] relative pt-10'>
+        <div className='w-full  z-30 grid lg:grid-cols-2 grid-cols-1 gap-10    text-textDark bg-secondaryDark relative pt-10'>
             <AOSInitializer />
+            {/* shading circle hai na idher sai start  */}
+            <ShadePurple className={'-right-20 top-20 bg-gradient-to-r w-72 h-72'} />
+
+            <ShadePurple className={'-left-24 bottom-20 bg-gradient-to-r w-72 h-72'} />
+
+            {/* shading circle yaha sai khatam bus ok  */}
             {/* Home text  */}
+            <span className='w-full h-1/5 absolute bottom-0 z-0 right-0 bg-gradient-to-t from-primaryDark
+                to-transparent' />
             <div className='col-span-1  justify-center text-left  flex flex-col  gap-y-6 sm:p-16 p-4 min-h-[24rem]'>
 
-                <h1 data-aos="fade-right" className=' font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]  '>
+                <h1 data-aos="fade-right" className=' font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1] text-headingDark '>
                     The Heart Behind Every Model
                 </h1>
                 <p data-aos="fade-right" className='font-merryWeater lg:text-lg text-sm '>At YummeArc, every model begins with your story your lore, your vibe, your soul. We believe your VTuber avatar shouldn’t just look good… it should feel like a reflection of you. Not just a character. A legacy.
@@ -20,7 +29,7 @@ const Heart = () => {
                 <p data-aos="fade-right" className='font-merryWeater lg:text-lg text-sm '>
                     Before we draw, we listen. <br />
                     Before we color, we understand. <br />
-                    We take your world, your personality, and your goals 
+                    We take your world, your personality, and your goals
                     and we build something that truly feels like you.
                 </p>
 
@@ -33,14 +42,15 @@ const Heart = () => {
 
                 <p data-aos="fade-right" className='font-merryWeater lg:text-lg text-sm '>
                     And your model? <br />
-                    It should be more than pretty 
+                    It should be more than pretty
                     It should be you, brought to life.
 
                 </p>
 
-                <div className=' flex md:flex-row flex-col sm:rounded-md gap-4 md:w-auto w-full text-md xl:text-lg pt-6 '>
-                    <button data-aos="fade-up" data-aos-delay="200" className=' px-8 py-2  font-semibold cursor-pointer transition-all duration-300 text-textColor border-2 bg-purpleText text-center rounded-md '>Commission</button>
-                    <button data-aos="fade-up" data-aos-delay="200" className=' px-8 py-2 text-white font-semibold cursor-pointer transition-all duration-300  bg-blushPink text-center rounded-md border-[1px] border-white'> View Portfolio</button>
+                <div className=' flex md:flex-row flex-col sm:rounded-md gap-4 md:w-auto w-full text-md xl:text-lg pt-6 z-20'>
+                    <button className=' px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>Commission</button>
+
+                    <button className=' px-8 py-2 text-white font-semibold cursor-pointer transition-all duration-300  bg-blushPink text-center rounded-md border-[1px] border-white'> View Portfolio</button>
                 </div>
 
 
