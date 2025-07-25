@@ -9,12 +9,21 @@ import { WiStars } from "react-icons/wi";
 import model_1 from '../Assets/Images/HomeImages/Vtuber_1.png'
 import model_2 from '../Assets/Images/HomeImages/Vtuber_2.png'
 import model_3 from '../Assets/Images/HomeImages/Vtuber_3.png'
+import model_4 from '../Assets/Images/HomeImages/Work_card_4.jpg'
+import model_5 from '../Assets/Images/HomeImages/Vtuber_5.png'
+import model_6 from '../Assets/Images/HomeImages/Work_card_6.jpg'
+
 
 //imports of processs
 import { FaHistory } from "react-icons/fa";
 import { TbBulbFilled } from "react-icons/tb";
-import { MdHighQuality } from "react-icons/md";
+import { MdAnimation, MdHighQuality, MdOutline3dRotation, MdScreenshotMonitor } from "react-icons/md";
 import { AiOutlineDeliveredProcedure } from "react-icons/ai";
+import { CgGirl } from "react-icons/cg";
+import { LuPanelLeft } from "react-icons/lu";
+import { DiNetbeans } from "react-icons/di";
+import { SiMaterialdesignicons, SiOpenbadges } from "react-icons/si";
+import { TfiLayoutMediaOverlayAlt } from "react-icons/tfi";
 
 
 
@@ -33,22 +42,43 @@ export const whyYummeArc = [
 ]
 
 export const weCreate =[
-    {name : "🧍‍♀ Custom 2D VTuber Models" , description : "We design detailed, rig-ready VTuber characters based on your lore, vibe, and personal style. Every model is made from scratch, just for you." , model : model_1},
-    {name : "🎀 Twitch/Kick Panels (Chibi Style)" , description : "Cute, custom info panels to match your stream's theme and personality. Perfect for overlays, Twitch bios, or Just Chatting screens." , model : model_2},
-    {name : "🌸 Lore-Based Character Design" , description : "Already have an idea, but not sure how it should look? We help build your OC’s visuals based on their story, traits, and emotion." , model : model_2},
-
-    {name : "👾 Stream Branding & Mascots" , description : "We create logos, banners, emotes, and mascots that match your VTuber identity — everything flows together, aesthetically and emotionally." , model : model_3},
-
     
-    {name : "🎨 Custom Merch Art / PNGTubers / Reference Sheets" , description : "One-time art for debuts, collabs, or even your fans. Just ask — we love special requests" , model : model_3},
+    {name : "Custom 2D VTuber Models" , description : "Anime/chibi art style" , model : <CgGirl />},
+    {name : "Custom 3D VTuber Models" , description : "Rig-ready 3d Avatars" , model : <MdOutline3dRotation />},
+    {name : "Custom Chibi Panels" , description : "Cute info panels" , model : <LuPanelLeft />},
+
+    {name : "Custom Panels" , description : "Panels for Twitch or Kick" , model : <DiNetbeans />},
+
+    {name : "2D Art Scenes for Stream Starting, Ending, and BRB's" , description : "Starting, ending, and BR3" , model : <MdScreenshotMonitor />},
+    
+    {name : "Custom PFP Design" , description : "Unique profile pictures" , model : <SiMaterialdesignicons />},
+
+    {name : "Custom Emotes & Badges" , description : "Personalized ematesand badges" , model : <SiOpenbadges />},
+
+
+    {name : "Overlays Pack" , description : "Visual overlays for streams" , model : <TfiLayoutMediaOverlayAlt />},
+
+    {name : "Intro/Outro Animation" , description : "Animated intro and outro" , model : <MdAnimation />
+},
+
+
 
 ]
 
 export const recentModels =[
-    {name : "John Abraham" , description : "A guardian of dreams who travels between realms" , model : model_1},
-    {name : "John Wick" , description : "A stargazer turned streamer, with celestial hair and a shy heart" , model : model_2},
-    {name : "Albert Einstien" , description : "Warrior of the blossom moon—soft outside, fierce inside" , model : model_3},
+    {name : "Aurelia Flareheart" , description : "A radiant fox-spirit born from embers and stars. Her expressive design and vivid glow were crafted to mesmerize perfectly rigged for dynamic live streaming and storytelling*" , model : model_1},
+    
+    {name : "Aren, The Lost Echo" , description : "A lone wanderer from a forgotten realm, Aren’s fully rigged 3D model brings depth and realism to virtual worlds. Ideal for creators seeking immersive expression and adventure in every motion." , model : model_2},
 
+    {name : "Whispering Realms" , description : "Every stream deserves a cinematic touch. These hand-painted art scenes set the mood before you even say a word — perfect for creating emotional, immersive transitions that leave a lasting impression." , model : model_3},
+
+    {name : "Immersive Studio Worlds" , description : "Transform your stream into a cinematic masterpiece. Our custom-built 3D scenes bring depth, light, and motion to your starting/ending screens or BRBs, making your room as legendary as your avatar." , model : model_4},
+
+    {name : "KuroBytes" , description : "A techy wolf-boy who runs your stream behind the scenes! These chibi-style panels show off your personality with charm, perfect for stream overlays, bios, or section breaks with flair." , model : model_5},
+
+    {name : "Lore-Based Intro Cinematics" , description : "Short animated intros that bring your VTuber backstory to life like an opening scene from your own anime. Perfect for debuts, trailers, or stream openers." , model : model_6},
+
+    
 ]
 
 export const our_process = [

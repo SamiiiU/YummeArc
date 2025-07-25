@@ -50,7 +50,7 @@ const RecentWork = () => {
 
             </div>
 
-            <div className='w-full flex flex-col gap-y-2 justify-center items-center text-center'>
+            <div className='w-full flex z-20 flex-col gap-y-2 justify-center items-center text-center'>
                 <button className='px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>
                     View Full Portfolio
                 </button>

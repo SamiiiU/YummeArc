@@ -40,7 +40,7 @@ const Hero = () => {
 
                 <div className='w-full z-30 flex justify-center  flex-col lg:flex-row gap-10 pt-28 '>
                     {/* Home text  */}
-                    <div data-aos="fade-in" className='lg:w-1/2 w-full lg:items-start md:items-center pt-10 space-y-7 '>
+                    <div data-aos="fade-in" className='lg:w-1/2 w-full lg:items-start md:items-center pt-10 space-y-12 '>
 
                         <h1 className=' font-[600]  lg:text-[3.5rem] text-5xl leading-[1.1] text-headingDark'>
                             Custom VTuber Models Made with Emotion & Detail.
