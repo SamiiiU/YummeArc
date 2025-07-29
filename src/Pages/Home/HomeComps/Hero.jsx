@@ -9,8 +9,7 @@ import Star from '../../../Common/Star'
 const Hero = () => {
     return (
 
-        <div className='bg-primaryDark relative overflow-hidden'>
-
+        <div className='relative overflow-hidden'>
 
 
             <div className='w-full xl:h-[37rem] lg:h-[40rem] h-auto bg-secondaryDark text-textDark   px-4 xl:px-28 sm:px-20  2xl:px-80   flex  '>

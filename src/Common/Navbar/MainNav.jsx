@@ -105,7 +105,7 @@ const MainNav = () => {
             </div>
 
             <div className='flex flex-col group items-center'>
-              <Link onClick={() => handleCurrPage("About")} to={"/about"} className='text-lg font-bold z-10 '>About</Link>
+              <Link onClick={() => handleCurrPage("About")} to={"/about"} className='text-lg font-bold z-10 '>Services</Link>
               <span className={`w-full transition-all ${currPage == "About" ? 'translate-y-0 bg-textColor' : 'group-hover:translate-y-0 -translate-y-4  group-hover:bg-textColor bg-transparent'} z-0 py-[2px] rounded-full`} />
             </div>
 

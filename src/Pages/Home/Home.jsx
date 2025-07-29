@@ -12,7 +12,7 @@ import Heart from './HomeComps/Heart'
 
 const Home = () => {
   return (
-    <div className='w-full  text-textColor bg-white font-inter'>
+    <div className='w-full   font-inter overflow-x-hidden'>
       <MainNav/>
       <Hero/>
       <WhyYummearc/>
