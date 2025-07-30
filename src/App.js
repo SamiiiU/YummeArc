@@ -4,6 +4,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import Home from "./Pages/Home/Home";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import Comission from "./Pages/ComissionPage/Comission";
+import Service from "./Pages/Service/Service";
 import About from "./Pages/About/About";
 
 function App() {
@@ -14,7 +15,9 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/portfolio" element={<Portfolio/>}/>
         <Route path="/comission" element={<Comission/>}/>
+        <Route path="/service" element={<Service/>}/>
         <Route path="/about" element={<About/>}/>
+
         </>
         
 
