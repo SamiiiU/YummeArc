@@ -6,15 +6,19 @@ import Packages from './ComissionComps/Packeges'
 import FAQs from './ComissionComps/FAQs'
 import CTA from '../../Common/CTAs/CTA'
 import Footer from '../../Common/Footer/Footer'
+import Costs from './ComissionComps/Costs'
+import OrderFrom from './ComissionComps/OrderFrom'
+import Terms from './ComissionComps/Terms'
 
 const Comission = () => {
   return (
-    <div className='w-full text-textColor  bg-[#f2f2f2] relative font-orbitron'>
+    <div className='w-full   font-inter overflow-x-hidden'>
       <MainNav/>
       <Hero/>
       <OurProcess/>
-      <Packages/>
-      <FAQs/>
+      <Costs/>
+      <OrderFrom/>
+      <Terms/>
       <CTA heading={"Start Your Commission"} para={"Tell us about your character, your dream, and how we can bring it to life.<br/>We’ll reply within 48 hours with your quote and next steps!"} cta1={"Start Your Request Form"} />
       <Footer/>
       
