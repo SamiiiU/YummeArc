@@ -5,28 +5,28 @@ import Img2 from '../../../Assets/Images/about/2.png'
 const Story = () => {
   return (
     <section className='w-full bg-primaryDark text-headingDark pb-20  px-4 sm:px-12 xl:px-64  2xl:px-80  xl:pt-40 flex flex-col justify-center items-center relative min-h-screen gap-y-10'>
-        <span className='w-full h-1/5 absolute bottom-0 z-20 right-0 bg-gradient-to-t from-secondaryDark
+      <span className='w-full h-1/5 absolute bottom-0 z-20 right-0 bg-gradient-to-t from-secondaryDark
                 to-transparent' />
 
-        <AOSInitializer/>
-            <h1 data-aos="flip-up" className='   lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1] w-full text-center font-bold'>
-                Why We Started YummeArc
+      <AOSInitializer />
+      <h1 data-aos="flip-up" className='   lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1] w-full text-center font-bold'>
+        Why We Started YummeArc
 
-            </h1>
-            <div className='w-full flex justify-evenly items-center gap-x-10'>
-                <p  data-aos="fade-up" className='lg:text-xl text-lg text-center mt-6'>
-                We’re a team of passionate artists who turn VTuber dreams into detailed, animated, and expressive designs from full models to stream overlays. Every project we touch is handcrafted with love, storytelling, and anime energy.
-            </p>
+      </h1>
+      <div className='w-full flex justify-evenly items-center gap-x-10'>
+        <p data-aos="fade-up" className='lg:text-xl text-lg text-center mt-6'>
+          We’re a team of passionate artists who turn VTuber dreams into detailed, animated, and expressive designs from full models to stream overlays. Every project we touch is handcrafted with love, storytelling, and anime energy.
+        </p>
 
-            <p  data-aos="fade-up" className='lg:text-xl text-lg text-center mt-6'>
-                We’re a team of passionate artists who turn VTuber dreams into detailed, animated, and expressive designs from full models to stream overlays. Every project we touch is handcrafted with love, storytelling, and anime energy.
-            </p>
+        <p data-aos="fade-up" className='lg:text-xl text-lg text-center mt-6'>
+          We’re a team of passionate artists who turn VTuber dreams into detailed, animated, and expressive designs from full models to stream overlays. Every project we touch is handcrafted with love, storytelling, and anime energy.
+        </p>
 
-            </div>
+      </div>
 
-            <button className=' my-6 px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>See Our Full Portfolio</button>
-            
-            <img src={Img2} alt="" className='w-[800px]  '/>
+      <button className=' my-6 px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>See Our Full Portfolio</button>
+
+      <img src={Img2} alt="" className='w-[800px]  ' />
     </section>
   )
 }

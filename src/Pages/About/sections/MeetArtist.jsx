@@ -25,8 +25,6 @@ const MeetArtist = () => {
         { callit: "Kuro", insta: "Luoro", twitter: "Luoro", discord: "Luoro", icon: img3 },
         { callit: "Kuro", insta: "Luoro", twitter: "Luoro", discord: "Luoro", icon: img3 },
 
-
-
     ]
     return (
         <section className='w-full bg-secondaryDark text-headingDark pb-20  px-4 sm:px-12 xl:px-64  2xl:px-80  xl:pt-40 flex flex-col justify-center items-center relative min-h-screen'>
