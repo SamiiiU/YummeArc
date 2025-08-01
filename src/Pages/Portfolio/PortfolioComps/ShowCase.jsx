@@ -22,7 +22,7 @@ const ShowCase = () => {
 
     ]
     return (
-        <section className='w-full bg-primaryDark text-headingDark pb-10  px-4 sm:px-12 xl:px-64  2xl:px-80  xl:pt-40 flex flex-col  items-center relative min-h-screen gap-y-10'>
+        <section className='w-full bg-primaryDark text-headingDark sm:py-10 py-20  px-4 sm:px-12 xl:px-64  2xl:px-80  xl:pt-40 flex flex-col  items-center relative min-h-screen gap-y-10'>
             <span className='w-full h-1/5 absolute bottom-0 z-0 right-0 bg-gradient-to-t from-secondaryDark
                 to-transparent' />
 
@@ -42,7 +42,7 @@ const ShowCase = () => {
                 {speaker.map((speaker, idx) => (
                     <div data-aos="zoom-in" key={idx} onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)} className='col-span-1 cursor-pointer bg-purple-950 bg-opacity-10 backdrop-blur-sm  row-span-1 rounded-xl  flex flex-col   items-center gap-y-6  transition-all gap-6 overflow-x-hidden'
                         style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(250, 250, 250, 0.1)' : '0px 1px 3px 2px #2C2839', transition: 'all 0.3s ease-in-out' }}>
-                        <img src={speaker.icon} alt="" className='w-full h-52' />
+                        <img src={speaker.icon} alt="" className='w-full sm:h-52' />
                         <div className='flex flex-col lg:text-lg text-sm gap-y-2 px-3 pb-3 text-center'>
                             <h1 className='text-lg font-semibold font-merryWeater text-headingDark'>{speaker.callit}</h1>
                             <p className='text-sm'>{speaker.desc}</p>

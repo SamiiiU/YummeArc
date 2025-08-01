@@ -24,7 +24,7 @@ const Stream = () => {
 
     ]
     return (
-        <section className='w-full bg-secondaryDark text-headingDark  px-4 sm:px-12 xl:px-64  2xl:px-80  xl:pt-40 flex flex-col  items-center relative min-h-screen gap-y-10 pb-10'>
+        <section className='w-full bg-secondaryDark text-headingDark  px-4 sm:px-12 xl:px-64  2xl:px-80  xl:pt-40 flex flex-col  items-center relative min-h-screen gap-y-10 sm:py-10 py-20'>
             <span className='w-full h-1/5 absolute bottom-0 z-0 right-0 bg-gradient-to-t from-primaryDark
                 to-transparent' />
 
@@ -44,7 +44,7 @@ const Stream = () => {
                     <div data-aos="zoom-in" key={idx} onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)} className='col-span-1 cursor-pointer   backdrop-blur-sm  row-span-1 rounded-xl overflow-hidden flex flex-col   items-center gap-y-6  transition-all gap-3 pt-6'
                         style={{ boxShadow: isActive == idx ? '0px 0px 0px 3px rgba(250, 250, 250, 0.1)' : '0px 0px 3px 2px #2C2839', transition: 'all 0.3s ease-in-out' }}>
                             <h1 className='text-xl font-semibold font-merryWeater text-headingDark'>{speaker.callit}</h1>
-                        <img src={speaker.icon} alt="" className='w-full h-80' />
+                        <img src={speaker.icon} alt="" className='w-full sm:h-80' />
 
                     </div>
                 ))}

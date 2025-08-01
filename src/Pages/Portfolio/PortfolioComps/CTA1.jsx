@@ -21,7 +21,7 @@ const CTA1 = () => {
                 <button className=' px-8 py-2  font-bold cursor-pointer transition-all duration-300 bg-iconColor  text-headingDark border-[1px] hover:-translate-y-2 border-blackText text-center rounded-md '>Explore Our Services</button>
             </div>
 
-            <img src={heroImg} alt="" className='absolute right-0 bottom-0 w-96' />
+            <img src={heroImg} alt="" className='absolute right-0 bottom-0 sm:w-96 w-40' />
         </section>
     )
 }

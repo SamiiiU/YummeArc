@@ -4,7 +4,7 @@ import heroImg from '../../../Assets/Images/services/heroImg.png'
 
 const Hero = () => {
     return (
-        <div className='w-full bg-secondaryDark text-headingDark min-h-fit  px-4 sm:px-12 xl:px-64  2xl:px-80  xl:pt-40 flex flex-col justify-center items-center relative'>
+        <div className='w-full bg-secondaryDark text-headingDark min-h-fit   px-4 sm:px-12 xl:px-64  2xl:px-80  pt-40 flex flex-col justify-center items-center relative'>
             <span className='w-full h-1/5 absolute bottom-0 z-20 right-0 bg-gradient-to-t from-primaryDark
                 to-transparent' />
             <AOSInitializer/>
@@ -18,7 +18,7 @@ const Hero = () => {
             </p>
 
             
-            <img src={heroImg} alt="" className='w-[800px] -translate-y-20 '/>
+            <img src={heroImg} alt="" className='md:w-[800px] w-[400px] sm:-translate-y-20 '/>
 
 
         </div>

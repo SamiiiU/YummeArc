@@ -31,7 +31,7 @@ const Costs = () => {
             <p className='text-xl w-2/3'>We love working with all kinds of budgets — big or small. Whether you’re looking for a chibi panel or a full Live2D rigged model, we’ll figure it out together! Just send us your idea, and we’ll get back with a tailored quote.
             </p>
 
-            <div className='flex w-full justify-between pr-20'>
+            <div className='flex md:flex-row flex-col w-full justify-between pr-20'>
                 <ul className='text-xl space-y-3'>
                     <li className='flex gap-x-3 items-center'> <BsCash size="1.4em" /> 50% upfront, 50% on delivery</li>
                     <li className='flex gap-x-3 items-center'> <RiLoopLeftLine size="1.4em" /> Unlimited revisions till you’re happy</li>
@@ -40,7 +40,7 @@ const Costs = () => {
 
                 </ul>
 
-                <img src={image} className='w-[300px] -translate-y-32'/>
+                <img src={image} className='w-[300px] sm:-translate-y-32 translate-y-10'/>
             </div>
         </div>
     )

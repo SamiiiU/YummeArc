@@ -4,7 +4,7 @@ import heroImg from '../../../Assets/Images/portfolio/1.png'
 
 const Hero = () => {
     return (
-        <div className='w-full bg-secondaryDark text-headingDark pb-20  px-4 sm:px-12 xl:px-64  2xl:px-80  xl:pt-40 flex flex-col justify-center items-center relative min-h-screen'>
+        <div className='w-full bg-secondaryDark text-headingDark pb-20 sm:pt-0 pt-20  px-4 sm:px-12 xl:px-64  2xl:px-80  xl:pt-40 flex flex-col justify-center items-center relative min-h-screen'>
             <span className='w-full h-1/5 absolute bottom-0 z-20 right-0 bg-gradient-to-t from-primaryDark
                 to-transparent' />
             <AOSInitializer />
