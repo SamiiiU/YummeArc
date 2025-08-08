@@ -26,7 +26,10 @@ const Story = () => {
 
       <button className=' my-6 px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>See Our Full Portfolio</button>
 
-      <img src={Img2} alt="" className='w-[800px]  ' />
+      <div className='w-full flex md:flex-row flex-col justify-center items-center'>
+                <h1 className='text-7xl font-semibold'>Every Story Starts With a Character..</h1>
+                <img src={Img2} alt="" className='xl:w-[500px] md:w-[400px]  ' />
+        </div>
     </section>
   )
 }

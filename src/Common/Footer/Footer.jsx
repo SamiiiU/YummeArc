@@ -16,7 +16,7 @@ const Footer = () => {
                     <h1 className='text-5xl font-bold font-kaushans'>YummeArc</h1>
 
                     {/* Logo image done  */}
-                    <h1 className='font-bold text-xl '> <i> "Where Your Story Becomes a Virtual Star ✨" </i></h1>
+                    <h1 className='font-bold text-xl '> <i> Where Your Story Becomes a Virtual Star ✨</i></h1>
 
                     <div className='w-full flex gap-x-6 '>
                         <a href="" target='_blank' className='hover:scale-125 transition-all' ><FaFacebook size={"2em"}/></a>
@@ -56,18 +56,15 @@ const Footer = () => {
                     <div className='flex flex-col gap-y-4 '>
                         <div className='flex '>
                             <MdEmail size={"2em"} />
-                            <p className='px-4 text-lg font-semibold underline'>jdcOfficial@bhikari.com</p>
+                            <p className='px-4 text-lg font-semibold underline'>studio@yumearc.com</p>
                         </div>
 
                         <div className='flex '>
                         <FaLocationDot  size={"2em"} />
-                            <p className='px-4 text-lg font-semibold underline'>S Palm AveSan Gabriel, CA 91776, USA</p>
+                            <p className='px-4 text-lg font-semibold underline'>Belle Mead, New Jersey, USA</p>
                         </div>
 
-                        <div className='flex '>
-                            <MdCall size={"2em"} />
-                            <p className='px-4 text-lg font-semibold underline'>+1 123 4567891</p>
-                        </div>
+
 
                     </div>
                 </div>

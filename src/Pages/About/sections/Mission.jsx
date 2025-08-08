@@ -1,6 +1,6 @@
 import React from 'react'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
-import Img5 from '../../../Assets/Images/about/4.png'
+import Img5 from '../../../Assets/Images/about/2.png'
 
 const Mission = () => {
     return (
@@ -33,7 +33,7 @@ const Mission = () => {
             </div>
             {/* <button className=' my-6 px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>See Our Full Portfolio</button> */}
 
-            <img src={Img5} alt="" className='w-[700px]  ' />
+            
         </section>
     )
 }

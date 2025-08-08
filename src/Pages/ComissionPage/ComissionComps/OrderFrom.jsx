@@ -10,13 +10,6 @@ const OrderFrom = () => {
 
 
             <div className='w-full xl:h-[37rem] lg:h-[40rem] h-auto bg-primaryDark text-textDark   px-4 xl:px-28 sm:px-20  2xl:px-80   flex  min-h-screen'>
-
-
-
-
-
- 
-
                 <span className='w-full h-1/5 absolute bottom-0 z-20 right-0 bg-gradient-to-t from-secondaryDark
                 to-transparent ' />
                 <AOSInitializer duration={500} offset={20} />

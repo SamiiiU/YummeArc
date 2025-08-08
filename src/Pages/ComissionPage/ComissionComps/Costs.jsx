@@ -40,7 +40,7 @@ const Costs = () => {
 
                 </ul>
 
-                <img src={image} className='w-[300px] sm:-translate-y-32 translate-y-10'/>
+                <img src={image} className='w-[500px] sm:-translate-y-64 translate-y-10'/>
             </div>
         </div>
     )

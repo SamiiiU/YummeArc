@@ -8,7 +8,7 @@ import { WiStars } from "react-icons/wi";
 
 import model_1 from '../Assets/Images/HomeImages/Vtuber_1.png'
 import model_2 from '../Assets/Images/HomeImages/Vtuber_2.png'
-import model_3 from '../Assets/Images/HomeImages/Vtuber_3.png'
+import model_3 from '../Assets/Images/HomeImages/Work_card_3.jpg'
 import model_4 from '../Assets/Images/HomeImages/Work_card_4.jpg'
 import model_5 from '../Assets/Images/HomeImages/Vtuber_5.png'
 import model_6 from '../Assets/Images/HomeImages/Work_card_6.jpg'
@@ -70,7 +70,7 @@ export const recentModels =[
     
     {name : "Aren, The Lost Echo" , description : "A lone wanderer from a forgotten realm, Aren’s fully rigged 3D model brings depth and realism to virtual worlds. Ideal for creators seeking immersive expression and adventure in every motion." , model : model_2},
 
-    {name : "Whispering Realms" , description : "Every stream deserves a cinematic touch. These hand-painted art scenes set the mood before you even say a word — perfect for creating emotional, immersive transitions that leave a lasting impression." , model : model_3},
+    {name : "Whispering Realms" , description : "2D Art Scenes for Stream Starting, Ending & BRBs Every stream deserves a cinematic touch. These hand-painted art scenes set the mood before you even say a word perfect for creating emotional, immersive transitions that leave a lasting impression." , model : model_3},
 
     {name : "Immersive Studio Worlds" , description : "Transform your stream into a cinematic masterpiece. Our custom-built 3D scenes bring depth, light, and motion to your starting/ending screens or BRBs, making your room as legendary as your avatar." , model : model_4},
 
