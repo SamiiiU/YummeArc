@@ -13,8 +13,8 @@ const Mission = () => {
                 Why We Started YummeArc
             </h1>
             <p data-aos="fade-up" className='lg:text-xl text-lg text-center mt-6'>
-                At YummeArc, our mission is simple — help every VTuber feel truly seen, truly unique.
-                We believe your design is more than just “cute” — it’s a reflection of your soul, your lore, your journey.
+                At YummeArc, our mission is simple help every VTuber feel truly seen, truly unique.
+                We believe your design is more than just “cute” it’s a reflection of your soul, your lore, your journey.
 
             </p>
 
@@ -23,7 +23,7 @@ const Mission = () => {
                 <ul className='text-lg space-y-2 font-light'>
                     <li className='ml-10'>* Craft every model with emotion, not just technique</li>
                     <li className='ml-10'>* Build long-term friendships, not just client lists</li>
-                    <li className='ml-10'>* Obsess over details — color meanings, backstory, even eye shape</li>
+                    <li className='ml-10'>* Obsess over details color meanings, backstory, even eye shape</li>
                     <li className='ml-10'>* Always revise until you’re 100% satisfied</li>
 
                 </ul>

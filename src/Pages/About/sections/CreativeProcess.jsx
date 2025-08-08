@@ -1,6 +1,6 @@
 import React from 'react'
 import Img5 from '../../../Assets/Images/about/5.png'
-import Img7 from '../../../Assets/Images/about/7.png'
+import Img7 from '../../../Assets/Images/about/2.png'
 
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 const CreativeProcess = () => {
