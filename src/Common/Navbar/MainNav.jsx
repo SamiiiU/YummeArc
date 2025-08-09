@@ -93,7 +93,7 @@ const MainNav = () => {
         <div className={`w-full fixed font-mPlus  flex justify-between items-center sm:px-28  2xl:px-80 px-4 py-4  z-50 ${isVisible ? 'bg-secondaryDark' : 'bg-secondaryDark'} transition-all text-headingDark` }>
           {/* Logo image started  */}
           {/* <Link to="/" className='w-[7%] h-16  px-4  ' style={{ backgroundImage: `url(${"https://upload.wikimedia.org/wikipedia/en/e/eb/JDC_Foundation_Logo.png"})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} /> */}
-          <h1 className='text-5xl font-bold font-kaushans'>YummeArc</h1>
+          <Link to="/" className='text-5xl font-bold font-kaushans'>YummeArc</Link>
           {/* Logo image done  */}
 
           <div className='flex justify-center items-center gap-x-6 font-semibold text-headingDark'>

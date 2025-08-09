@@ -1,28 +1,52 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 import img1 from '../../../Assets/Images/portfolio/P1.png'
 import img2 from '../../../Assets/Images/portfolio/P2.png'
 import img3 from '../../../Assets/Images/portfolio/P3.png'
+import { ContextAPI } from '../../../GlobalProvider/ContextAPI'
 
 const Stream = () => {
+    const { showImageViewer, setShowImageViewer } = useContext(ContextAPI);
+    
     const [isActive, setIsActive] = useState(null)
 
     const handleActive = (onMouse) => {
         setIsActive(onMouse)
     }
 
+    const [showModal, setShowModal] = useState(0);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
     const stream = [
-        { callit: "Chibi Panels", icon: img1 },
-        { callit: "Custom Panels", icon: img2 },
-        { callit: "Overlays", icon: img3 },
+        { callit: "ChibiFox Twitch Panels", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754747083/1_be1m7v.jpg' },
+        { callit: "Neon Green Chibi WolfBoy Panels", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754747076/2_l5v74w.jpg' },
+        { callit: "Retro Pixel Gamer Chibi Panels", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754747082/3_wqvtub.jpg' },
+        { callit: "Gothic Rose Vampire Overlay Pack", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754747075/4_qazinx.jpg' },
 
+        { callit: "Hooded Shadow Stream Overlay Kit", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754747080/5_q6ba78.jpg' },
+        { callit: "Seducky Mascot Stream Overlay Set", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754747084/6_hh8dwy.jpg' },
+        { callit: "Chibi Kitty Style Panel", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754747078/7_yjiepq.jpg' },
+        { callit: "Genshin-Inspired Chibi Panels Hu Tao Theme", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754747083/8_vdappe.jpg' },
 
-
-
-
-
+        { callit: "Kawaii Catgirl Stream Panel Pack", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754747086/9_dvjkst.png' },
+        { callit: "Travesty Alligator MascotStream Pack", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754747083/10_ijhum4.jpg' },
+        { callit: "Metal Rock Stream OverlayPack", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754747093/11_d9k9c4.jpg' },
+        { callit: "Quintuplets Anime AlertOverlay", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754747089/12_hyrnlr.jpg' },
 
     ]
+
+    const handleShowImage = (index) => {
+            setCurrentImageIndex(index);
+            setShowModal(stream[index].icon);
+            setShowImageViewer(true);
+        }
+    
+        const [showAll, setShowAll] = useState(false);
+        const handleShowAll = () => {
+            setShowAll(!showAll)
+        }
+        // Slice data if not showing all
+        const visibleWork = showAll ? stream : stream.slice(0, 6);
     return (
         <section className='w-full bg-secondaryDark text-headingDark  px-4 sm:px-12 xl:px-64  2xl:px-80  xl:pt-40 flex flex-col  items-center relative min-h-screen gap-y-10 sm:py-10 py-20'>
             <span className='w-full h-1/5 absolute bottom-0 z-0 right-0 bg-gradient-to-t from-primaryDark
@@ -39,16 +63,68 @@ const Stream = () => {
             {/* <button className='  px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>Request Your Own</button> */}
 
 
-            <div className='w-full grid sm:grid-cols-2 lg:grid-cols-3 grid-cols-1 xl:gap-8 lg:gap-6 gap-4 mt-6 '>
-                {stream.map((speaker, idx) => (
-                    <div data-aos="zoom-in" key={idx} onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)} className='col-span-1 cursor-pointer   backdrop-blur-sm  row-span-1 rounded-xl overflow-hidden flex flex-col   items-center gap-y-6  transition-all gap-3 pt-6'
-                        style={{ boxShadow: isActive == idx ? '0px 0px 0px 3px rgba(250, 250, 250, 0.1)' : '0px 0px 3px 2px #2C2839', transition: 'all 0.3s ease-in-out' }}>
-                            <h1 className='text-xl font-semibold font-merryWeater text-headingDark'>{speaker.callit}</h1>
-                        <img src={speaker.icon} alt="" className='w-full sm:h-80' />
+            <div className='w-full grid grid-cols-2 lg:grid-cols-3  xl:gap-8 lg:gap-6 gap-4 mt-6 '>
+                {visibleWork.map((stream, idx) => (
+                    <div data-aos="zoom-in" key={idx} onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)} className='col-span-1 cursor-pointer bg-purple-950 bg-opacity-10 backdrop-blur-sm overflow-hidden row-span-1 rounded-xl  flex flex-col   items-center  transition-all gap-6 '
+                        style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(250, 250, 250, 0.1)' : '0px 1px 3px 2px #2C2839', transition: 'all 0.3s ease-in-out' }}>
+                        {/* <img onClick={() => handleShowImage(idx)} src={stream.icon} alt="" className='w-full md:min-h-80' /> */}
+                        <div onClick={() => handleShowImage(idx)} className="w-full  min-h-64 relative bg-gradient-to-t from-purpleText/30 to-purpleText">
+                            <div className='w-full h-full ' style={{ backgroundImage: `url(${stream.icon})`, backgroundSize: 'cover', backgroundPosition: 'top' }}></div>
 
+                        </div>
+
+                        <div className='flex flex-col lg:text-lg text-sm gap-y-2 p-4 text-center'>
+                            <h1 className='text-xl font-semibold font-merryWeater text-headingDark'>{stream.callit}</h1>
+                        </div>
                     </div>
                 ))}
             </div>
+
+            <div className="w-full flex justify-center mt-8 z-20">
+                <button
+                    onClick={() => handleShowAll()}
+                    className="px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2"
+                >
+                    {showAll ? 'View Less' : 'View More'}
+                </button>
+            </div>
+
+            {showImageViewer && (
+                <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
+                    {/* <span onClick={() => setShowImageViewer(false)} className='top-4 right-4 cursor-pointer text-3xl absolute text-white'><RxCross1/></span> */}
+                    <button
+                        onClick={() => {
+                            const newIndex =
+                                (currentImageIndex - 1 + stream.length) %
+                                stream.length;
+                            setCurrentImageIndex(newIndex);
+                            setShowModal(stream[newIndex].icon);
+                        }}
+                        className="px-4 left-4 top-1/2 text-white text-4xl font-bold z-50"
+                    >
+                        ‹
+                    </button>
+
+                    <div onClick={() => setShowImageViewer(false)} className='w-full h-[100vh] flex justify-center items-center '>
+                        <img
+                            src={showModal}
+                            alt="viewer"
+                            className="sm:max-w-full max-w-[80vw] max-h-[90vh] object-contain"
+                        />
+                    </div>
+
+                    <button
+                        onClick={() => {
+                            const newIndex = (currentImageIndex + 1) % stream.length;
+                            setCurrentImageIndex(newIndex);
+                            setShowModal(stream[newIndex].icon);
+                        }}
+                        className="px-4 right-4 top-1/2 text-white text-4xl font-bold z-50"
+                    >
+                        ›
+                    </button>
+                </div>
+            )}
         </section>
     )
 }
