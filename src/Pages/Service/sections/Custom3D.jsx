@@ -54,7 +54,7 @@ const Custom3D = () => {
             </div>
 
 
-            <div data-aos="fade-top" className='col-span-1 h-full min-h-[26rem]  ' style={{ backgroundImage: `url("${'custom_3d'}")`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
+            <div data-aos="fade-top" className='col-span-1 h-full min-h-[26rem]  ' style={{ backgroundImage: `url("https://res.cloudinary.com/dqflexfdy/image/upload/v1754813076/sec2_model3d_ovibre.png")`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
 
         </div>
 

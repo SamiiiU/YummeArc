@@ -1,5 +1,4 @@
 import React from 'react'
-import image from '../../../Assets/Images/services/sec9_emote.png'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 import ShadePurple from '../../../Common/ShadePurple'
 
@@ -55,7 +54,7 @@ const Sec11_intro = () => {
             </div>
 
 
-            <div data-aos="fade-top" className='2xl:w-[700px] md:w-[600px] sm:w-[500px]  h-full min-h-[26rem] ' style={{ backgroundImage: `url("${image}")`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
+            <div data-aos="fade-top" className='2xl:w-[700px] md:w-[600px] sm:w-[500px]  h-full min-h-[26rem] ' style={{ backgroundImage: `url("https://res.cloudinary.com/dqflexfdy/image/upload/v1754813001/faqs_duxeck.png")`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
 
         </div>
 

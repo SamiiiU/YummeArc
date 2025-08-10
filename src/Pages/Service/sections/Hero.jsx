@@ -1,6 +1,5 @@
 import React from 'react'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
-import heroImg from '../../../Assets/Images/services/heroImg.png'
 
 const Hero = () => {
     return (
@@ -15,7 +14,7 @@ const Hero = () => {
             </p>
 
             
-            <img src={heroImg} alt="" className='md:w-[500px] w-[400px] mt-10 '/>
+            <img src={'https://res.cloudinary.com/dqflexfdy/image/upload/v1754813102/heroImg_bs0e8x.png'} alt="" className='md:w-[500px] w-[400px] mt-10 '/>
 
 
         </div>

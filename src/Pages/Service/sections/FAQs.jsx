@@ -1,5 +1,4 @@
 import React from 'react'
-import whyYmmearc from '../../../Assets/Images/HomeImages/heartChar.png'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 import ShadePurple from '../../../Common/ShadePurple'
 
@@ -86,7 +85,7 @@ const FAQs = () => {
 
             </div>
 
-            <div data-aos="fade-top" className='h-[1000px] w-[900px] ' style={{ backgroundImage: `url("${whyYmmearc}")`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
+            <div data-aos="fade-top" className='h-[1000px] xl:w-[600px] ' style={{ backgroundImage: `url("https://res.cloudinary.com/dqflexfdy/image/upload/v1754818364/faqs_glkpjc.png")`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
 
 
         </div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import custom_3d from '../../../Assets/Images/services/sec6_animation.png'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 import ShadePurple from '../../../Common/ShadePurple'
 
@@ -58,7 +57,7 @@ const Sec5_vtuber = () => {
             </div>
 
 
-            <div data-aos="fade-top" className='col-span-1 h-full min-h-[26rem]  ' style={{ backgroundImage: `url("${custom_3d}")`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
+            <div data-aos="fade-top" className='col-span-1 h-full min-h-[26rem]  ' style={{ backgroundImage: `url("https://res.cloudinary.com/dqflexfdy/image/upload/v1754813005/sec6_animation_wdzp6y.png")`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
 
         </div>
 
