@@ -13,3 +13,8 @@ export const faqs = [
     {question : "Q: Do I own the model after it’s done?" , answer : "A: Yes! You receive full usage rights for personal and streaming use."},
 
 ]
+
+
+
+
+    

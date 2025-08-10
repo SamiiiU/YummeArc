@@ -2,11 +2,12 @@ import React from 'react'
 import MainNav from '../../Common/Navbar/MainNav'
 import Hero from './PortfolioComps/Hero'
 import Footer from '../../Common/Footer/Footer'
-import PastWork from './PortfolioComps/PastWork'
 import Speak from './PortfolioComps/Speak'
 import Stream from './PortfolioComps/Stream'
-import ShowCase from './PortfolioComps/ShowCase'
 import CTA1 from './PortfolioComps/CTA1'
+import Emotes from './PortfolioComps/Emotes'
+import ArtScenes from './PortfolioComps/ArtScenes'
+import PFP from './PortfolioComps/PFP'
 
 const Portfolio = () => {
   return (
@@ -15,9 +16,10 @@ const Portfolio = () => {
       <Hero/>
       <Speak/>
       <Stream/>
-      <ShowCase/>
+      <Emotes/>
+      <ArtScenes/>
+      <PFP/>
       <CTA1/>
-
       <Footer/>
 
     </div>

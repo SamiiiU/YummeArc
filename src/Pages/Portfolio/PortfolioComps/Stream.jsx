@@ -1,8 +1,6 @@
 import React, { useContext, useState } from 'react'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
-import img1 from '../../../Assets/Images/portfolio/P1.png'
-import img2 from '../../../Assets/Images/portfolio/P2.png'
-import img3 from '../../../Assets/Images/portfolio/P3.png'
+
 import { ContextAPI } from '../../../GlobalProvider/ContextAPI'
 
 const Stream = () => {

@@ -18,7 +18,7 @@ const MeetArtist = () => {
         icon: img3 },
 
 
-        { callit: "Celestria Paisley",
+        { callit: "MIDNIGHT KENSHI",
               twitter : 'https://x.com/celestiapaisley?s=21',
               twitch : 'https://www.twitch.tv/celestialpaisley',
                discord: "Luoro",
