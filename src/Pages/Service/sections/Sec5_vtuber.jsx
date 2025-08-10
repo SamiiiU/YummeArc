@@ -1,5 +1,5 @@
 import React from 'react'
-import custom_3d from '../../../Assets/Images/services/model_3d.png'
+import custom_3d from '../../../Assets/Images/services/sec6_animation.png'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 import ShadePurple from '../../../Common/ShadePurple'
 

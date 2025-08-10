@@ -1,12 +1,9 @@
 import React, { useState } from 'react'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
-import heroImg from '../../../Assets/Images/about/hero.png'
-import { CiStar } from 'react-icons/ci'
-import { FaBook, FaLeaf } from 'react-icons/fa'
-import { WiStars } from 'react-icons/wi'
-import img3 from '../../../Assets/Images/about/3.png'
+
 import { BsDiscord, BsTwitch, BsTwitter } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
+import { FaXTwitter } from 'react-icons/fa6'
 
 
 const MeetArtist = () => {
@@ -15,74 +12,74 @@ const MeetArtist = () => {
               twitter : 'https://x.com/celestiapaisley?s=21',
               twitch : 'https://www.twitch.tv/celestialpaisley',
                discord: "Luoro",
-        icon: img3 },
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808456/1_pqngnm.jpg' },
 
 
         { callit: "MIDNIGHT KENSHI",
-              twitter : 'https://x.com/celestiapaisley?s=21',
+              twitter : 'https://x.com/Midnight_Kenshi',
               twitch : 'https://www.twitch.tv/celestialpaisley',
-               discord: "Luoro",
-        icon: img3 },
+               discord: "midnightkenshi",
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808457/2_l0grli.jpg' },
 
-        { callit: "Celestria Paisley",
-              twitter : 'https://x.com/celestiapaisley?s=21',
+        { callit: "HEIDI FELIX",
+              twitter : 'https://x.com/heidifelix601',
               twitch : 'https://www.twitch.tv/celestialpaisley',
-               discord: "Luoro",
-        icon: img3 },
+               discord: "tsukispectra",
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808458/3_o7amdf.jpg' },
 
-        { callit: "Celestria Paisley",
-              twitter : 'https://x.com/celestiapaisley?s=21',
+        { callit: "EMILY JOHNSON:",
+              twitter : 'https://x.com/Emily_Johnson55',
               twitch : 'https://www.twitch.tv/celestialpaisley',
-               discord: "Luoro",
-        icon: img3 },
+               discord: "emily_johnson55",
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808458/4_uzvatn.jpg' },
 
-        { callit: "Celestria Paisley",
-              twitter : 'https://x.com/celestiapaisley?s=21',
+        { callit: "ANGELA WRIGHT",
+              twitter : 'https://x.com/Angela_Wright56',
               twitch : 'https://www.twitch.tv/celestialpaisley',
-               discord: "Luoro",
-        icon: img3 },
+               discord: "angela_wright56",
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808460/5_woauld.jpg' },
 
-        { callit: "Celestria Paisley",
-              twitter : 'https://x.com/celestiapaisley?s=21',
+        { callit: "MIMI NOCTELLE",
+              twitter : 'https://x.com/noctellemimi',
               twitch : 'https://www.twitch.tv/celestialpaisley',
-               discord: "Luoro",
-        icon: img3 },
+               discord: "Luoromimi_noctelle",
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808462/6_atrgym.jpg' },
 
-        { callit: "Celestria Paisley",
-              twitter : 'https://x.com/celestiapaisley?s=21',
+        { callit: "STARRY MUSE",
+              twitter : 'https://x.com/Hey_StarryMuse',
               twitch : 'https://www.twitch.tv/celestialpaisley',
-               discord: "Luoro",
-        icon: img3 },
+               discord: "heystarry",
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808465/7_f0o81e.jpg' },
 
-        { callit: "Celestria Paisley",
-              twitter : 'https://x.com/celestiapaisley?s=21',
+        { callit: "USA LUMINA ",
+              twitter : 'https://x.com/Usa_Lumina4',
               twitch : 'https://www.twitch.tv/celestialpaisley',
-               discord: "Luoro",
-        icon: img3 },
+               discord: "usa_lumina4",
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808466/8_t5naiw.jpg' },
 
-        { callit: "Celestria Paisley",
-              twitter : 'https://x.com/celestiapaisley?s=21',
+        { callit: "SOPHIA BLADE",
+              twitter : 'https://x.com/sophia_blade1',
               twitch : 'https://www.twitch.tv/celestialpaisley',
-               discord: "Luoro",
-        icon: img3 },
+               discord: "sophia_blade1",
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808470/9_givwnq.jpg' },
 
-        { callit: "Celestria Paisley",
-              twitter : 'https://x.com/celestiapaisley?s=21',
+        { callit: "Aurora Lucas",
+              twitter : 'https://x.com/Aurora_Lucas02',
               twitch : 'https://www.twitch.tv/celestialpaisley',
-               discord: "Luoro",
-        icon: img3 },
+               discord: "aurora_lucas",
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808471/10_hjzm3o.jpg' },
 
-        { callit: "Celestria Paisley",
-              twitter : 'https://x.com/celestiapaisley?s=21',
+        { callit: "AMELIA ZOE",
+              twitter : 'https://x.com/AmeliaZ04528482',
               twitch : 'https://www.twitch.tv/celestialpaisley',
-               discord: "Luoro",
-        icon: img3 },
+               discord: "amelia_zoe",
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808475/11_hby5fk.jpg' },
 
-        { callit: "Celestria Paisley",
+        { callit: "Emma smith",
               twitter : 'https://x.com/celestiapaisley?s=21',
               twitch : 'https://www.twitch.tv/celestialpaisley',
-               discord: "Luoro",
-        icon: img3 },
+               discord: "emmasmith_",
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808476/12_ydmlbz.jpg' },
 
     ]
 
@@ -127,23 +124,28 @@ const MeetArtist = () => {
                             transition: 'all 0.3s ease-in-out',
                         }}
                     >
-                        <img src={why.icon} alt="" className='w-20' />
+                        {/* <img src={why.icon} alt="" className='w-20' /> */}
+                        <div className='w-20 h-20' style={{
+                            backgroundImage: `url(${why.icon})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'top',
+                        }}></div>
                         <div className='flex flex-col lg:text-lg text-sm gap-y-2'>
                             <h1 className='text-xl font-semibold font-merryWeater text-headingDark'>
                                 {why.callit}
                             </h1>
 
-                            <span className='flex gap-x-4 items-center'>
-                                <BsDiscord size="1.2em" /> {why.callit}
+                            <span className='flex gap-x-4 items-center hover:text-purple-300'>
+                                <BsDiscord size="1.2em" /> {why.discord}
                             </span>
 
-                            <Link target='__blank' to={why.twitch} className='flex gap-x-4 items-center'>
+                            <a target='__blank' href={why.twitch} className='flex gap-x-4 items-center hover:text-purple-300'>
                                 <BsTwitch size="1.2em" /> Twitch
-                            </Link>
+                            </a>
 
-                            <Link target='__blank' to={why.twitter} className='flex gap-x-4 items-center'>
-                                <BsTwitter size="1.2em" /> Twitter
-                            </Link>
+                            <a target='__blank' href={why.twitter} className='flex gap-x-4 items-center hover:text-purple-300'>
+                                <FaXTwitter size="1.2em" />Twitter
+                            </a>
                         </div>
                     </div>
                 ))}

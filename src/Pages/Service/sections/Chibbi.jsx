@@ -1,5 +1,5 @@
 import React from 'react'
-import chibi from '../../../Assets/Images/services/chibiPanels.png'
+import chibi from '../../../Assets/Images/services/sec3_chibiPanels.png'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 import ShadePurple from '../../../Common/ShadePurple'
 
