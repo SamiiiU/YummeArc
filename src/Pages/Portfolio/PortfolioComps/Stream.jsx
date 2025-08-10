@@ -5,7 +5,7 @@ import { ContextAPI } from '../../../GlobalProvider/ContextAPI'
 
 const Stream = () => {
     const { showImageViewer, setShowImageViewer } = useContext(ContextAPI);
-    
+
     const [isActive, setIsActive] = useState(null)
 
     const handleActive = (onMouse) => {
@@ -34,17 +34,17 @@ const Stream = () => {
     ]
 
     const handleShowImage = (index) => {
-            setCurrentImageIndex(index);
-            setShowModal(stream[index].icon);
-            setShowImageViewer(true);
-        }
-    
-        const [showAll, setShowAll] = useState(false);
-        const handleShowAll = () => {
-            setShowAll(!showAll)
-        }
-        // Slice data if not showing all
-        const visibleWork = showAll ? stream : stream.slice(0, 6);
+        setCurrentImageIndex(index);
+        setShowModal(stream[index].icon);
+        setShowImageViewer(true);
+    }
+
+    const [showAll, setShowAll] = useState(false);
+    const handleShowAll = () => {
+        setShowAll(!showAll)
+    }
+    // Slice data if not showing all
+    const visibleWork = showAll ? stream : stream.slice(0, 6);
     return (
         <section className='w-full bg-secondaryDark text-headingDark  px-4 sm:px-12 xl:px-64  2xl:px-80  xl:pt-40 flex flex-col  items-center relative min-h-screen gap-y-10 sm:py-10 py-20'>
             <span className='w-full h-1/5 absolute bottom-0 z-0 right-0 bg-gradient-to-t from-primaryDark
@@ -71,9 +71,8 @@ const Stream = () => {
 
                         </div>
 
-                        <div className='flex flex-col lg:text-lg text-sm gap-y-2 p-4 text-center'>
-                            <h1 className='text-xl font-semibold font-merryWeater text-headingDark'>{stream.callit}</h1>
-                        </div>
+                        <h1 className=' lg:text-lg text-sm  sm:p-4 p-2 text-center'>{stream.callit}</h1>
+
                     </div>
                 ))}
             </div>

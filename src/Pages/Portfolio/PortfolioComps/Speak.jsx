@@ -25,21 +25,20 @@ const Speak = () => {
 
 
     const speaker = [
-        { callit: "2D Chibi Model", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754745969/F1_zdxgvb.png' },
-        { callit: "2D Model", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754746124/F2_o3gcmr.png' },
+        { callit: "Infernia 2D Chibi Model", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754745969/F1_zdxgvb.png' },
+        { callit: "Aurelius Guard 2D Model", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754746124/F2_o3gcmr.png' },
 
-        { callit: "2D Model", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754746129/F3_ktyyqd.png' },
-        { callit: "3D Model", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754746058/F4_lzs9av.png' },
-        { callit: "3D Model", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754746058/F5_tokal0.png' },
-        { callit: "3D Model", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754746060/F6_u7xrr0.png' },
-        { callit: "2D Model", icon: img7 },
-        { callit: "2D Model", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754746149/F8_bfbsyj.png' },
-        { callit: "2D Model", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754746205/F9_jpss1z.png' },
+        { callit: "Neon Lyra 2D Model", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754746129/F3_ktyyqd.png' },
+        { callit: "Frostbyte 3D Model", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754746058/F4_lzs9av.png' },
+        { callit: "Shadowtail 3D Model", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754746058/F5_tokal0.png' },
+        { callit: "Azure Ranger 3D Model", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754746060/F6_u7xrr0.png' },
+        { callit: "Infernal Wraith 2D Model", icon: img7 },
+        { callit: "Obsidian Shade 2D Model", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754746149/F8_bfbsyj.png' },
+        { callit: "Silverblade Ronin 2D Model", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754746205/F9_jpss1z.png' },
 
-        { callit: "2D Model", icon: img10 },
-        { callit: "3D Model", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754746224/F11_mmugmx.png' },
-        { callit: "2D Model", icon: img12 },
-
+        { callit: "Crimson Trickster 2D Model", icon: img10 },
+        { callit: "Aetherfire Sentinel 3D Model", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754746224/F11_mmugmx.png' },
+        { callit: "Pixel Purrfect 2D Model", icon: img12 },
 
 
     ]
@@ -82,12 +81,9 @@ const Speak = () => {
                         {/* <img onClick={() => handleShowImage(idx)} src={speaker.icon} alt="" className='w-full md:min-h-80' /> */}
                         <div onClick={() => handleShowImage(idx)} className="w-full  min-h-64 relative bg-gradient-to-t from-purpleText/30 to-purpleText">
                             <div className='w-full h-full ' style={{ backgroundImage: `url(${speaker.icon})`, backgroundSize: 'cover', backgroundPosition: 'top' }}></div>
-
                         </div>
 
-                        <div className='flex flex-col lg:text-lg text-sm gap-y-2 '>
-                            <h1 className='flex flex-col lg:text-lg text-sm gap-y-2 p-4 text-center'>{speaker.callit}</h1>
-                        </div>
+                            <h1 className=' lg:text-lg text-sm  sm:p-4 p-2 text-center'>{speaker.callit}</h1>
                     </div>
                 ))}
             </div>

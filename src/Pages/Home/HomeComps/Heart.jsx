@@ -19,7 +19,7 @@ const Heart = () => {
                 to-transparent' />
             <div className='col-span-1  justify-center text-left  flex flex-col  gap-y-6 sm:p-16 p-4 min-h-[24rem]'>
 
-                <h1 data-aos="fade-right" className=' font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1] text-headingDark '>
+                <h1 data-aos="fade-right" className='w-full text-left z-20  font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]  text-headingDark font-kaushans'>
                     The Heart Behind Every Model
                 </h1>
                 <p data-aos="fade-right" className='font-merryWeater lg:text-lg text-sm '>At YummeArc, every model begins with your story your lore, your vibe, your soul. We believe your VTuber avatar shouldn’t just look good… it should feel like a reflection of you. Not just a character. A legacy.

@@ -8,9 +8,9 @@ const Sec11_intro = () => {
         <div className='w-full  z-30 grid lg:grid-cols-2 grid-cols-1 gap-10  min-h-screen  text-textDark bg-secondaryDark relative py-10'>
             <AOSInitializer />
             {/* shading circle hai na idher sai start  */}
-            <ShadePurple className={'-right-20 top-20 bg-gradient-to-r w-72 h-72'} />
+            <ShadePurple className={'-right-20 top-20 bg-gradient-to-r w-72 h-72  opacity-35'} />
 
-            <ShadePurple className={'-left-24 bottom-20 bg-gradient-to-r w-72 h-72'} />
+            <ShadePurple className={'-left-24 bottom-20 bg-gradient-to-r w-72 h-72  opacity-35'} />
 
             {/* shading circle yaha sai khatam bus ok  */}
             {/* Home text  */}
@@ -32,21 +32,21 @@ const Sec11_intro = () => {
 
                 <ul>
                     <li>
-                       Fully Custom Animations (2D or Mixed)
+                        Fully Custom Animations (2D or Mixed)
                     </li>
                     <li>
                         Optional Sound Effects / Music Sync
                     </li>
                     <li>
-                         Match VTuber Lore / Branding
+                        Match VTuber Lore / Branding
                     </li>
                     <li>
-                       Twitch, YouTube, Kick Compatible
+                        Twitch, YouTube, Kick Compatible
                     </li>
                 </ul>
 
                 <div className=' flex md:flex-row flex-col sm:rounded-md gap-4 md:w-auto w-full text-md xl:text-lg pt-6 z-20'>
-                    <button className=' px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>Order My Emotes & Badges</button>
+                    <button className=' px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>Start My Animation Project</button>
 
                 </div>
 
@@ -54,7 +54,20 @@ const Sec11_intro = () => {
             </div>
 
 
-            <div data-aos="fade-top" className='2xl:w-[700px] md:w-[600px] sm:w-[500px]  h-full min-h-[26rem] ' style={{ backgroundImage: `url("https://res.cloudinary.com/dqflexfdy/image/upload/v1754813001/faqs_duxeck.png")`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
+            <div
+                data-aos="fade-top"
+                className="2xl:w-[700px] md:w-[600px] sm:w-[500px] h-full min-h-[26rem]"
+            >
+                <video
+                    src="https://res.cloudinary.com/dqflexfdy/video/upload/v1754819069/WhatsApp_Video_2025-08-08_at_19.16.47_badd7726_ryhbj8.mp4" // apna video URL yahan daal
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-full h-full object-contain"
+                />
+            </div>
+
 
         </div>
 

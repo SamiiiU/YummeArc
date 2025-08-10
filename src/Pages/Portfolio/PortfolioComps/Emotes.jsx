@@ -23,6 +23,9 @@ const Emotes = () => {
         { callit: "Dance Animated Emote", icon: 'https://res.cloudinary.com/dqflexfdy/video/upload/v1754804685/8_juymka.mp4' },
         { callit: "Custom Twitch Emotes", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754804689/9_y1j01k.jpg' },
         { callit: "Twitch Emotes", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754804694/10_srt99o.jpg' },
+
+        { callit: "Chibi Duo Emotes", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754819436/11_wwyyhh.jpg' },
+        { callit: "Pink Princess Emote Pack", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754819441/12_vcdpwb.jpg' },
     ]
 
   // helper -> detect if a url is a video by extension
@@ -131,9 +134,8 @@ const Emotes = () => {
                 )}
               </div>
 
-              <div className="flex flex-col lg:text-lg text-sm gap-y-2 w-full">
-                <h1 className="flex flex-col lg:text-lg text-sm gap-y-2 p-4 text-center">{item.callit}</h1>
-              </div>
+                <h1 className=" lg:text-lg text-sm  sm:p-4 p-2 text-center">{item.callit}</h1>
+    
             </div>
           );
         })}

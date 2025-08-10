@@ -45,11 +45,11 @@ const Terms = () => {
             <div className='w-full grid  md:grid-cols-2 grid-cols-1 gap-8 mt-6'>
                 {process.map((process, idx) => (
                     <div data-aos="fade-up" key={idx} onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)}
-                        style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }} className='col-span-1 row-span-1 p-4 flex rounded-md transition-all cursor-pointer  text-headingDark items-center'>
-                        <span className='   text-5xl bg-buttonPrimary/20 rounded-full p-4 '>
+                        style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }} className='col-span-1 row-span-1 p-4 flex sm:flex-row flex-col rounded-md transition-all cursor-pointer sm:gap-y-2 gap-y-6 text-headingDark sm:items-center'>
+                        <span className=' w-fit  text-5xl bg-buttonPrimary/20 rounded-full p-4 '>
                             <FaQuestion/>
                         </span>
-                        <div className='px-5 space-y-3'>
+                        <div className='sm:px-5 space-y-3'>
                             <h1 className='text-xl font-bold'>{process.heaiding}</h1>
                             <p className='font-merryWeater'>{process.para}</p>
                         </div>
@@ -57,7 +57,7 @@ const Terms = () => {
                 ))}
             </div>
 
-            <h1 className='w-full text-center text-xl font-semibold italic z-20 px-20  mt-10'>🚫 Note: We do not work with any third-party artists or resellers. If someone claims to represent us outside our official platforms, please report it.</h1>
+            <h1 className='w-full text-center text-xl font-semibold italic z-20 sm:px-20  mt-10'>🚫 Note: We do not work with any third-party artists or resellers. If someone claims to represent us outside our official platforms, please report it.</h1>
 
         </div>
     )

@@ -27,7 +27,7 @@ const OurProcess = () => {
             {/* shading circle yaha sai khatam bus ok  */}
             <span className='w-full h-1/5 absolute bottom-0 z-0 right-0 bg-gradient-to-t from-secondaryDark
                 to-transparent ' />
-            <h1 className='font-kaushans text-headingDark text-5xl'>How to Order a Custom Piece 💫</h1>
+            <h1 className='w-full text-left z-20  font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]  text-headingDark font-kaushans'>How to Order a Custom Piece</h1>
             <p data-aos="fade-up" className='text-center lg:text-lg text-sm w-full my-6  '>Whether it's a Live2D model, emotes, or full stream setup — here’s how the magic begins:
             </p>
 
@@ -35,12 +35,12 @@ const OurProcess = () => {
                 {process.map((process, idx) => (
                     <div data-aos="fade-up" key={idx} onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)}
                         style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }} className='col-span-1 row-span-1 p-4 flex rounded-md transition-all cursor-pointer  text-headingDark items-center'>
-                        <span className=' h-full  text-5xl bg-buttonPrimary/20 rounded-full p-4'>
+                        <span className=' sm:h-full text-2xl sm:text-5xl bg-buttonPrimary/20 rounded-full p-4'>
                             {process.icon}
                         </span>
                         <div className='px-5'>
                             <h1 className='text-xl font-bold'>{process.heaiding}</h1>
-                            <p className='font-merryWeater'>{process.para}</p>
+                            <p className='font-merryWeater sm:text-lg text-sm '>{process.para}</p>
                         </div>
                     </div>
                 ))}

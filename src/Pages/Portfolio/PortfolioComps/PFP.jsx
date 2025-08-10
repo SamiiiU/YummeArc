@@ -18,7 +18,7 @@ const PFP = () => {
         { callit: "Starry-Eyed Blossom", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754806821/1_wxqico.png' },
         { callit: "Neon Purrfect ", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754806824/2_qjsmca.jpg' },
 
-        { callit: "Moonlit Hex", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754806824/2_qjsmca.jpg' },
+        { callit: "Moonlit Hex", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754806765/3_lq6ivd.jpg' },
         { callit: "Neon Diva pfp", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754806766/4_orbchh.jpg' },
         { callit: "Ghost Spark", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754806767/5_z5qjyd.jpg' },
         { callit: "Void Enchanter ", icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754806771/6_zjokrs.jpg' },
@@ -37,9 +37,16 @@ const PFP = () => {
     }
 
     const [showAll, setShowAll] = useState(false);
+    const [loading, setLoading] = useState(false);
+
     const handleShowAll = () => {
-        setShowAll(!showAll)
-    }
+        setLoading(true); // loader start
+        setTimeout(() => {
+            setShowAll(!showAll);
+            setLoading(false); // loader stop
+        }, 1000); // 1 sec delay simulate (API call ka time)
+    };
+
     // Slice data if not showing all
     const visibleWork = showAll ? speaker : speaker.slice(0, 6);
 
@@ -70,21 +77,49 @@ const PFP = () => {
 
                         </div>
 
-                        <div className='flex flex-col lg:text-lg text-sm gap-y-2 '>
-                            <h1 className='flex flex-col lg:text-lg text-sm gap-y-2 p-4 text-center'>{speaker.callit}</h1>
-                        </div>
+                        <h1 className=' lg:text-lg text-sm  sm:p-4 p-2 text-center'>{speaker.callit}</h1>
+
                     </div>
                 ))}
             </div>
 
             <div className="w-full flex justify-center mt-8 z-20">
                 <button
-                    onClick={() => handleShowAll()}
-                    className=" px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2"
+                    onClick={handleShowAll}
+                    disabled={loading} // disable while loading
+                    className={`px-8 py-2 font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2 
+            ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
                 >
-                    {showAll ? 'View Less' : 'View More'}
+                    {loading ? (
+                        <span className="flex items-center gap-2">
+                            <svg
+                                className="animate-spin h-5 w-5 text-headingDark"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                            >
+                                <circle
+                                    className="opacity-25"
+                                    cx="12"
+                                    cy="12"
+                                    r="10"
+                                    stroke="currentColor"
+                                    strokeWidth="4"
+                                ></circle>
+                                <path
+                                    className="opacity-75"
+                                    fill="currentColor"
+                                    d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                                ></path>
+                            </svg>
+                            Loading...
+                        </span>
+                    ) : (
+                        showAll ? 'View Less' : 'View More'
+                    )}
                 </button>
             </div>
+
 
             {showImageViewer && (
                 <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">

@@ -82,10 +82,10 @@ export const recentModels =[
 ]
 
 export const our_process = [
-    {heaiding : 'Step 1: Discovery' ,  para : 'We start with you — your lore, vibe, inspirations, and goals. Whether it’s a simple PNGTuber or a full-blown magical OC, we get to know everything.' , icon : < FaBrain />},
+    {heaiding : 'Step 1: Discovery' ,  para : 'We start with you your lore, vibe, inspirations, and goals. Whether it’s a simple PNGTuber or a full-blown magical OC, we get to know everything.' , icon : < FaBrain />},
     {heaiding : 'Step 2: Concept & Sketch' ,  para : 'We sketch early ideas and send previews. You give feedback. This step lets you shape the vibe before anything’s finalized.' , icon : <FaPen />},
     {heaiding : 'Step 3: Final Model Art' ,  para : 'Once approved, we render the full piece with polish, emotion, and deep detail. You\'ll see your character come to life.' , icon : <FaHeart />},
-    {heaiding : 'Step 4: Delivery & Support' ,  para : 'You receive clean files — rig-ready, high-res, or for panels/branding. We’re here for post-delivery questions or add-ons.' , icon : <FaBox />},
+    {heaiding : 'Step 4: Delivery & Support' ,  para : 'You receive clean files rig-ready, high-res, or for panels/branding. We’re here for post-delivery questions or add-ons.' , icon : <FaBox />},
     {heaiding : 'Step 5: Debut Ready Extras ' ,  para : 'Need help with banners, panels, or extra poses? We offer creative add-ons based on your needs.' , icon : <FaStar />},
 ]
 
@@ -93,6 +93,6 @@ export const testimonals_home = [
     {client_name : "AikoVT" , review : "YumeArc completely understood my character’s soul. The attention to detail was insane, and the process was super smooth!"},
     {client_name : "ErlicOnAir" , review : "The model design captured my lore perfectly. It wasn’t just a drawing—it was a story in motion."},
     {client_name : "Voidcaster" , review : "My lore felt complicated… but they actually made it beautiful.  I’ve never been so excited to see myself as a character."},
-    {client_name : "NyanyaLive" , review : "The chibi panels? TOO cute.  It matched my stream's energy perfectly — I get compliments every day."},
+    {client_name : "NyanyaLive" , review : "The chibi panels? TOO cute.  It matched my stream's energy perfectly I get compliments every day."},
 
 ]

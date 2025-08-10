@@ -18,7 +18,7 @@ const OrderFrom = () => {
                     {/* Home text  */}
                     <div data-aos="fade-in" className='lg:w-1/2 w-full lg:items-start md:items-center pt-10 space-y-12 '>
 
-                        <h1 className=' font-[600]  lg:text-[3.5rem] text-5xl leading-[1.1] text-headingDark'>
+                        <h1 className=' w-full text-left z-20  font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]  text-headingDark font-kaushans'>
                             Wanna place a commission?
 
 

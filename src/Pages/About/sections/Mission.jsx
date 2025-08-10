@@ -4,13 +4,14 @@ import Img5 from '../../../Assets/Images/about/2.png'
 
 const Mission = () => {
     return (
-        <section className='w-full bg-primaryDark text-headingDark pb-20  px-4 sm:px-12 xl:px-64  2xl:px-80  xl:pt-40 flex flex-col justify-center items-center relative min-h-screen gap-y-10'>
+        <section className='w-full bg-primaryDark text-headingDark sm:pb-20  px-4 sm:px-12 xl:px-64  2xl:px-80 sm:py-0 py-6 xl:pt-40 flex flex-col justify-center items-center relative sm:min-h-screen gap-y-10'>
             <span className='w-full h-1/5 absolute bottom-0 z-20 right-0 bg-gradient-to-t from-secondaryDark
                 to-transparent' />
 
             <AOSInitializer />
             <h1 data-aos="flip-up" className='   lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1] w-full text-center font-bold'>
-                Why We Started YummeArc
+                What We Stand For
+
             </h1>
             <p data-aos="fade-up" className='lg:text-xl text-lg text-center mt-6'>
                 At YummeArc, our mission is simple help every VTuber feel truly seen, truly unique.

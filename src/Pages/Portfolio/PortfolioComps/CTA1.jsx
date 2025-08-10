@@ -16,9 +16,9 @@ const CTA1 = () => {
 
             </p>
 
-            <div className=' flex md:flex-row flex-col sm:rounded-md gap-4 md:w-auto w-full text-md xl:text-lg  '>
+            <div className='z-10 flex md:flex-row flex-col sm:rounded-md gap-4 md:w-auto w-full text-md xl:text-lg  '>
                 <button className=' px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'> Request a Commission</button>
-                <button className=' px-8 py-2  font-bold cursor-pointer transition-all duration-300 bg-iconColor  text-headingDark border-[1px] hover:-translate-y-2 border-blackText text-center rounded-md '>Explore Our Services</button>
+                <button className=' px-8 py-2  font-bold cursor-pointer transition-all duration-300   text-headingDark border-[1px] hover:-translate-y-2 border-headingDark text-center rounded-md  '>Explore Our Services</button>
             </div>
 
             <img src={heroImg} alt="" className='absolute right-0 bottom-0 sm:w-96 w-40' />

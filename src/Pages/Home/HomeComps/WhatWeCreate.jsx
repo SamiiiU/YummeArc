@@ -45,13 +45,13 @@ const WhatWeCreate = () => {
             </div>
 
             <div className='w-full flex flex-col gap-y-4 justify-center items-center text-center z-30'>
-                <h1 className='font-semibold text-2xl'>
+                <h1 className='font-bold sm:text-4xl text-2xl text-headingDark'>
                     Have something custom in mind? Let’s make it real together
 
                 </h1>
-                <span className='text-xl bg-buttonPrimary text-headingDark font-semibold px-8 py-2 rounded-md cursor-pointer transition-all duration-300 hover:scale-[105%] hover:drop-shadow-sm'>
+                <button className='px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>
                     Start a Custom Project 💌
-                </span>
+                </button>
             </div>
 
 

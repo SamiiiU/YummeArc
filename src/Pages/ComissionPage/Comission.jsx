@@ -19,7 +19,7 @@ const Comission = () => {
       <Costs/>
       <OrderFrom/>
       <Terms/>
-      <CTA heading={"Start Your Commission"} para={"Tell us about your character, your dream, and how we can bring it to life.<br/>We’ll reply within 48 hours with your quote and next steps!"} cta1={"Start Your Request Form"} />
+      <CTA heading={"Start Your Commission"} para={"Tell us about your character, your dream, and how we can bring it to life.<br/>We’ll reply within 24 hours with your quote and next steps!"} cta1={"Start Your Request Form"} />
       <Footer/>
       
 

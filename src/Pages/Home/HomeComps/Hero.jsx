@@ -30,10 +30,10 @@ const Hero = () => {
 
 
                 <span className='w-full h-full absolute top-0 z-20 right-0 bg-gradient-to-tl from-secondaryDark
-                to-transparent' />
+                to-transparent sm:bg-opacity-80 bg-opacity-50 ' />
 
                 <span className='w-full h-1/5 absolute bottom-0 z-20 right-0 bg-gradient-to-t from-primaryDark
-                to-transparent' />
+                to-transparent sm:bg-opacity-80 bg-opacity-50' />
 
                 <AOSInitializer duration={500} offset={20} />
 
@@ -41,11 +41,11 @@ const Hero = () => {
                     {/* Home text  */}
                     <div data-aos="fade-in" className='lg:w-1/2 w-full lg:items-start md:items-center pt-10 space-y-12 '>
 
-                        <h1 className=' font-[600]  lg:text-[3.5rem] text-5xl leading-[1.1] text-headingDark'>
+                        <h1 className=' font-[600] text-4xl sm:text-5xl lg:text-[3.5rem]  leading-[1.1] text-headingDark'>
                             Custom VTuber Models Made with Emotion & Detail.
 
                         </h1>
-                        <p className='text-xl font-merryWeater'>We create anime-style VTuber characters and stream branding built on story, softness, and charm — every design speaks you.
+                        <p className='text-sm sm:text-xl font-merryWeater'>We create anime-style VTuber characters and stream branding built on story, softness, and charm every design speaks you.
                         </p>
 
                         <div className=' flex md:flex-row flex-col sm:rounded-md gap-4 md:w-auto w-full text-md xl:text-lg  '>

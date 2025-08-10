@@ -12,74 +12,76 @@ const MeetArtist = () => {
               twitter : 'https://x.com/celestiapaisley?s=21',
               twitch : 'https://www.twitch.tv/celestialpaisley',
                discord: "Luoro",
-        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808456/1_pqngnm.jpg' },
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754825301/1_vftjej.png' },
 
 
         { callit: "MIDNIGHT KENSHI",
               twitter : 'https://x.com/Midnight_Kenshi',
               twitch : 'https://www.twitch.tv/celestialpaisley',
                discord: "midnightkenshi",
-        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808457/2_l0grli.jpg' },
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754825302/2_joep1t.png' },
 
         { callit: "HEIDI FELIX",
               twitter : 'https://x.com/heidifelix601',
               twitch : 'https://www.twitch.tv/celestialpaisley',
                discord: "tsukispectra",
-        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808458/3_o7amdf.jpg' },
-
-        { callit: "EMILY JOHNSON:",
-              twitter : 'https://x.com/Emily_Johnson55',
-              twitch : 'https://www.twitch.tv/celestialpaisley',
-               discord: "emily_johnson55",
-        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808458/4_uzvatn.jpg' },
-
-        { callit: "ANGELA WRIGHT",
-              twitter : 'https://x.com/Angela_Wright56',
-              twitch : 'https://www.twitch.tv/celestialpaisley',
-               discord: "angela_wright56",
-        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808460/5_woauld.jpg' },
-
-        { callit: "MIMI NOCTELLE",
-              twitter : 'https://x.com/noctellemimi',
-              twitch : 'https://www.twitch.tv/celestialpaisley',
-               discord: "Luoromimi_noctelle",
-        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808462/6_atrgym.jpg' },
-
-        { callit: "STARRY MUSE",
-              twitter : 'https://x.com/Hey_StarryMuse',
-              twitch : 'https://www.twitch.tv/celestialpaisley',
-               discord: "heystarry",
-        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808465/7_f0o81e.jpg' },
-
-        { callit: "USA LUMINA ",
-              twitter : 'https://x.com/Usa_Lumina4',
-              twitch : 'https://www.twitch.tv/celestialpaisley',
-               discord: "usa_lumina4",
-        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808466/8_t5naiw.jpg' },
-
-        { callit: "SOPHIA BLADE",
-              twitter : 'https://x.com/sophia_blade1',
-              twitch : 'https://www.twitch.tv/celestialpaisley',
-               discord: "sophia_blade1",
-        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808470/9_givwnq.jpg' },
-
-        { callit: "Aurora Lucas",
-              twitter : 'https://x.com/Aurora_Lucas02',
-              twitch : 'https://www.twitch.tv/celestialpaisley',
-               discord: "aurora_lucas",
-        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808471/10_hjzm3o.jpg' },
-
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754825304/3_quq6sh.png' },
+        
         { callit: "AMELIA ZOE",
               twitter : 'https://x.com/AmeliaZ04528482',
               twitch : 'https://www.twitch.tv/celestialpaisley',
                discord: "amelia_zoe",
-        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808475/11_hby5fk.jpg' },
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754825310/4_khf95f.png' },
 
         { callit: "Emma smith",
               twitter : 'https://x.com/celestiapaisley?s=21',
               twitch : 'https://www.twitch.tv/celestialpaisley',
                discord: "emmasmith_",
-        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754808476/12_ydmlbz.jpg' },
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754825323/5_rl8xka.png' },
+
+        { callit: "EMILY JOHNSON:",
+              twitter : 'https://x.com/Emily_Johnson55',
+              twitch : 'https://www.twitch.tv/celestialpaisley',
+               discord: "emily_johnson55",
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754825344/6_izj1db.png' },
+
+        { callit: "ANGELA WRIGHT",
+              twitter : 'https://x.com/Angela_Wright56',
+              twitch : 'https://www.twitch.tv/celestialpaisley',
+               discord: "angela_wright56",
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754825348/7_poxnks.png' },
+
+        { callit: "MIMI NOCTELLE",
+              twitter : 'https://x.com/noctellemimi',
+              twitch : 'https://www.twitch.tv/celestialpaisley',
+               discord: "Luoromimi_noctelle",
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754825324/8_n70c3v.png' },
+
+        { callit: "STARRY MUSE",
+              twitter : 'https://x.com/Hey_StarryMuse',
+              twitch : 'https://www.twitch.tv/celestialpaisley',
+               discord: "heystarry",
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754825363/9_uymfua.png' },
+
+        { callit: "USA LUMINA ",
+              twitter : 'https://x.com/Usa_Lumina4',
+              twitch : 'https://www.twitch.tv/celestialpaisley',
+               discord: "usa_lumina4",
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754825380/10_qqntrd.png' },
+
+        { callit: "SOPHIA BLADE",
+              twitter : 'https://x.com/sophia_blade1',
+              twitch : 'https://www.twitch.tv/celestialpaisley',
+               discord: "sophia_blade1",
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754825332/11_jiek9v.png' },
+
+        { callit: "Aurora Lucas",
+              twitter : 'https://x.com/Aurora_Lucas02',
+              twitch : 'https://www.twitch.tv/celestialpaisley',
+               discord: "aurora_lucas",
+        icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754825341/12_fmdvk3.png' },
+
+        
 
     ]
 
@@ -139,9 +141,7 @@ const MeetArtist = () => {
                                 <BsDiscord size="1.2em" /> {why.discord}
                             </span>
 
-                            <a target='__blank' href={why.twitch} className='flex gap-x-4 items-center hover:text-purple-300'>
-                                <BsTwitch size="1.2em" /> Twitch
-                            </a>
+                            
 
                             <a target='__blank' href={why.twitter} className='flex gap-x-4 items-center hover:text-purple-300'>
                                 <FaXTwitter size="1.2em" />Twitter
