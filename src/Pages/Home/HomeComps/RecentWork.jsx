@@ -4,6 +4,7 @@ import { recentModels, whyYummeArc } from '../../../WebData/HomeData'
 import { FollowerPointerCard } from '../../../components/ui/following-pointer'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 import ShadePurple from '../../../Common/ShadePurple'
+import { Link } from 'react-router-dom'
 
 
 
@@ -51,9 +52,9 @@ const RecentWork = () => {
             </div>
 
             <div className='w-full flex z-20 flex-col gap-y-4 justify-center items-center text-center'>
-                <button className='px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>
+                <Link to={"/portfolio"} className='px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>
                     View Full Portfolio
-                </button>
+                </Link>
                 <h1 className='font-bold sm:text-4xl text-2xl text-headingDark'>
                     Every design we create carries a little bit of your world
 
