@@ -56,12 +56,9 @@ const RecentWork = () => {
                     View Full Portfolio
                 </Link>
                 <h1 className='font-bold sm:text-4xl text-2xl text-headingDark'>
-                    Every design we create carries a little bit of your world
+                    Every design we create carries a little bit of your world <br/>and a whole lot of our care
 
                 </h1>
-                <h2 className='text-xl'>
-                    and a whole lot of our care
-                </h2>
             </div>
 
 

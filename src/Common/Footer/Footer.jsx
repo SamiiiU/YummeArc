@@ -14,7 +14,7 @@ const Footer = () => {
                     {/* Logo image started  */}
                     {/* <img className='w-[5rem]' src="https://upload.wikimedia.org/wikipedia/en/e/eb/JDC_Foundation_Logo.png" alt="Logo " /> */}
                     <Link to="/" >
-                              <img src="https://res.cloudinary.com/dqflexfdy/image/upload/v1754810921/YummeArc-05_nehado.png" alt="yumearc logo" className='sm:w-28 w-20'/></Link>
+                              <img src="https://res.cloudinary.com/dqflexfdy/image/upload/v1755023786/YummeArc-05_e2vbff.png" alt="yumearc logo" className='sm:w-28 w-20'/></Link>
 
                     {/* Logo image done  */}
                     <h1 className='font-bold text-xl '> <i> Where Your Story Becomes a Virtual Star ✨</i></h1>

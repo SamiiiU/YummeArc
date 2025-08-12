@@ -12,8 +12,7 @@ const Hero = () => {
 
         <div className='relative overflow-hidden'>
 
-
-            <div className='w-full xl:h-[37rem] lg:h-[40rem] h-auto bg-secondaryDark text-textDark   px-4 xl:px-28 sm:px-20  2xl:px-80   flex  '>
+            <div className='w-full xl:h-[37rem] lg:h-[40rem] md:min-h-screen  bg-secondaryDark text-textDark   px-4 xl:px-28 sm:px-20  2xl:px-80   flex  '>
                 <div className='px-5  z-40 rounded-md text-center py-4 text-xl absolute bottom-0  right-0 animate-fadeIn font-bold flex items-center gap-x-4'> Scroll To Explore <FaArrowDown /></div>
 
                 {/* <span className='w-full h-full absolute top-0 left-0 z-20  bg-pinkText/50' /> */}
@@ -51,7 +50,7 @@ const Hero = () => {
 
                         <div className=' flex md:flex-row flex-col sm:rounded-md gap-4 md:w-auto w-full text-md xl:text-lg  '>
                             <Link to={"/portfolio"} className=' px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'> View Portfolio</Link>
-                            <button className=' px-8 py-2  font-bold cursor-pointer transition-all duration-300   text-headingDark border-[1px] hover:-translate-y-2 border-headingDark text-center rounded-md '>Start Your Commission</button>
+                            <Link to={"/comission"} className=' px-8 py-2  font-bold cursor-pointer transition-all duration-300   text-headingDark border-[1px] hover:-translate-y-2 border-headingDark text-center rounded-md '>Start Your Commission</Link>
                         </div>
                     </div>
 

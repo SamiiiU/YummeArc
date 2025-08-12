@@ -34,7 +34,7 @@ const MeetArtist = () => {
         icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754825310/4_khf95f.png' },
 
         { callit: "Emma smith",
-              twitter : 'https://x.com/celestiapaisley?s=21',
+              twitter : 'https://x.com/emmasmith100?s=21',
               twitch : 'https://www.twitch.tv/celestialpaisley',
                discord: "emmasmith_",
         icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754825323/5_rl8xka.png' },

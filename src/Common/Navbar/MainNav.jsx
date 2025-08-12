@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 
 import { FaArrowAltCircleUp } from 'react-icons/fa';
-
+import logo from '../../Assets/Images/logo1.png'
 import { ContextAPI } from '../../GlobalProvider/ContextAPI';
 import MobNav from './MobNav';
 import { Link } from 'react-router-dom';
@@ -94,7 +94,7 @@ const MainNav = () => {
           {/* Logo image started  */}
           {/* <Link to="/" className='w-[7%] h-16  px-4  ' style={{ backgroundImage: `url(${"https://upload.wikimedia.org/wikipedia/en/e/eb/JDC_Foundation_Logo.png"})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} /> */}
           <Link to="/" >
-          <img src="https://res.cloudinary.com/dqflexfdy/image/upload/v1754810921/YummeArc-05_nehado.png" alt="yumearc logo" className='w-28'/></Link>
+          <img src={logo} alt="yumearc logo" className='w-28'/></Link>
           {/* Logo image done  */}
 
           <div className='flex justify-center items-center gap-x-6 font-semibold text-headingDark'>

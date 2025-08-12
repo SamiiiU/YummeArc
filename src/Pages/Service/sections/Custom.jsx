@@ -56,9 +56,6 @@ const Custom = () => {
 
             </div>
 
-
-
-
         </div>
 
     )

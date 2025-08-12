@@ -1,6 +1,5 @@
 import React from 'react'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
-import heroImg from '../../../Assets/Images/portfolio/4.png'
 const CTA1 = () => {
     return (
         <section className='w-full bg-secondaryDark text-headingDark pb-10  px-4    flex flex-col  items-center relative  gap-y-10 text-center py-10'>
@@ -12,7 +11,7 @@ const CTA1 = () => {
                 Ready to Make Your <br /> Vision Come to Life?
             </h1>
             <p data-aos="fade-up" className='lg:text-xl text-lg text-center max-w-2xl '>
-                Let’s bring your story, your character, and your vibe to the screen — crafted with heart by the artists at YummeArc.
+                Let’s bring your story, your character, and your vibe to the screen crafted with heart by the artists at YummeArc.
 
             </p>
 
@@ -21,7 +20,7 @@ const CTA1 = () => {
                 <button className=' px-8 py-2  font-bold cursor-pointer transition-all duration-300   text-headingDark border-[1px] hover:-translate-y-2 border-headingDark text-center rounded-md  '>Explore Our Services</button>
             </div>
 
-            <img src={heroImg} alt="" className='absolute right-0 bottom-0 sm:w-96 w-40' />
+            <img src="https://res.cloudinary.com/dqflexfdy/image/upload/v1754812999/cta_lllxtc.png" alt="" className='absolute right-0 bottom-0 sm:w-96 w-40 z-30' />
         </section>
     )
 }
