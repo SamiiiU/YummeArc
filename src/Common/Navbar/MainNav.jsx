@@ -98,8 +98,6 @@ const MainNav = () => {
           {/* Logo image done  */}
 
           <div className='flex justify-center items-center gap-x-6 font-semibold text-headingDark'>
-            
-
             <div className='flex flex-col group items-center'>
               <Link onClick={() => handleCurrPage("Portfolio")} to={"/portfolio"} className='text-lg font-bold z-10 '>Portfolio</Link>
               <span className={`w-full transition-all ${currPage == "Portfolio" ? 'translate-y-0 bg-headingDark' : 'group-hover:translate-y-0 -translate-y-4  group-hover:bg-headingDark bg-transparent'} z-0 py-[2px] rounded-full`}/>

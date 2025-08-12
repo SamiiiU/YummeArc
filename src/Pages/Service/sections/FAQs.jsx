@@ -1,6 +1,7 @@
 import React from 'react'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 import ShadePurple from '../../../Common/ShadePurple'
+import { Link } from 'react-router-dom';
 
 
 const FAQs = () => {
@@ -77,9 +78,9 @@ const FAQs = () => {
 
 
                 <div className=' flex md:flex-row flex-col sm:rounded-md gap-4 md:w-auto w-full text-md xl:text-lg pt-6 z-20'>
-                    <button className=' px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>Commission</button>
+                    <Link to={"/comission"} className=' px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>Commission</Link>
 
-                    <button className=' px-8 py-2 text-white font-semibold cursor-pointer transition-all duration-300  bg-blushPink text-center rounded-md border-[1px] border-white'> View Portfolio</button>
+                    <Link to={"/portfolio"} className=' px-8 py-2 text-white font-semibold cursor-pointer transition-all duration-300  bg-blushPink text-center rounded-md border-[1px] border-white'> View Portfolio</Link>
                 </div>
 
 

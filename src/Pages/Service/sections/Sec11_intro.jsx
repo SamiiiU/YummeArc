@@ -5,7 +5,7 @@ import ShadePurple from '../../../Common/ShadePurple'
 
 const Sec11_intro = () => {
     return (
-        <div className='w-full  z-30 grid lg:grid-cols-2 grid-cols-1 gap-10  min-h-screen  text-textDark bg-secondaryDark relative py-10'>
+        <div className='w-full  z-30 grid lg:grid-cols-2 grid-cols-1 gap-10  md:min-h-screen  text-textDark bg-secondaryDark relative md:py-10'>
             <AOSInitializer />
             {/* shading circle hai na idher sai start  */}
             <ShadePurple className={'-right-20 top-20 bg-gradient-to-r w-72 h-72  opacity-35'} />
@@ -56,7 +56,7 @@ const Sec11_intro = () => {
 
             <div
                 data-aos="fade-top"
-                className="2xl:w-[700px] md:w-[600px] sm:w-[500px] h-full min-h-[26rem]"
+                className="2xl:w-[700px] md:w-[600px] sm:w-[500px] h-full min-h-[26rem] mx-auto"
             >
                 <video
                     src="https://res.cloudinary.com/dqflexfdy/video/upload/v1754819069/WhatsApp_Video_2025-08-08_at_19.16.47_badd7726_ryhbj8.mp4" // apna video URL yahan daal

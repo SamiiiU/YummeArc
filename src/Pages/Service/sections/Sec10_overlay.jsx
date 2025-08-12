@@ -7,7 +7,7 @@ import ShadePurple from '../../../Common/ShadePurple'
 
 const Sec10_overlay = () => {
     return (
-        <div className='w-full  z-30 grid lg:grid-cols-2 grid-cols-1 gap-10  min-h-screen  text-textDark bg-primaryDark relative py-20 sm:p-16 p-4 '>
+        <div className='w-full  z-30 grid lg:grid-cols-2 grid-cols-1 gap-10  md:min-h-screen  text-textDark bg-primaryDark relative md:py-20 sm:p-16 p-4 '>
             <AOSInitializer />
             {/* shading circle hai na idher sai start  */}
             <ShadePurple className={'-right-20 top-20 bg-gradient-to-r w-72 h-72  opacity-35'} />
@@ -20,7 +20,8 @@ const Sec10_overlay = () => {
                 to-transparent' />
  
             <div data-aos="fade-top" className='2xl:w-[700px] md:w-[600px] sm:w-[500px]  h-full min-h-[26rem] order-2 lg:order-1 ' style={{ backgroundImage: `url("https://res.cloudinary.com/dqflexfdy/image/upload/v1754813008/sec10_overlay_qrtsge.jpg")`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
-            <div className='col-span-1  justify-center text-left  flex flex-col  gap-y-6 sm:p-16 p-4 min-h-[24rem]'>
+            <div className='col-span-1  justify-center text-left  flex flex-col  gap-y-6 sm:p-16 p-4 min-h-[24rem] 
+            order-1 lg:order-2'>
 
                 <h1 data-aos="fade-right" className=' font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1] text-headingDark '>
                     Custom Overlay Packs

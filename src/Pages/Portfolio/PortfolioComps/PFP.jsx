@@ -87,7 +87,7 @@ const PFP = () => {
                 <button
                     onClick={handleShowAll}
                     disabled={loading} // disable while loading
-                    className={`px-8 py-2 font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2 
+                    className={`px-8 py-2 font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md  
             ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
                 >
                     {loading ? (
