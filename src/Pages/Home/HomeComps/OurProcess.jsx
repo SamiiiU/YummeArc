@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { our_process } from '../../../WebData/HomeData'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 import bgImage from '../../../Assets/Images/BG/stars.png'
+import { ContextAPI } from '../../../GlobalProvider/ContextAPI'
 
 const OurProcess = () => {
     const [isActive, setIsActive] = useState(null)
+        const { setIsFormOpen} = useContext(ContextAPI)
+    
 
     const handleActive = (onMouse) => {
         setIsActive(onMouse)
@@ -41,7 +44,7 @@ const OurProcess = () => {
                     Have something custom in mind? Let’s make it real together
 
                 </h1>
-                <span className='text-xl bg-buttonPrimary text-headingDark font-semibold px-8 py-2 rounded-md cursor-pointer transition-all duration-300 hover:scale-[105%] hover:drop-shadow-sm'>
+                <span onClick={() => setIsFormOpen(true)} className='text-xl bg-buttonPrimary text-headingDark font-semibold px-8 py-2 rounded-md cursor-pointer transition-all duration-300 hover:scale-[105%] hover:drop-shadow-sm'>
                     Start a Custom Project 💌
                 </span>
             </div>

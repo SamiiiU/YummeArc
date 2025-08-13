@@ -6,6 +6,7 @@ import Portfolio from "./Pages/Portfolio/Portfolio";
 import Comission from "./Pages/ComissionPage/Comission";
 import Service from "./Pages/Service/Service";
 import About from "./Pages/About/About";
+import CommissionForm from "./Common/ComissionForm";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route path="/comission" element={<Comission/>}/>
         <Route path="/service" element={<Service/>}/>
         <Route path="/about" element={<About/>}/>
+        <Route path="/com" element={<CommissionForm/>}/>
+
 
         </>
         

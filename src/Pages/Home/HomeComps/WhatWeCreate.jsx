@@ -1,14 +1,17 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import whyYmmearc from '../../../Assets/Images/HomeImages/WhySecImg.png'
 import { recentModels, weCreate, whyYummeArc } from '../../../WebData/HomeData'
 import { FollowerPointerCard } from '../../../components/ui/following-pointer'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 import ShadePurple from '../../../Common/ShadePurple'
+import { ContextAPI } from '../../../GlobalProvider/ContextAPI'
 
 
 
 const WhatWeCreate = () => {
     const [isActive, setIsActive] = useState(null)
+    const { setIsFormOpen} = useContext(ContextAPI)
+    
 
     const handleActive = (onMouse) => {
         setIsActive(onMouse)
@@ -49,7 +52,7 @@ const WhatWeCreate = () => {
                     Have something custom in mind? Let’s make it real together
 
                 </h1>
-                <button className='px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>
+                <button onClick={() => setIsFormOpen(true)} className='px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>
                     Start a Custom Project 💌
                 </button>
             </div>

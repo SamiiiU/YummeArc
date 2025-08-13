@@ -5,7 +5,7 @@ import { ContextAPI } from '../../../GlobalProvider/ContextAPI'
 
 const Testimonals = () => {
   const [isActive, setIsActive] = useState(null)
-  const { scrwidth } = useContext(ContextAPI)
+  const { scrwidth , setIsFormOpen } = useContext(ContextAPI)
 
   const handleActive = (onMouse) => {
     setIsActive(onMouse)
@@ -76,9 +76,9 @@ const Testimonals = () => {
           Let’s create your identity together.
 
         </h1>
-        <span className='text-xl bg-buttonPrimary text-headingDark font-semibold px-8 py-2 rounded-md cursor-pointer transition-all duration-300 hover:scale-[105%] hover:drop-shadow-sm'>
+        <button onClick={() => setIsFormOpen(true)} className='text-xl bg-buttonPrimary text-headingDark font-semibold px-8 py-2 rounded-md cursor-pointer transition-all duration-300 hover:scale-[105%] hover:drop-shadow-sm'>
           Start a Custom Project
-        </span>
+        </button>
       </div>
 
 

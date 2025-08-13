@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import heroVid from '../../../Assets/Videos/HomeHeroVideo.mp4'
 import heroImg from '../../../Assets/Images/HomeImages/HeroImg.png'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
@@ -6,8 +6,11 @@ import { FaArrowDown } from 'react-icons/fa'
 import ShadePurple from '../../../Common/ShadePurple'
 import Star from '../../../Common/Star'
 import { Link } from 'react-router-dom'
+import { ContextAPI } from '../../../GlobalProvider/ContextAPI'
 
 const Hero = () => {
+        const {isFormOpen , setIsFormOpen} = useContext(ContextAPI)
+    
     return (
 
         <div className='relative overflow-hidden'>
@@ -50,7 +53,7 @@ const Hero = () => {
 
                         <div className=' flex md:flex-row flex-col sm:rounded-md gap-4 md:w-auto w-full text-md xl:text-lg  '>
                             <Link to={"/portfolio"} className=' px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'> View Portfolio</Link>
-                            <Link to={"/comission"} className=' px-8 py-2  font-bold cursor-pointer transition-all duration-300   text-headingDark border-[1px] hover:-translate-y-2 border-headingDark text-center rounded-md '>Start Your Commission</Link>
+                            <button onClick={() => setIsFormOpen(true)} className=' px-8 py-2  font-bold cursor-pointer transition-all duration-300   text-headingDark border-[1px] hover:-translate-y-2 border-headingDark text-center rounded-md '>Start Your Commission</button>
                         </div>
                     </div>
 

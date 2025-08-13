@@ -6,7 +6,8 @@ const GlobalProvider = ({ children }) => {
   const [scrwidth, setWidth] = useState(window.innerWidth);
   const [isLoading, setIsLoading] = useState(false)
   const [currPage, setcurrPage] = useState("Home")
-  const [showImageViewer, setShowImageViewer] = useState(false);
+  const [isFormOpen , setIsFormOpen] = useState(true);
+
 
 
   useEffect(() => {
@@ -26,7 +27,7 @@ const GlobalProvider = ({ children }) => {
       scrwidth,
       isLoading, setIsLoading,
       currPage, setcurrPage,
-      showImageViewer, setShowImageViewer,
+      isFormOpen , setIsFormOpen,
 
     }}>
       {children}

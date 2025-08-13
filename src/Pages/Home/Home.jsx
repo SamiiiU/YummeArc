@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import MainNav from '../../Common/Navbar/MainNav';
 import Hero from './HomeComps/Hero';
 import WhyYummearc from './HomeComps/WhyYummearc';
@@ -10,6 +10,8 @@ import Footer from '../../Common/Footer/Footer';
 import WhatWeCreate from './HomeComps/WhatWeCreate';
 import Heart from './HomeComps/Heart';
 import Loader from '../../components/Loader';
+import CommissionForm from '../../Common/ComissionForm';
+import { ContextAPI } from '../../GlobalProvider/ContextAPI';
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -60,6 +62,7 @@ const Home = () => {
       {loading && <Loader text={"Home"}/>}
 
       <MainNav />
+      <CommissionForm  />
       <Hero />
       <WhyYummearc />
       <WhatWeCreate />
