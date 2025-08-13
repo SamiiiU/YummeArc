@@ -6,7 +6,7 @@ const GlobalProvider = ({ children }) => {
   const [scrwidth, setWidth] = useState(window.innerWidth);
   const [isLoading, setIsLoading] = useState(false)
   const [currPage, setcurrPage] = useState("Home")
-  const [isFormOpen , setIsFormOpen] = useState(true);
+  const [isFormOpen , setIsFormOpen] = useState(false);
 
 
 
