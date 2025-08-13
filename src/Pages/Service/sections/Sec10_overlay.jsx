@@ -10,7 +10,7 @@ const Sec10_overlay = () => {
         const {setIsFormOpen} = useContext(ContextAPI)
     
     return (
-        <div className='w-full  z-30 grid xl:grid-cols-2 grid-cols-1 sm:gap-10   text-textDark bg-primaryDark relative md:py-20 sm:p-16 p-4 '>
+        <div className='w-full px-4  sm:px-20 xl:px-28 3xl:px-80 z-30 grid xl:grid-cols-2 grid-cols-1 sm:gap-10   text-textDark bg-primaryDark relative md:py-20 sm:p-16 p-4 '>
             <AOSInitializer />
             {/* shading circle hai na idher sai start  */}
             <ShadePurple className={'-right-20 top-20 bg-gradient-to-r w-72 h-72  opacity-35'} />

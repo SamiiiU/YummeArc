@@ -44,7 +44,7 @@ const FAQs = () => {
     ];
 
     return (
-        <div className='w-full  z-30 flex md:flex-row flex-col justify-between items-center md:gap-10 gap-4    text-textDark bg-primaryDark relative pt-10'>
+        <div className='w-full px-4  sm:px-20 xl:px-28 3xl:px-80 z-30 flex md:flex-row flex-col justify-between items-center md:gap-10 gap-4    text-textDark bg-primaryDark relative pt-10'>
             <AOSInitializer />
             {/* shading circle hai na idher sai start  */}
             <ShadePurple className={'-right-20 top-20 bg-gradient-to-r w-72 h-72 opacity-20'} />

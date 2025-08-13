@@ -1,31 +1,30 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, lazy, Suspense } from 'react';
 import MainNav from '../../Common/Navbar/MainNav';
-import Hero from './HomeComps/Hero';
-import WhyYummearc from './HomeComps/WhyYummearc';
-import RecentWork from './HomeComps/RecentWork';
-import OurProcess from './HomeComps/OurProcess';
-import Testimonals from './HomeComps/Testimonals';
-import CTA from '../../Common/CTAs/CTA';
-import Footer from '../../Common/Footer/Footer';
-import WhatWeCreate from './HomeComps/WhatWeCreate';
-import Heart from './HomeComps/Heart';
 import Loader from '../../components/Loader';
-import CommissionForm from '../../Common/ComissionForm';
 import { ContextAPI } from '../../GlobalProvider/ContextAPI';
 
+const Hero = lazy(() => import('./HomeComps/Hero'));
+const WhyYummearc = lazy(() => import('./HomeComps/WhyYummearc'));
+const RecentWork = lazy(() => import('./HomeComps/RecentWork'));
+const OurProcess = lazy(() => import('./HomeComps/OurProcess'));
+const Testimonals = lazy(() => import('./HomeComps/Testimonals'));
+const CTA = lazy(() => import('../../Common/CTAs/CTA'));
+const Footer = lazy(() => import('../../Common/Footer/Footer'));
+const WhatWeCreate = lazy(() => import('./HomeComps/WhatWeCreate'));
+const Heart = lazy(() => import('./HomeComps/Heart'));
+const CommissionForm = lazy(() => import('../../Common/ComissionForm'));
+
 const Home = () => {
-  const {loading, setLoading} = useContext(ContextAPI);
+  const { loading, setLoading } = useContext(ContextAPI);
 
   useEffect(() => {
-    // Scroll to top when this page mounts
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    // Check if all images are loaded
     const images = document.images;
     let loadedCount = 0;
 
     if (images.length === 0) {
-      setLoading(false); // No images
+      setLoading(false);
       return;
     }
 
@@ -41,7 +40,7 @@ const Home = () => {
         loadedCount++;
       } else {
         img.addEventListener('load', handleImageLoad);
-        img.addEventListener('error', handleImageLoad); // avoid stuck loader on error
+        img.addEventListener('error', handleImageLoad);
       }
     }
 
@@ -59,24 +58,26 @@ const Home = () => {
 
   return (
     <div className="w-full font-inter overflow-x-hidden">
-      {loading && <Loader text={"Home"}/>}
+      {loading && <Loader text={"Home"} />}
 
       <MainNav />
-      <CommissionForm  />
-      <Hero />
-      <WhyYummearc />
-      <WhatWeCreate />
-      <RecentWork />
-      <Heart />
-      <OurProcess />
-      <Testimonals />
-      <CTA
-        heading={"Ready to Start Your VTuber Journey?"}
-        para={"Whether it’s your first model or a full rebrand we’re here to design with you, not just for you."}
-        cta1={"Start a Commission"}
-        cta2={"Contact Us"}
-      />
-      <Footer />
+      <Suspense fallback={<Loader text="Loading section..." />}>
+        <CommissionForm />
+        <Hero />
+        <WhyYummearc />
+        <WhatWeCreate />
+        <RecentWork />
+        <Heart />
+        <OurProcess />
+        <Testimonals />
+        <CTA
+          heading={"Ready to Start Your VTuber Journey?"}
+          para={"Whether it’s your first model or a full rebrand we’re here to design with you, not just for you."}
+          cta1={"Start a Commission"}
+          cta2={"Contact Us"}
+        />
+        <Footer />
+      </Suspense>
     </div>
   );
 };

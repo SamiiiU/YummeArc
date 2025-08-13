@@ -96,27 +96,27 @@ const MainNav = () => {
         <div className={`w-full fixed font-mPlus  flex justify-between items-center sm:px-28  2xl:px-80 px-4 py-4  z-50 ${isVisible ? 'bg-secondaryDark' : 'bg-secondaryDark'} transition-all text-headingDark` }>
           {/* Logo image started  */}
     
-          <span onClick={() => handleCurrPage("Home" , "/")}>
+          <span className='cursor-pointer' onClick={() => handleCurrPage("Home" , "/")}>
           <img src={logo} alt="yumearc logo" className='w-28'/>
           </span>
           {/* Logo image done  */}
 
-          <div className='flex justify-center items-center gap-x-6 font-semibold text-headingDark'>
-            <div className='flex flex-col group items-center'>
+          <div className='flex justify-center items-center gap-x-6 font-semibold text-headingDark '>
+            <div className='flex flex-col group items-center cursor-pointer'>
               <h1 onClick={() => handleCurrPage("Portfolio" , "/portfolio")}  className='text-lg font-bold z-10 '>Portfolio</h1>
               <span className={`w-full transition-all ${currPage == "Portfolio" ? 'translate-y-0 bg-headingDark' : 'group-hover:translate-y-0 -translate-y-4  group-hover:bg-headingDark bg-transparent'} z-0 py-[2px] rounded-full`}/>
             </div>
-            <div className='flex flex-col group items-center'>
+            <div className='flex flex-col group items-center cursor-pointer'>
               <h1 onClick={() => handleCurrPage("About" , "/about")} className='text-lg font-bold z-10 '>About</h1>
               <span className={`w-full transition-all ${currPage == "About" ? 'translate-y-0 bg-headingDark' : 'group-hover:translate-y-0 -translate-y-4  group-hover:bg-headingDark bg-transparent'} z-0 py-[2px] rounded-full`} />
             </div>
 
-            <div className='flex flex-col group items-center'>
+            <div className='flex flex-col group items-center cursor-pointer'>
               <h1 onClick={() => handleCurrPage("Service" , "/service")} className='text-lg font-bold z-10 '>Services</h1>
               <span className={`w-full transition-all ${currPage == "Service" ? 'translate-y-0 bg-headingDark' : 'group-hover:translate-y-0 -translate-y-4  group-hover:bg-headingDark bg-transparent'} z-0 py-[2px] rounded-full`} />
             </div>
 
-            <div className='flex flex-col group items-center'>
+            <div className='flex flex-col group items-center cursor-pointer'>
               <h1 onClick={() => handleCurrPage("Comission" , "/comission")} className='text-lg font-bold z-10 '>Comission</h1>
               <span className={`w-full transition-all ${currPage == "Comission" ? 'translate-y-0 bg-headingDark' : 'group-hover:translate-y-0 -translate-y-4  group-hover:bg-headingDark bg-transparent'} z-0 py-[2px] rounded-full`} />
             </div>

@@ -9,7 +9,7 @@ import { ContextAPI } from '../../../GlobalProvider/ContextAPI'
 const CTA = () => {
     const {setIsFormOpen} = useContext(ContextAPI)
     return (
-        <div className='w-full  z-30 flex md:flex-row flex-col justify-between items-center gap-10   text-textDark bg-secondaryDark relative py-20'>
+        <div className='w-full px-4  sm:px-20 xl:px-28 3xl:px-80 z-30 flex md:flex-row flex-col justify-between items-center gap-10   text-textDark bg-secondaryDark relative py-20'>
             <AOSInitializer />
             {/* shading circle hai na idher sai start  */}
             <ShadePurple className={'-right-20 top-20 bg-gradient-to-r w-72 h-72'} />

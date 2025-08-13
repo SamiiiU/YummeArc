@@ -1,77 +1,78 @@
-import React, { useContext, useEffect } from 'react'
-import MainNav from '../../Common/Navbar/MainNav'
-import Hero from './PortfolioComps/Hero'
-import Footer from '../../Common/Footer/Footer'
-import Speak from './PortfolioComps/Speak'
-import Stream from './PortfolioComps/Stream'
-import CTA1 from './PortfolioComps/CTA1'
-import Emotes from './PortfolioComps/Emotes'
-import ArtScenes from './PortfolioComps/ArtScenes'
-import PFP from './PortfolioComps/PFP'
-import Loader from '../../components/Loader'
-import CommissionForm from '../../Common/ComissionForm'
-import { ContextAPI } from '../../GlobalProvider/ContextAPI'
+import React, { useContext, useEffect, Suspense, lazy } from 'react';
+import Loader from '../../components/Loader';
+import { ContextAPI } from '../../GlobalProvider/ContextAPI';
+
+// ✅ Lazy load components
+const MainNav = lazy(() => import('../../Common/Navbar/MainNav'));
+const Hero = lazy(() => import('./PortfolioComps/Hero'));
+const Speak = lazy(() => import('./PortfolioComps/Speak'));
+const Stream = lazy(() => import('./PortfolioComps/Stream'));
+const CTA1 = lazy(() => import('./PortfolioComps/CTA1'));
+const Emotes = lazy(() => import('./PortfolioComps/Emotes'));
+const ArtScenes = lazy(() => import('./PortfolioComps/ArtScenes'));
+const PFP = lazy(() => import('./PortfolioComps/PFP'));
+const Footer = lazy(() => import('../../Common/Footer/Footer'));
+const CommissionForm = lazy(() => import('../../Common/ComissionForm'));
 
 const Portfolio = () => {
-    const {loading, setLoading} = useContext(ContextAPI);
-  
-  
-    useEffect(() => {
-      // Scroll to top
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-  
-      // Wait for all images to load
-      const images = document.images;
-      let loadedCount = 0;
-  
-      if (images.length === 0) {
-        setLoading(false);
-        return;
-      }
-  
-      const handleImageLoad = () => {
-        loadedCount++;
-        if (loadedCount === images.length) {
-          setLoading(false);
-        }
-      };
-  
-      for (let img of images) {
-        if (img.complete) {
-          loadedCount++;
-        } else {
-          img.addEventListener('load', handleImageLoad);
-          img.addEventListener('error', handleImageLoad);
-        }
-      }
-  
+  const { loading, setLoading } = useContext(ContextAPI);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    const images = document.images;
+    let loadedCount = 0;
+
+    if (images.length === 0) {
+      setLoading(false);
+      return;
+    }
+
+    const handleImageLoad = () => {
+      loadedCount++;
       if (loadedCount === images.length) {
         setLoading(false);
       }
-  
-      return () => {
-        for (let img of images) {
-          img.removeEventListener('load', handleImageLoad);
-          img.removeEventListener('error', handleImageLoad);
-        }
-      };
-    }, []);
+    };
+
+    for (let img of images) {
+      if (img.complete) {
+        loadedCount++;
+      } else {
+        img.addEventListener('load', handleImageLoad);
+        img.addEventListener('error', handleImageLoad);
+      }
+    }
+
+    if (loadedCount === images.length) {
+      setLoading(false);
+    }
+
+    return () => {
+      for (let img of images) {
+        img.removeEventListener('load', handleImageLoad);
+        img.removeEventListener('error', handleImageLoad);
+      }
+    };
+  }, [setLoading]);
+
   return (
-    <div className='w-full   font-inter overflow-x-hidden'>
-      {loading && <Loader text={"Portfolio"}/>} {/* ✅ Loader visible until images/content load */}
-      <MainNav/>
-      <CommissionForm/>
-      <Hero/>
-      <Speak/>
-      <Stream/>
-      <Emotes/>
-      <ArtScenes/>
-      <PFP/>
-      <CTA1/>
-      <Footer/>
-
+    <div className="w-full font-inter overflow-x-hidden">
+      {loading && <Loader text="Portfolio" />}
+      <Suspense fallback={<Loader text="Loading..." />}>
+        <MainNav />
+        <CommissionForm />
+        <Hero />
+        <Speak />
+        <Stream />
+        <Emotes />
+        <ArtScenes />
+        <PFP />
+        <CTA1 />
+        <Footer />
+      </Suspense>
     </div>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

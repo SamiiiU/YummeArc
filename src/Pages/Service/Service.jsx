@@ -1,31 +1,32 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { Suspense, useContext, useEffect } from 'react';
 import MainNav from '../../Common/Navbar/MainNav';
-import Hero from './sections/Hero';
 import Footer from '../../Common/Footer/Footer';
-import Custom from './sections/Custom';
-import Custom3D from './sections/Custom3D';
-import Chibbi from './sections/Chibbi';
-import Sec5_vtuber from './sections/Sec5_vtuber';
-import Sec6_lorebased from './sections/Sec6_lorebased';
-import Sec7_art2d from './sections/Sec7_art2d';
-import Sec8_pfp from './sections/Sec8_pfp';
-import Sec9_emote from './sections/Sec9_emote';
-import Sec10_overlay from './sections/Sec10_overlay';
-import Sec11_intro from './sections/Sec11_intro';
-import FAQs from './sections/FAQs';
-import CTA from './sections/CTA';
-import Loader from '../../components/Loader'; // ✅ Make sure loader is imported
+import Loader from '../../components/Loader';
 import CommissionForm from '../../Common/ComissionForm';
 import { ContextAPI } from '../../GlobalProvider/ContextAPI';
 
+// ✅ Lazy load sections
+const Hero = React.lazy(() => import('./sections/Hero'));
+const Custom = React.lazy(() => import('./sections/Custom'));
+const Custom3D = React.lazy(() => import('./sections/Custom3D'));
+const Chibbi = React.lazy(() => import('./sections/Chibbi'));
+const Sec5_vtuber = React.lazy(() => import('./sections/Sec5_vtuber'));
+const Sec6_lorebased = React.lazy(() => import('./sections/Sec6_lorebased'));
+const Sec7_art2d = React.lazy(() => import('./sections/Sec7_art2d'));
+const Sec8_pfp = React.lazy(() => import('./sections/Sec8_pfp'));
+const Sec9_emote = React.lazy(() => import('./sections/Sec9_emote'));
+const Sec10_overlay = React.lazy(() => import('./sections/Sec10_overlay'));
+const Sec11_intro = React.lazy(() => import('./sections/Sec11_intro'));
+const FAQs = React.lazy(() => import('./sections/FAQs'));
+const CTA = React.lazy(() => import('./sections/CTA'));
+
 const Service = () => {
-    const {loading, setLoading} = useContext(ContextAPI);
-  
+  const { loading, setLoading } = useContext(ContextAPI);
+
   useEffect(() => {
-    // Always scroll to top on page load
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    // Show loader for a short duration (e.g., 1.2s)
+    // Keep loader for a short time before rendering sections
     const timer = setTimeout(() => {
       setLoading(false);
     }, 1200);
@@ -35,23 +36,28 @@ const Service = () => {
 
   return (
     <div className="w-full font-inter overflow-x-hidden">
-      {loading && <Loader text={"Services"}/>} {/* ✅ Loader visible until images/content load */}
+      {loading && <Loader text={"Services"} />}
 
       <MainNav />
-      <CommissionForm/>
-      <Hero />
-      <Custom />
-      <Custom3D />
-      <Chibbi />
-      <Sec5_vtuber />
-      <Sec6_lorebased />
-      <Sec7_art2d />
-      <Sec8_pfp />
-      <Sec9_emote />
-      <Sec10_overlay />
-      <Sec11_intro />
-      <FAQs />
-      <CTA />
+      <CommissionForm />
+
+      {/* ✅ Suspense wrapper for lazy loaded sections */}
+      <Suspense fallback={<Loader text="Loading Section..." />}>
+        <Hero />
+        <Custom />
+        <Custom3D />
+        <Chibbi />
+        <Sec5_vtuber />
+        <Sec6_lorebased />
+        <Sec7_art2d />
+        <Sec8_pfp />
+        <Sec9_emote />
+        <Sec10_overlay />
+        <Sec11_intro />
+        <FAQs />
+        <CTA />
+      </Suspense>
+
       <Footer />
     </div>
   );
