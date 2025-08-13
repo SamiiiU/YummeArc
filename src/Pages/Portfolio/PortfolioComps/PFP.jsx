@@ -3,7 +3,9 @@ import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 import { ContextAPI } from '../../../GlobalProvider/ContextAPI'
 
 const PFP = () => {
-    const { showImageViewer, setShowImageViewer } = useContext(ContextAPI);
+    
+    const { setIsFormOpen} = useContext(ContextAPI);
+    const [ showImageViewer, setShowImageViewer ] = useState()
     const [isActive, setIsActive] = useState(null)
 
     const [showModal, setShowModal] = useState(0);
@@ -64,7 +66,7 @@ const PFP = () => {
                 Stand out in every stream Your face, your vibe, your story
             </p>
 
-            <button className='  px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>Request Your Own</button>
+            <button onClick={() => setIsFormOpen(true)} className='  px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md md:hover:-translate-y-2'>Request Your Own</button>
 
 
             <div className='w-full grid grid-cols-2 lg:grid-cols-3  xl:gap-8 lg:gap-6 gap-4 mt-6 '>

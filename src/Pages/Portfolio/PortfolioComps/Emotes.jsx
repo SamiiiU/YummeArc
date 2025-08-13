@@ -1,8 +1,11 @@
 import React, { useContext, useState } from 'react';
 import AOSInitializer from '../../../Common/AOS/AOSInitializer';
 import { RxCross1 } from 'react-icons/rx'; // optional close icon
+import { ContextAPI } from '../../../GlobalProvider/ContextAPI';
 
 const Emotes = () => {
+  const {setIsFormOpen} = useContext(ContextAPI)
+  
   const [showImageViewer, setShowImageViewer] = useState()
   const [isActive, setIsActive] = useState(null);
 
@@ -91,7 +94,7 @@ const Emotes = () => {
                 Bring Your Community to Life with Unique, Expressive Emotes and Badges.
             </p>
 
-      <button className="px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2">
+      <button onClick={() => setIsFormOpen(true)} className="px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md sm:hover:-translate-y-2">
         Request Your Own
       </button>
 

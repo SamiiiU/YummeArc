@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import MainNav from '../../Common/Navbar/MainNav'
 import Hero from './PortfolioComps/Hero'
 import Footer from '../../Common/Footer/Footer'
@@ -9,9 +9,12 @@ import Emotes from './PortfolioComps/Emotes'
 import ArtScenes from './PortfolioComps/ArtScenes'
 import PFP from './PortfolioComps/PFP'
 import Loader from '../../components/Loader'
+import CommissionForm from '../../Common/ComissionForm'
+import { ContextAPI } from '../../GlobalProvider/ContextAPI'
 
 const Portfolio = () => {
-   const [loading, setLoading] = useState(true);
+    const {loading, setLoading} = useContext(ContextAPI);
+  
   
     useEffect(() => {
       // Scroll to top
@@ -57,6 +60,7 @@ const Portfolio = () => {
     <div className='w-full   font-inter overflow-x-hidden'>
       {loading && <Loader text={"Portfolio"}/>} {/* ✅ Loader visible until images/content load */}
       <MainNav/>
+      <CommissionForm/>
       <Hero/>
       <Speak/>
       <Stream/>

@@ -93,9 +93,15 @@ const MeetArtist = () => {
 
     const [isActiveMore, setIsActiveMore] = useState(null);
     const [showAll, setShowAll] = useState(false);
-    const handleShowAll = () => {
-        setShowAll(!showAll)
-    }
+    const [loading, setLoading] = useState(false);
+  
+      const handleShowAll = () => {
+          setLoading(true); // loader start
+          setTimeout(() => {
+              setShowAll(!showAll);
+              setLoading(false); // loader stop
+          }, 1000); // 1 sec delay simulate (API call ka time)
+      };
 
     // Slice data if not showing all
     const visibleArtists = showAll ? meetArtist : meetArtist.slice(0, 6);
@@ -137,12 +143,11 @@ const MeetArtist = () => {
                                 {why.callit}
                             </h1>
 
-                            <span className='flex gap-x-4 items-center hover:text-purple-300'>
+                            <h1 className='flex gap-x-4 items-center hover:text-purple-300'>
                                 <BsDiscord size="1.2em" /> {why.discord}
-                            </span>
+                            </h1>
 
                             
-
                             <a target='__blank' href={why.twitter} className='flex gap-x-4 items-center hover:text-purple-300'>
                                 <FaXTwitter size="1.2em" />Twitter
                             </a>
@@ -151,14 +156,42 @@ const MeetArtist = () => {
                 ))}
             </div>
             
-                <div className="w-full flex justify-center mt-8 z-20">
-                    <button
-                        onClick={() => handleShowAll()}
-                        className="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition-all duration-300 cursor-pointer"
-                    >
-                        {showAll ? 'View Less' : 'View More'}
-                    </button>
-                </div>
+             <div className="w-full flex justify-center mt-8 z-20">
+                <button
+                    onClick={handleShowAll}
+                    disabled={loading} // disable while loading
+                    className={`px-8 py-2 font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md  
+            ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
+                >
+                    {loading ? (
+                        <span className="flex items-center gap-2">
+                            <svg
+                                className="animate-spin h-5 w-5 text-headingDark"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                            >
+                                <circle
+                                    className="opacity-25"
+                                    cx="12"
+                                    cy="12"
+                                    r="10"
+                                    stroke="currentColor"
+                                    strokeWidth="4"
+                                ></circle>
+                                <path
+                                    className="opacity-75"
+                                    fill="currentColor"
+                                    d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                                ></path>
+                            </svg>
+                            Loading...
+                        </span>
+                    ) : (
+                        showAll ? 'View Less' : 'View More'
+                    )}
+                </button>
+            </div>
             
             <div className='z-20 p-8 text-center space-y-3 rounded-lg bg-pink-950 bg-opacity-10 mt-10 border-[1px] border-headingDark'>
                 <h1 className='text-xl '><span className=' font-bold '>Important Note : </span> These are the only official artists working under YummeArc.

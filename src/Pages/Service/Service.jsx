@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import MainNav from '../../Common/Navbar/MainNav';
 import Hero from './sections/Hero';
 import Footer from '../../Common/Footer/Footer';
@@ -15,10 +15,12 @@ import Sec11_intro from './sections/Sec11_intro';
 import FAQs from './sections/FAQs';
 import CTA from './sections/CTA';
 import Loader from '../../components/Loader'; // ✅ Make sure loader is imported
+import CommissionForm from '../../Common/ComissionForm';
+import { ContextAPI } from '../../GlobalProvider/ContextAPI';
 
 const Service = () => {
-  const [loading, setLoading] = useState(true);
-
+    const {loading, setLoading} = useContext(ContextAPI);
+  
   useEffect(() => {
     // Always scroll to top on page load
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -36,6 +38,7 @@ const Service = () => {
       {loading && <Loader text={"Services"}/>} {/* ✅ Loader visible until images/content load */}
 
       <MainNav />
+      <CommissionForm/>
       <Hero />
       <Custom />
       <Custom3D />

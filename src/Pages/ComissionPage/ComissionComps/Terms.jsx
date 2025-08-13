@@ -42,7 +42,7 @@ const Terms = () => {
             <p data-aos="fade-up" className='text-center lg:text-lg text-sm w-full my-6  '>Terms & Important Notes of your Commission Page, written in your YummeArc voice and matching your theme
             </p>
 
-            <div className='w-full grid  md:grid-cols-2 grid-cols-1 gap-8 mt-6'>
+            <div className='w-full grid  lg:grid-cols-2 grid-cols-1 gap-8 mt-6'>
                 {process.map((process, idx) => (
                     <div data-aos="fade-up" key={idx} onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)}
                         style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }} className='col-span-1 row-span-1 p-4 flex sm:flex-row flex-col rounded-md transition-all cursor-pointer sm:gap-y-2 gap-y-6 text-headingDark sm:items-center'>

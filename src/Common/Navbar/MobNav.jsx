@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { LuMenu } from 'react-icons/lu'
 import { RxCross2 } from 'react-icons/rx'
 import { Link, useNavigate } from 'react-router-dom'
 import logo from '../../Assets/Images/logo1.png'
+import { ContextAPI } from '../../GlobalProvider/ContextAPI'
 
 const MobNav = () => {
+    const { setLoading } = useContext(ContextAPI);
+  
   const [isOpen , setIsOpen] = useState(false)
   const navigate = useNavigate()
 
@@ -14,6 +17,7 @@ const MobNav = () => {
 
   const navigateTo = (page) => {
     setIsOpen(false)
+    setLoading(true)
     navigate(page)
   }
   return (

@@ -13,6 +13,7 @@ import img12 from '../../../Assets/Images/portfolio/2d & 3D Models/F12.png'
 import { ContextAPI } from '../../../GlobalProvider/ContextAPI'
 
 const Speak = () => {
+    const {setIsFormOpen} = useContext(ContextAPI)
     const [showImageViewer, setShowImageViewer] = useState()
     const [isActive, setIsActive] = useState(null)
 
@@ -51,15 +52,15 @@ const Speak = () => {
 
     const [showAll, setShowAll] = useState(false);
     const [loading, setLoading] = useState(false);
-      
-          const handleShowAll = () => {
-              setLoading(true); // loader start
-              setTimeout(() => {
-                  setShowAll(!showAll);
-                  setLoading(false); // loader stop
-              }, 1000); // 1 sec delay simulate (API call ka time)
-          };
-    
+
+    const handleShowAll = () => {
+        setLoading(true); // loader start
+        setTimeout(() => {
+            setShowAll(!showAll);
+            setLoading(false); // loader stop
+        }, 1000); // 1 sec delay simulate (API call ka time)
+    };
+
     // Slice data if not showing all
     const visibleWork = showAll ? speaker : speaker.slice(0, 6);
 
@@ -78,7 +79,7 @@ const Speak = () => {
                 reflection of its creator. We let the art do most of the talking.
             </p>
 
-            <button className='  px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>Request Your Own</button>
+            <button onClick={() => setIsFormOpen(true)} className=' my-6 px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md sm:hover:-translate-y-2'>Request Your Own</button>
 
 
             <div className='w-full grid grid-cols-2 lg:grid-cols-3  xl:gap-8 lg:gap-6 gap-4 mt-6 '>
@@ -90,7 +91,7 @@ const Speak = () => {
                             <div className='w-full h-full ' style={{ backgroundImage: `url(${speaker.icon})`, backgroundSize: 'cover', backgroundPosition: 'top' }}></div>
                         </div>
 
-                            <h1 className=' lg:text-lg text-sm  sm:p-4 p-2 text-center'>{speaker.callit}</h1>
+                        <h1 className=' lg:text-lg text-sm  sm:p-4 p-2 text-center'>{speaker.callit}</h1>
                     </div>
                 ))}
             </div>

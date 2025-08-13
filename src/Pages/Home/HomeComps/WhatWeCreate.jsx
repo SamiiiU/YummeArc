@@ -17,7 +17,7 @@ const WhatWeCreate = () => {
         setIsActive(onMouse)
     }
     return (
-        <div className='w-full px-4 bg-secondaryDark sm:px-28  2xl:px-80  flex flex-col  items-center  relative space-y-20
+        <div className='w-full px-4  sm:px-20 xl:px-28 3xl:px-80 bg-secondaryDark   flex flex-col  items-center  relative space-y-20
          py-10 text-textDark'>
             <AOSInitializer />
 

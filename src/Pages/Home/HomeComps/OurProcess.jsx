@@ -13,8 +13,8 @@ const OurProcess = () => {
         setIsActive(onMouse)
     }
     return (
-        <div className='w-full  px-4 sm:px-28  2xl:px-80  flex flex-col  items-center   relative 
-          py-20 bg-primaryDark text-textDark' >
+        <div className='w-full  px-4  sm:px-20 xl:px-28 3xl:px-80  flex flex-col  items-center   relative 
+          py-20 bg-primaryDark text-textDark ' >
             <AOSInitializer />
 
             <span className='w-full h-1/5 absolute bottom-0 z-0 right-0 bg-gradient-to-t from-secondaryDark

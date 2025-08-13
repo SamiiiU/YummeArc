@@ -1,6 +1,10 @@
-import React from 'react'
+import { useContext } from 'react'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
+import { ContextAPI } from '../../../GlobalProvider/ContextAPI'
+import { Link } from 'react-router-dom'
+
 const CTA1 = () => {
+    const {setIsFormOpen} = useContext(ContextAPI)
     return (
         <section className='w-full bg-secondaryDark text-headingDark pb-10  px-4    flex flex-col  items-center relative  gap-y-10 text-center py-10'>
             <span className='w-full h-1/5 absolute bottom-0 z-0 right-0 bg-gradient-to-t from-primaryDark
@@ -16,11 +20,11 @@ const CTA1 = () => {
             </p>
 
             <div className='z-10 flex md:flex-row flex-col sm:rounded-md gap-4 md:w-auto w-full text-md xl:text-lg  '>
-                <button className=' px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'> Request a Commission</button>
-                <button className=' px-8 py-2  font-bold cursor-pointer transition-all duration-300   text-headingDark border-[1px] hover:-translate-y-2 border-headingDark text-center rounded-md  '>Explore Our Services</button>
+                <button onClick={() =>  setIsFormOpen(true)} className=' px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md sm:hover:-translate-y-2'> Request a Commission</button>
+                <Link to={"/service"} className=' px-8 py-2  font-bold cursor-pointer transition-all duration-300   text-headingDark border-[1px] sm:hover:-translate-y-2 border-headingDark text-center rounded-md  '>Explore Our Services</Link>
             </div>
 
-            <img src="https://res.cloudinary.com/dqflexfdy/image/upload/v1754812999/cta_lllxtc.png" alt="" className='absolute right-0 bottom-0 sm:w-96 w-40 z-30' />
+            <img src="https://res.cloudinary.com/dqflexfdy/image/upload/v1754812999/cta_lllxtc.png" alt="" className='absolute right-0 bottom-0 2xl:w-96 w-40 z-30' />
         </section>
     )
 }

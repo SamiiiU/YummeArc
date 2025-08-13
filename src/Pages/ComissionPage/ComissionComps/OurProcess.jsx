@@ -19,7 +19,7 @@ const OurProcess = () => {
 
     ]
     return (
-        <div className=' bg-primaryDark flex flex-col items-center px-4 sm:px-28  2xl:px-80 py-10  min-h-screen text-textDark  relative'>
+        <div className=' bg-primaryDark flex flex-col items-center px-4 sm:px-28  2xl:px-80 py-10   text-textDark  relative'>
             <AOSInitializer />
             {/* shading circle hai na idher sai start  */}
 
@@ -28,14 +28,14 @@ const OurProcess = () => {
             <span className='w-full h-1/5 absolute bottom-0 z-0 right-0 bg-gradient-to-t from-secondaryDark
                 to-transparent ' />
             <h1 className='w-full text-left z-20  font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]  text-headingDark font-kaushans'>How to Order a Custom Piece</h1>
-            <p data-aos="fade-up" className='text-center lg:text-lg text-sm w-full my-6  '>Whether it's a Live2D model, emotes, or full stream setup — here’s how the magic begins:
+            <p data-aos="fade-up" className='text-center lg:text-lg text-sm w-full my-6  '>Whether it's a Live2D model, emotes, or full stream setup here’s how the magic begins:
             </p>
 
-            <div className='w-full grid  md:grid-cols-2 grid-cols-1 gap-8 mt-6'>
+            <div className='w-full grid  lg:grid-cols-2 grid-cols-1 gap-8 mt-6'>
                 {process.map((process, idx) => (
                     <div data-aos="fade-up" key={idx} onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)}
                         style={{ boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }} className='col-span-1 row-span-1 p-4 flex rounded-md transition-all cursor-pointer  text-headingDark items-center'>
-                        <span className=' sm:h-full text-2xl sm:text-5xl bg-buttonPrimary/20 rounded-full p-4'>
+                        <span className='  text-2xl sm:text-5xl bg-buttonPrimary/20 rounded-full p-4'>
                             {process.icon}
                         </span>
                         <div className='px-5'>

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const Heart = () => {
     return (
-        <div className='w-full  z-30 grid lg:grid-cols-2 grid-cols-1 gap-10    text-textDark bg-secondaryDark relative pt-10'>
+        <div className='w-full  z-30 grid lg:grid-cols-2 grid-cols-1 gap-10    text-textDark bg-secondaryDark relative pt-10  px-4  sm:px-20 xl:px-28 3xl:px-80'>
             <AOSInitializer />
             {/* shading circle hai na idher sai start  */}
             <ShadePurple className={'-right-20 top-20 bg-gradient-to-r w-72 h-72'} />

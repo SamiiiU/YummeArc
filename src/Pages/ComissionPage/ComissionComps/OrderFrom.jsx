@@ -9,7 +9,7 @@ const OrderFrom = () => {
         <div className='relative overflow-hidden'>
 
 
-            <div className='w-full xl:h-[37rem] lg:h-[40rem] h-auto bg-primaryDark text-textDark   px-4 xl:px-28 sm:px-20  2xl:px-80   flex  min-h-screen'>
+            <div className='w-full  h-auto bg-primaryDark text-textDark   px-4 xl:px-28 sm:px-20  2xl:px-80   flex  '>
                 <span className='w-full h-1/5 absolute bottom-0 z-20 right-0 bg-gradient-to-t from-secondaryDark
                 to-transparent ' />
                 <AOSInitializer duration={500} offset={20} />
@@ -20,26 +20,31 @@ const OrderFrom = () => {
 
                         <h1 className=' w-full text-left z-20  font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]  text-headingDark font-kaushans'>
                             Wanna place a commission?
-
-
-
                         </h1>
                         <p className='text-xl font-merryWeater'>We handle all commission requests through Twitter DMs or Discord!
-                            That’s where we’ll chat, plan, and send all previews and updates. 💬💕
-                            <br/> <br/>
-                            Just hit us up — we’re friendly, responsive, and super excited to hear your idea!
+                            That’s where we’ll chat, plan, and send all previews and updates 💬💕
+                            <br /> <br />
+                            Just hit us up we’re friendly, responsive, and super excited to hear your idea!
 
 
                         </p>
 
                         <div className=' flex md:flex-row flex-col sm:rounded-md gap-4 md:w-auto w-full text-md xl:text-lg  '>
-                            <button className=' px-8 py-2  font-bold cursor-pointer transition-all duration-300 bg-iconColor  text-blackText border-[1px] hover:-translate-y-2 border-blackText text-center rounded-md '> Message on Twitter </button>
+                            <a
+                                href="https://x.com/yumearcstudio?s=21"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className='px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md sm:hover:-translate-y-2'> Message on Twitter </a>
 
-                            <button className=' px-8 py-2  font-bold cursor-pointer transition-all duration-300 bg-iconColor  text-blackText border-[1px] hover:-translate-y-2 border-blackText text-center rounded-md '> Message on Twitter </button>
-
+                            <a
+                                href="https://discord.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className='px-8 py-2  font-bold cursor-pointer transition-all duration-300   text-headingDark border-[1px] sm:hover:-translate-y-2 border-headingDark text-center rounded-md '>Message on Discord 
+                            </a>
                         </div>
                     </div>
-                    <div data-aos="fade-in" className=' lg:w-[450px] w-full lg:h-full h-[20rem] pt-4  ' style={{ backgroundImage: `url("${heroImg}")`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
+                    <div data-aos="fade-in" className=' lg:w-[450px] w-full  h-[28rem] pt-4  ' style={{ backgroundImage: `url("${heroImg}")`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
                 </div>
             </div>
         </div>

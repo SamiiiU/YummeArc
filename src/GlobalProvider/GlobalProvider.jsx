@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { ContextAPI } from './ContextAPI'
 
 const GlobalProvider = ({ children }) => {
-  const [states, setState] = useState('false');
   const [scrwidth, setWidth] = useState(window.innerWidth);
-  const [isLoading, setIsLoading] = useState(false)
+  const [loading, setLoading] = useState(false)
   const [currPage, setcurrPage] = useState("Home")
   const [isFormOpen , setIsFormOpen] = useState(false);
 
@@ -23,9 +22,8 @@ const GlobalProvider = ({ children }) => {
 
   return (
     <ContextAPI.Provider value={{
-      states,
       scrwidth,
-      isLoading, setIsLoading,
+      loading, setLoading,
       currPage, setcurrPage,
       isFormOpen , setIsFormOpen,
 

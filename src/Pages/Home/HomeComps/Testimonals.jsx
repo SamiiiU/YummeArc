@@ -11,7 +11,7 @@ const Testimonals = () => {
     setIsActive(onMouse)
   }
   return (
-    <div className='w-full   px-4 sm:px-12  2xl:px-80  flex flex-col    relative 
+    <div className='w-full   px-4  sm:px-20 xl:px-28 3xl:px-80 flex flex-col    relative 
          py-10 bg-secondaryDark text-textDark'>
       <AOSInitializer />
 

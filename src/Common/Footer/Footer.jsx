@@ -20,11 +20,10 @@ const Footer = () => {
                     <h1 className='font-bold text-xl '> <i> Where Your Story Becomes a Virtual Star ✨</i></h1>
 
                     <div className='w-full flex gap-x-6 '>
-                        <a href="" target='_blank' className='hover:scale-125 transition-all' ><FaFacebook size={"2em"}/></a>
-                        <a href="" target='_blank' className='hover:scale-125 transition-all' ><FaTwitter size={"2em"}/></a>
-                        <a href="" target='_blank' className='hover:scale-125 transition-all' ><FaSnapchat size={"2em"}/></a>
-                        <a href="" target='_blank' className='hover:scale-125 transition-all' ><FaInstagram size={"2em"}/></a>
-                        <a href="" target='_blank' className='hover:scale-125 transition-all' ><FaTwitch size={"2em"}/></a>
+                        <a href="https://www.facebook.com/" target='_blank' className='hover:scale-125 transition-all' ><FaFacebook size={"2em"}/></a>
+                        <a href="https://x.com/yumearcstudio?s=21" target='_blank' className='hover:scale-125 transition-all' ><FaTwitter size={"2em"}/></a>
+                        <a href="https://www.instagram.com/" target='_blank' className='hover:scale-125 transition-all' ><FaInstagram size={"2em"}/></a>
+                        <a href="https://www.twitch.tv/" target='_blank' className='hover:scale-125 transition-all' ><FaTwitch size={"2em"}/></a>
 
 
                     </div>
@@ -40,11 +39,8 @@ const Footer = () => {
 
                         <Link to={"/portfolio"} className='text-lg font-semibold underline z-10 '>Portfolio</Link>
 
-
-
                         <Link to={"/about"} className='text-lg font-semibold underline z-10 '>About</Link>
-
-
+                        <Link to={"/service"} className='text-lg font-semibold underline z-10 '>Service</Link>
 
                         <Link to={"/comission"} className='text-lg font-semibold underline z-10 '>Comission</Link>
                     </div>

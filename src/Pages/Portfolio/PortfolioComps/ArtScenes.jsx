@@ -4,6 +4,7 @@ import { ContextAPI } from '../../../GlobalProvider/ContextAPI';
 import { RxCross1 } from 'react-icons/rx'; // optional close icon
 
 const ArtScenes = () => {
+  const {setIsFormOpen} = useContext(ContextAPI)
   const [showImageViewer, setShowImageViewer] = useState()
   const [isActive, setIsActive] = useState(null);
 
@@ -90,7 +91,7 @@ const ArtScenes = () => {
         Bring Your Stream World to Life with Stunning 2D & 3D Scenes
       </p>
 
-      <button className="px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2">
+      <button onClick={() => setIsFormOpen(true)} className="px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md sm:hover:-translate-y-2">
         Request Your Own
       </button>
 

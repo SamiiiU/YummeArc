@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import MainNav from '../../Common/Navbar/MainNav'
 import Hero from './ComissionComps/Hero'
 import OurProcess from './ComissionComps/OurProcess'
@@ -10,9 +10,11 @@ import Costs from './ComissionComps/Costs'
 import OrderFrom from './ComissionComps/OrderFrom'
 import Terms from './ComissionComps/Terms'
 import Loader from '../../components/Loader'
+import CommissionForm from '../../Common/ComissionForm'
+import { ContextAPI } from '../../GlobalProvider/ContextAPI'
 
 const Comission = () => {
-  const [loading, setLoading] = useState(true);
+    const {loading, setLoading} = useContext(ContextAPI);
   
     useEffect(() => {
       // Scroll to top when this page mounts
@@ -58,6 +60,7 @@ const Comission = () => {
     <div className='w-full   font-inter overflow-x-hidden'>
       {loading && <Loader text={"Comission"}/>} {/* ✅ Loader visible until images/content load */}
       <MainNav/>
+      <CommissionForm/>
       <Hero/>
       <OurProcess/>
       <Costs/>

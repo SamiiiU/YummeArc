@@ -1,6 +1,7 @@
 import React from 'react'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 import Img2 from '../../../Assets/Images/about/2.png'
+import { Link } from 'react-router-dom'
 
 const Story = () => {
   return (
@@ -25,7 +26,7 @@ const Story = () => {
 
       </div>
 
-      <button className=' my-6 px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>See Our Full Portfolio</button>
+      <Link to={"/portfolio"} className=' my-6 px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>See Our Full Portfolio</Link>
 
       <div className='w-full flex md:flex-row flex-col justify-center items-center'>
         <h1 className='text-2xl sm:text-5xl lg:text-7xl font-semibold sm:text-left text-center'>Every Story Starts With a Character..</h1>

@@ -15,7 +15,7 @@ const RecentWork = () => {
         setIsActive(onMouse)
     }
     return (
-        <div className='w-full px-4 sm:px-28 bg-primaryDark  2xl:px-80  flex flex-col  items-center  relative space-y-20
+        <div className='w-full px-4  sm:px-20 xl:px-28 3xl:px-80 bg-primaryDark   flex flex-col  items-center  relative space-y-20
          py-20 text-textDark'>
             <AOSInitializer />
 
@@ -29,7 +29,7 @@ const RecentWork = () => {
                 to-transparent' />
 
             <h1 data-aos="flip-up" className='w-full text-left z-20  font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]  text-headingDark font-kaushans'>Our Work In Action</h1>
-            <div className='w-full grid md:grid-cols-3 grid-cols-1 xl:gap-16 lg:gap-8 gap-6 '>
+            <div className='w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-16 lg:gap-8 gap-6 '>
                 {recentModels.map((model, idx) => (
                     <div data-aos-duration="200" data-aos="flip-right" key={idx} onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)}
                         style={{ transform: isActive == idx ? 'scale(1.1)' : 'scale(1)', boxShadow: isActive == idx ? '0px 8px 15px 3px rgba(0, 0, 0, 0.1)' : '0px 1px 3px 2px rgba(0, 0, 0, 0.1)' }}
@@ -39,7 +39,7 @@ const RecentWork = () => {
 
                         </FollowerPointerCard>
 
-                        <div className='w-full  flex flex-col p-6 bg-secondaryDark z-20'>
+                        <div className='w-full h-full flex flex-col p-6 bg-secondaryDark z-20'>
                             <h1 data-aos="fade-up" className='text-xl  font-bold text-headingDark'>{model.name}</h1>
                             <p data-aos="fade-up" className='mt-4 font-merryWeater'>{model.description} </p>
                         </div>

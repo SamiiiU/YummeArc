@@ -9,7 +9,7 @@ const Loader = ({text}) => {
 
       {/* Loading Text */}
       <p className="mt-6 text-lg flex items-center space-x-1">
-        <span>Loading Yumearc {text}</span>
+        <span>Loading Yumearc Page</span>
         <span className="flex space-x-1">
           <span className="animate-bounce">.</span>
           <span className="animate-bounce delay-150">.</span>

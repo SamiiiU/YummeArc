@@ -199,7 +199,7 @@ const CommissionForm = () => {
           <textarea
             name="idea"
             placeholder="Describe your idea"
-            className="col-span-2 p-2 rounded bg-transparent border border-gray-500 min-h-[100px]"
+            className=" md:col-span-2 p-2 rounded bg-transparent border border-gray-500 min-h-[100px]"
             value={formData.idea}
             onChange={handleChange}
             required
@@ -209,18 +209,18 @@ const CommissionForm = () => {
           <textarea
             name="lore"
             placeholder="Lore / Story (optional)"
-            className="col-span-2 p-2 rounded bg-transparent border border-gray-500 min-h-[80px]"
+            className="md:col-span-2 p-2 rounded bg-transparent border border-gray-500 min-h-[80px]"
             value={formData.lore}
             onChange={handleChange}
           ></textarea>
 
-          <p className="col-span-2 text-lg text-gray-300">
+          <p className="md:col-span-2 text-lg text-gray-300">
             50% upfront payment is required. We’ll respond within 24-49 hours.
           </p>
 
           <button
             type="submit"
-            className="col-span-2 bg-buttonPrimary hover:bg-slate-700  text-white font-semibold py-2 px-4 rounded"
+            className="md:col-span-2 bg-buttonPrimary hover:bg-slate-700  text-white font-semibold py-2 px-4 rounded"
           >
             REQUEST MY CUSTOM PROJECT
           </button>

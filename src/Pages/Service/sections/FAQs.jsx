@@ -44,7 +44,7 @@ const FAQs = () => {
     ];
 
     return (
-        <div className='w-full  z-30 flex md:flex-row flex-col justify-between items-center gap-10    text-textDark bg-primaryDark relative pt-10'>
+        <div className='w-full  z-30 flex md:flex-row flex-col justify-between items-center md:gap-10 gap-4    text-textDark bg-primaryDark relative pt-10'>
             <AOSInitializer />
             {/* shading circle hai na idher sai start  */}
             <ShadePurple className={'-right-20 top-20 bg-gradient-to-r w-72 h-72 opacity-20'} />
@@ -86,7 +86,7 @@ const FAQs = () => {
 
             </div>
 
-            <div data-aos="fade-top" className=' sm:h-[1000px]  xl:w-[600px] sm:w-[400px] w-[300px]' style={{ backgroundImage: `url("https://res.cloudinary.com/dqflexfdy/image/upload/v1754818364/faqs_glkpjc.png")`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
+            <div data-aos="fade-top" className=' md:h-[1000px] h-[600px]  xl:w-[600px] sm:w-[400px] w-[300px]' style={{ backgroundImage: `url("https://res.cloudinary.com/dqflexfdy/image/upload/v1754818364/faqs_glkpjc.png")`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
 
 
         </div>

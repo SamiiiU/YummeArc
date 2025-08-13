@@ -13,7 +13,7 @@ const WhyYummearc = () => {
   }
   return (
     <BackgroundBeamsWithCollision className={"min-h-screen"}>
-      <div className=' bg-primaryDark flex flex-col justify-center px-4 sm:px-28  2xl:px-80 py-10  min-h-screen text-textDark space-y-20 relative'>
+      <div className=' bg-primaryDark flex flex-col justify-center px-4  sm:px-20 xl:px-28 3xl:px-80 py-10  min-h-screen text-textDark space-y-20 relative'>
         <AOSInitializer />
         {/* shading circle hai na idher sai start  */}
         <ShadePurple className={'-right-20 top-20 bg-gradient-to-r w-72 h-72'} />
@@ -39,10 +39,10 @@ const WhyYummearc = () => {
 
         <div className='w-full flex flex-col gap-y-4 justify-center items-center text-center'>
           <h1 data-aos="slide-up" className='font-bold sm:text-4xl text-2xl text-headingDark'>
-            You’re not just buying a model.
+            You’re not just buying a model
           </h1>
           <h2 data-aos="slide-up" className='sm:text-xl text-lg'>
-            You’re investing in your virtual identity.
+            You’re investing in your virtual identity
           </h2>
         </div>
 

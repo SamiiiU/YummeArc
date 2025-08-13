@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import heroVid from '../../../Assets/Videos/HomeHeroVideo.mp4'
 import heroImg from '../../../Assets/Images/comission/heroImg.png'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 import { FaArrowDown } from 'react-icons/fa'
 import ShadePurple from '../../../Common/ShadePurple'
 import Star from '../../../Common/Star'
+import { ContextAPI } from '../../../GlobalProvider/ContextAPI'
 
 const Hero = () => {
+    const {setIsFormOpen} = useContext(ContextAPI)
     return (
 
         <div className='relative overflow-hidden'>
@@ -53,7 +55,7 @@ const Hero = () => {
 
                         <div className=' flex md:flex-row flex-col sm:rounded-md gap-4 md:w-auto w-full text-md xl:text-lg  '>
        
-                            <button className='  px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'> Let’s Begin </button>
+                            <button onClick={() => setIsFormOpen(true)} className='  px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'> Let’s Begin </button>
                         </div>
                     </div>
 

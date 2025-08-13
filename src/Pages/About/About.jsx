@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import MainNav from '../../Common/Navbar/MainNav'
 import Footer from '../../Common/Footer/Footer'
 import HeroSection from './sections/HeroSection'
@@ -8,9 +8,11 @@ import Mission from './sections/Mission'
 import CreativeProcess from './sections/CreativeProcess'
 import CTAsection from './sections/CTAsection'
 import Loader from '../../components/Loader'
+import ComissionForm from '../../Common/ComissionForm.jsx'
+import { ContextAPI } from '../../GlobalProvider/ContextAPI.jsx'
 
 const About = () => {
-  const [loading, setLoading] = useState(true);
+    const {loading, setLoading} = useContext(ContextAPI);
   
     useEffect(() => {
       // Scroll to top when this page mounts
@@ -57,6 +59,7 @@ const About = () => {
       {loading && <Loader text={"About Page"}/>} {/* ✅ Loader visible until images/content load */}
 
         <MainNav/>
+            <ComissionForm/>
             <HeroSection/>
             <Story/>
             <MeetArtist/>

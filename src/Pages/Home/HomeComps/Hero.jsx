@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import heroVid from '../../../Assets/Videos/HomeHeroVideo.mp4'
 import heroImg from '../../../Assets/Images/HomeImages/HeroImg.png'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 import { FaArrowDown } from 'react-icons/fa'
@@ -9,13 +8,13 @@ import { Link } from 'react-router-dom'
 import { ContextAPI } from '../../../GlobalProvider/ContextAPI'
 
 const Hero = () => {
-        const {isFormOpen , setIsFormOpen} = useContext(ContextAPI)
+        const {isFormOpen , setIsFormOpen , scrwidth} = useContext(ContextAPI)
     
     return (
 
         <div className='relative overflow-hidden'>
 
-            <div className='w-full xl:h-[37rem] lg:h-[40rem] md:min-h-screen  bg-secondaryDark text-textDark   px-4 xl:px-28 sm:px-20  2xl:px-80   flex  '>
+            <div className='w-full xl:h-[37rem] lg:h-[40rem]   bg-secondaryDark text-textDark   px-4  sm:px-20 xl:px-28 3xl:px-80   flex  '>
                 <div className='px-5  z-40 rounded-md text-center py-4 text-xl absolute bottom-0  right-0 animate-fadeIn font-bold flex items-center gap-x-4'> Scroll To Explore <FaArrowDown /></div>
 
                 {/* <span className='w-full h-full absolute top-0 left-0 z-20  bg-pinkText/50' /> */}
@@ -52,12 +51,12 @@ const Hero = () => {
                         </p>
 
                         <div className=' flex md:flex-row flex-col sm:rounded-md gap-4 md:w-auto w-full text-md xl:text-lg  '>
-                            <Link to={"/portfolio"} className=' px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'> View Portfolio</Link>
-                            <button onClick={() => setIsFormOpen(true)} className=' px-8 py-2  font-bold cursor-pointer transition-all duration-300   text-headingDark border-[1px] hover:-translate-y-2 border-headingDark text-center rounded-md '>Start Your Commission</button>
+                            <Link to={"/portfolio"} className=' px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md sm:hover:-translate-y-2'> View Portfolio</Link>
+                            <button onClick={() => setIsFormOpen(true)} className=' px-8 py-2  font-bold cursor-pointer transition-all duration-300   text-headingDark border-[1px] sm:hover:-translate-y-2 border-headingDark text-center rounded-md '>Start Your Commission</button>
                         </div>
                     </div>
 
-                    <div data-aos="fade-in" className=' lg:w-1/2 w-full lg:h-full h-[30rem] pt-4  ' style={{ backgroundImage: `url("${heroImg}")`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
+                    <div data-aos="fade-in" className='2xl:w-[500px] lg:w-1/2 w-full  h-[30rem]   ' style={{ backgroundImage: `url("${heroImg}")`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
 
 
 

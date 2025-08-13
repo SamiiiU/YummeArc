@@ -14,7 +14,7 @@ import CommissionForm from '../../Common/ComissionForm';
 import { ContextAPI } from '../../GlobalProvider/ContextAPI';
 
 const Home = () => {
-  const [loading, setLoading] = useState(true);
+  const {loading, setLoading} = useContext(ContextAPI);
 
   useEffect(() => {
     // Scroll to top when this page mounts
