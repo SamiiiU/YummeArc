@@ -64,7 +64,7 @@ const Comission = () => {
       {loading && <Loader text="Comission" />}
       <Suspense fallback={<Loader text="Loading Commission Page..." />}>
         <MainNav />
-        <CommissionForm />
+        {/* <CommissionForm /> */}
         <Hero />
         <OurProcess />
         <Costs />

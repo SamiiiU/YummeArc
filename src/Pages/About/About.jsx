@@ -61,7 +61,7 @@ const About = () => {
 
       <Suspense fallback={<Loader text="Loading About Page..." />}>
         <MainNav />
-        <ComissionForm />
+        {/* <ComissionForm /> */}
         <HeroSection />
         <Story />
         <MeetArtist />

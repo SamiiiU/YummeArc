@@ -56,7 +56,9 @@ const CommissionForm = () => {
     emailjs
       .send(
         "service_ahydoxf",
-        "template_p97et6g",
+        // "template_p97et6g",
+        "template_p97es3q",
+
         {
           name: formData.name,
           email: formData.email,
@@ -90,7 +92,7 @@ const CommissionForm = () => {
       })
       .catch((err) => {
         console.error("Failed to send email:", err);
-        alert("Failed to send. Please try again.");
+        alert("Failed to send. Form is not working properly");
       });
   };
 
