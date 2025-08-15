@@ -6,6 +6,8 @@ const GlobalProvider = ({ children }) => {
   const [loading, setLoading] = useState(false)
   const [currPage, setcurrPage] = useState("Home")
   const [isFormOpen , setIsFormOpen] = useState(false);
+  const [isFormsaOpen , setIsFsadormOpen] = useState(false);
+
 
 
 
