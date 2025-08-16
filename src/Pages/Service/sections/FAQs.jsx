@@ -9,7 +9,7 @@ const FAQs = () => {
         {
             question: "Do I need a reference sheet for a model or panel design?",
             answer:
-                "Nope! You can share anything — references, your vibe, a Pinterest board, or even just a description. We’ll handle the rest.",
+                "Nope! You can share anything references, your vibe, a Pinterest board, or even just a description. We’ll handle the rest.",
         },
         {
             question: "Can I order just one emote or one panel?",
@@ -24,22 +24,22 @@ const FAQs = () => {
         {
             question: "Do you provide rigging too?",
             answer:
-                "Yes! We handle both 2D and 3D rigging in-house. You’ll get everything ready-to-use.",
+                "Yes! We handle both 2D and 3D rigging in-house. You’ll get everything ready to use.",
         },
         {
             question: "How do payments work?",
             answer:
-                "We usually do 50% upfront, 50% on delivery. We accept multiple payment methods including PayPal, Wise, Bank Transfer, and more — just let us know what works for you!",
+                "We usually do 50% upfront, 50% on delivery. We accept multiple payment methods including PayPal, Wise, Bank Transfer, and more just let us know what works for you!",
         },
         {
             question: "Is the art fully custom or template-based?",
             answer:
-                "Everything is 100% hand-drawn from scratch. No templates. No AI tracing. Just pure, personalized art.",
+                "Everything is 100% hand drawn from scratch. No templates. No AI tracing. Just pure, personalized art.",
         },
         {
             question: "Can I use the art commercially?",
             answer:
-                "Yep! Unless stated otherwise, all deliveries include full commercial rights — you're free to stream, monetize, and shine.",
+                "Yep! Unless stated otherwise, all deliveries include full commercial rights you're free to stream, monetize, and shine.",
         },
     ];
 
@@ -57,7 +57,7 @@ const FAQs = () => {
                 to-transparent' />
             <div className='md:w-2/3 w-full  justify-center text-left  flex flex-col  gap-y-6 sm:p-16 p-4 min-h-[24rem]'>
 
-                <h1 data-aos="fade-right" className=' font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1] text-headingDark '>
+                <h1 data-aos="fade-right" className=' font-kaushans font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1] text-headingDark '>
                     Frequently Asked Questions
                 </h1>
                 <p data-aos="fade-right" className='font-merryWeater lg:text-lg text-sm '>At YummeArc, every Still got questions? We got answers. And if it's not listed here — just shoot us a message. We're super chill about it.

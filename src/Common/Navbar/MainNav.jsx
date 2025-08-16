@@ -90,7 +90,7 @@ const MainNav = () => {
     <>
 
       {/* button for scrolling to top  */}
-      <span onClick={scrollToTop} className={`z-50 fixed sm:bottom-5 bottom-10 ${!isVisible && 'hidden opacity-100'} right-5 lg:text-5xl text-3xl transition-all text-white  bg-[#16316a] lg:p-2 cursor-pointer rounded-full  `}><FaArrowAltCircleUp /></span>
+      <span onClick={scrollToTop} className={`z-50 fixed sm:bottom-5 bottom-10 ${!isVisible && 'hidden opacity-100'} right-5 lg:text-5xl text-3xl transition-all text-white  bg-buttonPrimary lg:p-2 cursor-pointer rounded-full  `}><FaArrowAltCircleUp /></span>
 
       {scrwidth > 1280 ? (
         <div className={`w-full fixed font-mPlus  flex justify-between items-center sm:px-28  2xl:px-80 px-4 py-4  z-50 ${isVisible ? 'bg-secondaryDark' : 'bg-secondaryDark'} transition-all text-headingDark` }>

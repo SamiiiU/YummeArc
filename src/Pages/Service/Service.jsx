@@ -39,7 +39,7 @@ const Service = () => {
       {loading && <Loader text={"Services"} />}
 
       <MainNav />
-      {/* <CommissionForm /> */}
+      <CommissionForm />
 
       {/* ✅ Suspense wrapper for lazy loaded sections */}
       <Suspense fallback={<Loader text="Loading Section..." />}>

@@ -62,7 +62,7 @@ const Home = () => {
 
       <MainNav />
       <Suspense fallback={<Loader text="Loading section..." />}>
-        {/* <CommissionForm /> */}
+        <CommissionForm />
         <Hero />
         <WhyYummearc />
         <WhatWeCreate />

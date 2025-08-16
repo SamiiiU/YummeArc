@@ -9,7 +9,7 @@ const Mission = () => {
                 to-transparent' />
 
             <AOSInitializer />
-            <h1 data-aos="flip-up" className='   lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1] w-full text-center font-bold'>
+            <h1 data-aos="flip-up" className='  font-kaushans  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1] w-full text-center font-bold'>
                 What We Stand For
 
             </h1>

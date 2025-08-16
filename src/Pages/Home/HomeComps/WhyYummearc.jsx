@@ -16,14 +16,14 @@ const WhyYummearc = () => {
       <div className=' bg-primaryDark flex flex-col justify-center px-4  sm:px-20 xl:px-28 3xl:px-80 py-10  min-h-screen text-textDark space-y-20 relative'>
         <AOSInitializer />
         {/* shading circle hai na idher sai start  */}
-        <ShadePurple className={'-right-20 top-20 bg-gradient-to-r w-72 h-72'} />
+        <ShadePurple className={'-right-20 top-20 bg-gradient-to-r w-72 h-72 opacity-30'} />
 
-        <ShadePurple className={'-left-24 bottom-20 bg-gradient-to-r w-72 h-72'} />
+        <ShadePurple className={'-left-24 bottom-20 bg-gradient-to-r w-72 h-72 opacity-30'} />
 
         {/* shading circle yaha sai khatam bus ok  */}
         <span className='w-full h-1/5 absolute bottom-0 z-0 right-0 bg-gradient-to-t from-secondaryDark
                 to-transparent' />
-        <h1 className='w-full text-left  font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]   font-kaushans text-headingDark'>Why YummeArc?</h1>
+        <h1 className='w-full text-left  font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]   font-kaushans text-headingDark'>Why YumeArc?</h1>
         <div className='w-full grid md:grid-cols-2 grid-cols-1 xl:gap-16 lg:gap-8 gap-6 mt-16 '>
           {whyYummeArc.map((why, idx) => (
             <div data-aos="zoom-in" key={idx} onMouseEnter={() => handleActive(idx)} onMouseLeave={() => handleActive(null)} className='col-span-1 cursor-pointer bg-opacity-40 backdrop-blur-sm  row-span-1 rounded-3xl  flex flex-col justify-center items-center gap-y-6 px-8 py-6 transition-all '

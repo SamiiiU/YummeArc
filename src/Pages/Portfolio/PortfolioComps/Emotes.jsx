@@ -87,7 +87,7 @@ const Emotes = () => {
 
       <AOSInitializer />
 
-      <h1 data-aos="flip-up" className='   lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1] w-full  font-bold text-center'>
+      <h1 data-aos="flip-up" className='  font-kaushans  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1] w-full  font-bold text-center'>
                 Custom Emotes & Sub Badges
             </h1>
             <p data-aos="fade-up" className='lg:text-xl text-lg text-center '>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { MdCall, MdEmail } from 'react-icons/md'
 import { Link } from 'react-router-dom'
-import { FaFacebook, FaInstagram, FaLocationDot, FaSnapchat, FaTwitch, FaTwitter } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaLocationDot, FaSnapchat, FaTwitch, FaTwitter, FaX, FaXTwitter } from "react-icons/fa6";
 
 
 const Footer = () => {
@@ -20,9 +20,9 @@ const Footer = () => {
                     <h1 className='font-bold text-xl '> <i> Where Your Story Becomes a Virtual Star ✨</i></h1>
 
                     <div className='w-full flex gap-x-6 '>
-                        <a href="https://www.facebook.com/" target='_blank' className='hover:scale-125 transition-all' ><FaFacebook size={"2em"}/></a>
-                        <a href="https://x.com/yumearcstudio?s=21" target='_blank' className='hover:scale-125 transition-all' ><FaTwitter size={"2em"}/></a>
-                        <a href="https://www.instagram.com/" target='_blank' className='hover:scale-125 transition-all' ><FaInstagram size={"2em"}/></a>
+                        
+                        <a href="https://x.com/yumearcstudio?s=21" target='_blank' className='hover:scale-125 transition-all' ><FaXTwitter size={"2em"}/></a>
+                        
                         <a href="https://www.twitch.tv/" target='_blank' className='hover:scale-125 transition-all' ><FaTwitch size={"2em"}/></a>
 
 

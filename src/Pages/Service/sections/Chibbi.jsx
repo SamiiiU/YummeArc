@@ -20,12 +20,12 @@ const Chibbi = () => {
             <span className='w-full h-1/5 absolute bottom-0 z-0 right-0 bg-gradient-to-t from-secondaryDark
                 to-transparent' />
 
-            <div data-aos="fade-top" className='w-[450px] md:w-[500px] mx-auto 3xl:h-[26rem] h-[30rem]  order-2 lg:order-1 
+            <div data-aos="fade-top" className='w-[350px] md:w-[500px] mx-auto 3xl:h-[26rem] h-[30rem]  order-2 lg:order-1 
             ' style={{ backgroundImage: `url("https://res.cloudinary.com/dqflexfdy/image/upload/v1754813003/sec3_chibiPanels_byj50o.png")`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
             <div className='col-span-1  justify-center text-left  flex flex-col  gap-y-6 sm:px-16 px-4 min-h-[24rem] 
             order-1 lg:order-2'>
 
-                <h1 data-aos="fade-right" className=' font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1] text-headingDark '>
+                <h1 data-aos="fade-right" className=' font-[600]  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1] text-headingDark  font-kaushans'>
                     Custom
                     Chibi Panels
                 </h1>

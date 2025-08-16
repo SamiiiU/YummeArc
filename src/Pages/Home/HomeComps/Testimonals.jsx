@@ -16,7 +16,7 @@ const Testimonals = () => {
       <AOSInitializer />
 
       <h1 data-aos="flip-up" className=' font-[600] font-kaushans  lg:text-[3.5rem] sm:text-5xl text-3xl leading-[1.1]  text-headingDark'>
-        What Our Client Says
+        What Our Clients Says
       </h1>
       <p data-aos="fade-up" className='font-merryWeater lg:text-lg text-sm w-full my-6  '>Streamers who trusted us and felt seen, styled, and supported.
       </p>
