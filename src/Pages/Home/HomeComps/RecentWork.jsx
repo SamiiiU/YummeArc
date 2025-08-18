@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import whyYmmearc from '../../../Assets/Images/HomeImages/WhySecImg.png'
 import { recentModels, whyYummeArc } from '../../../WebData/HomeData'
 import { FollowerPointerCard } from '../../../components/ui/following-pointer'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'

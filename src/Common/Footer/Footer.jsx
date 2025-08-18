@@ -2,6 +2,7 @@ import React from 'react'
 import { MdCall, MdEmail } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 import { FaFacebook, FaInstagram, FaLocationDot, FaSnapchat, FaTwitch, FaTwitter, FaX, FaXTwitter } from "react-icons/fa6";
+import TrustPilotBadge from '../../components/TrustPilotBadge';
 
 
 const Footer = () => {
@@ -14,16 +15,16 @@ const Footer = () => {
                     {/* Logo image started  */}
                     {/* <img className='w-[5rem]' src="https://upload.wikimedia.org/wikipedia/en/e/eb/JDC_Foundation_Logo.png" alt="Logo " /> */}
                     <Link to="/" >
-                              <img src="https://res.cloudinary.com/dqflexfdy/image/upload/v1755023786/YummeArc-05_e2vbff.png" alt="yumearc logo" className='sm:w-28 w-20'/></Link>
+                        <img src="https://res.cloudinary.com/dqflexfdy/image/upload/v1755023786/YummeArc-05_e2vbff.png" alt="yumearc logo" className='sm:w-28 w-20' /></Link>
 
                     {/* Logo image done  */}
                     <h1 className='font-bold text-xl '> <i> Where Your Story Becomes a Virtual Star ✨</i></h1>
 
                     <div className='w-full flex gap-x-6 '>
-                        
-                        <a href="https://x.com/yumearcstudio?s=21" target='_blank' className='hover:scale-125 transition-all' ><FaXTwitter size={"2em"}/></a>
-                        
-                        <a href="https://www.twitch.tv/" target='_blank' className='hover:scale-125 transition-all' ><FaTwitch size={"2em"}/></a>
+
+                        <a href="https://x.com/yumearcstudio?s=21" target='_blank' className='hover:scale-125 transition-all' ><FaXTwitter size={"2em"} /></a>
+
+                        <a href="https://www.twitch.tv/" target='_blank' className='hover:scale-125 transition-all' ><FaTwitch size={"2em"} /></a>
 
 
                     </div>
@@ -57,9 +58,13 @@ const Footer = () => {
                         </div>
 
                         <div className='flex '>
-                        <FaLocationDot  size={"2em"} />
+                            <FaLocationDot size={"2em"} />
                             <p className='px-4 text-lg font-semibold underline'>Belle Mead, New Jersey, USA</p>
                         </div>
+
+                        <TrustPilotBadge
+                            
+                        />
 
 
 
@@ -69,7 +74,7 @@ const Footer = () => {
 
             <div className=' w-full  py-4 text-center bg-primaryDark text-white font-semibold text-xl'> © 2025 YummeArc — Made with sparkles, stories & coffee ☕✨
 
-</div>
+            </div>
         </div>
     )
 }

@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import { testimonals_home } from '../../../WebData/HomeData'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 import { ContextAPI } from '../../../GlobalProvider/ContextAPI'
+import TrustPilotBadge from '../../../components/TrustPilotBadge'
 
 const Testimonals = () => {
   const [isActive, setIsActive] = useState(null)
@@ -69,8 +70,9 @@ const Testimonals = () => {
         </>
       </div>
 
-
+        
       <div className='w-full flex flex-col gap-y-4 mt-10 justify-center items-center text-center'>
+        <TrustPilotBadge/>
         <h1 className='font-semibold text-2xl'>
           Your story matters too. <br />
           Let’s create your identity together.
