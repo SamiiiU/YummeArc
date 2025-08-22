@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 
 import { BsDiscord, BsTwitch, BsTwitter } from 'react-icons/bs'
-import { Link } from 'react-router-dom'
 import { FaXTwitter } from 'react-icons/fa6'
 
 
@@ -54,7 +53,7 @@ const MeetArtist = () => {
         { callit: "MIMI NOCTELLE",
               twitter : 'https://x.com/noctellemimi',
               twitch : 'https://www.twitch.tv/celestialpaisley',
-               discord: "Luoromimi_noctelle",
+               discord: "mimi_noctelle",
         icon: 'https://res.cloudinary.com/dqflexfdy/image/upload/v1754825324/8_n70c3v.png' },
 
         { callit: "STARRY MUSE",
@@ -117,7 +116,7 @@ const MeetArtist = () => {
 
             </h1>
             <div className='w-full grid sm:grid-cols-2 grid-cols-1 xl:gap-8 lg:gap-6 gap-4 mt-16 '>
-                {visibleArtists.map((why, idx) => (
+                {meetArtist.map((why, idx) => (
                     <div
                         data-aos="zoom-in"
                         key={idx}
@@ -156,7 +155,7 @@ const MeetArtist = () => {
                 ))}
             </div>
             
-             <div className="w-full flex justify-center mt-8 z-20">
+             {/* <div className="w-full flex justify-center mt-8 z-20">
                 <button
                     onClick={handleShowAll}
                     disabled={loading} // disable while loading
@@ -191,7 +190,7 @@ const MeetArtist = () => {
                         showAll ? 'View Less' : 'View More'
                     )}
                 </button>
-            </div>
+            </div> */}
             
             <div className='z-20 p-8 text-center space-y-3 rounded-lg bg-pink-950 bg-opacity-10 mt-10 border-[1px] border-headingDark'>
                 <h1 className='text-xl '><span className=' font-bold '>Important Note : </span> These are the only official artists working under YummeArc.

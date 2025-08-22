@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import { useContext, useState } from 'react'
 import { testimonals_home } from '../../../WebData/HomeData'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
 import { ContextAPI } from '../../../GlobalProvider/ContextAPI'
