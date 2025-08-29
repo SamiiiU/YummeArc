@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
+//import heroImg from '../../../Assets/Images/about/hero.png'
 import heroImg from '../../../Assets/Images/about/8.png'
 import { ContextAPI } from '../../../GlobalProvider/ContextAPI'
 
