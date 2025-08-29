@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, lazy, Suspense } from 'react';
 import Loader from '../../components/Loader';
 import { ContextAPI } from '../../GlobalProvider/ContextAPI.jsx';
+import HeroSection from './sections/HeroSection';
 
 // Lazy load components
 const MainNav = lazy(() => import('../../Common/Navbar/MainNav'));
