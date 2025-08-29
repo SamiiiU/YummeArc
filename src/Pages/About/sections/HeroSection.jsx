@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
-import heroImg from '../../../Assets/Images/about/Adobe Express - file (8)-min.png'
+import himg from '../../../Assets/Images/about/Adobe Express - file (8)-min.png'
 import { ContextAPI } from '../../../GlobalProvider/ContextAPI'
 
 const HeroSection = () => {
@@ -20,7 +20,7 @@ const HeroSection = () => {
 
             <button onClick={() => setIsFormOpen(true)} className=' my-6 px-8 py-2 text-headingDark font-bold cursor-pointer transition-all duration-300 border-2 border-textDark bg-buttonPrimary text-center rounded-md hover:-translate-y-2'>Meet The Artist</button>
             
-            <img src={heroImg} alt="" className="w-[800px]" />
+            <img src={himg} alt="" className="w-[800px]" />
 
 
         </div>
