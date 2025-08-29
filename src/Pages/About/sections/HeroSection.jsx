@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import AOSInitializer from '../../../Common/AOS/AOSInitializer'
-import heroImg from '../../../Assets/Images/about/hero.png'
+import heroImg from '../../../Assets/Images/about/Adobe Express - file (8)-min'
 import { ContextAPI } from '../../../GlobalProvider/ContextAPI'
 
 const HeroSection = () => {
